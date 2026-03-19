@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1599",
+    "task": "Create a Silicon Labs Si1133 Uv/Als/Ir Optical Sensor Color And Light Sensors Application for Hobbyist Project",
+    "input": "Write a C program for Raspberry Pi 3 Model B+ to interface with a Silicon Labs Si1133 UV/ALS/IR sensor via I2C using the `wiringPiI2C` library, continuously reading UV index, ambient light (ALS), and IR data, logging the values with timestamps to a \"light_data.log\" file, and gracefully handling I2C communication errors.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "26",
+    "task": "Create a Pir Sensor Gpio Interrupt Activating Buzzer Interrupt_Driven Application for Wearable Technology",
+    "input": "Write a C program for Raspberry Pi 3 Model B+ using `pigpio` library: when a HC-SR501 PIR sensor triggers an interrupt on GPIO 17, activate a buzzer connected to GPIO 18 via an interrupt-driven routine; include robust error handling for `pigpio` initialization and GPIO setup, ensuring graceful program termination on failure.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "2841",
+    "task": "Create a Temperature Sensor Controlling A Cooling Fan Sensor_Actuator_Combo Application for Automated Quality Control",
+    "input": "Write a C program for Raspberry Pi 5 using the `libi2c-dev` library to regulate a PWM-controlled cooling fan based on temperature readings from an LM75B temperature sensor connected via I2C, logging fan speed adjustments and temperature readings to a circular buffer in memory for real-time monitoring of a server rack's thermal profile.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "862",
+    "task": "Create a Cooling Fan Actuators Application for Assistive Technology",
+    "input": "Write a C program for Raspberry Pi Zero W to regulate a PWM-controlled 5V cooling fan connected to GPIO18, triggered by temperature readings from a MAX31855 thermocouple connected via SPI, logging temperature and fan speed (0-100%) to `fan_log.txt`, handling SPI errors gracefully using `wiringPi`.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "0210",
+    "task": "Create a Honeywell Awm5000 Series Airflow Sensor Flow Sensors Application for Motion-Triggered Surveillance",
+    "input": "Write a C program for Raspberry Pi 3 Model B+ to interface with a Honeywell AWM5300V airflow sensor (analog voltage output) using the wiringPi library, logging airflow readings to \"airflow_log.txt\" with timestamp and voltage, triggering an alarm via GPIO if airflow drops below a threshold.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "0777",
+    "task": "Create a Buzzer Actuators Application for Aircraft Monitoring",
+    "input": "Write a C program for Raspberry Pi 5 using the `pigpio` library to implement a rudimentary proximity alert system; drive two KY-012 active buzzer modules connected to GPIO pins 17 and 18, modulating their frequencies based on simulated distance readings from stdin (0-100cm), triggering distinct alarm patterns when readings fall below 20cm and 10cm, respectively, with graceful error handling for `pigpio` initialization and invalid input.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "0647",
+    "task": "Create a Ir Sensor Reading Using Gpio Sensor_Simple Application for Professional Monitoring System",
+    "input": "Write a C program for Raspberry Pi Zero W to detect motion using a HC-SR501 PIR sensor on GPIO 17, logging timestamped HIGH/LOW state changes to 'motion.log' with robust error handling for GPIO initialization failures using the `wiringPi` library.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "2693",
+    "task": "Create a Log Motion Detection Timestamps To A Text File File_Logging Application for Interactive Art Installation",
+    "input": "Write a C program for Raspberry Pi 5 using the `wiringPi` library to detect motion via a PIR sensor on GPIO 4, logging timestamps of motion events to a \"motion_log.txt\" file, handling potential `wiringPiSetup` failures.\nInclude error handling for GPIO setup and ensure the file is properly opened and closed after each timestamp entry, formatted as \"YYYY-MM-DD HH:MM:SS\".\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "1507",
+    "task": "Create a Pir Sensor Gpio Interrupt Activating Buzzer Interrupt_Driven Application for Research Application",
+    "input": "Write a C program for Raspberry Pi 4 Model B using the pigpio library, implementing interrupt-driven functionality: trigger a buzzer connected to GPIO18 via interrupt when a HC-SR501 PIR sensor connected to GPIO4 detects motion, logging each motion event (timestamp and duration of buzzer activation) to a file named 'motion_log.txt'.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "1097",
+    "task": "Create a Pir Motion Sensor Activating A Light Or Buzzer Sensor_Actuator_Combo Application for Educational Setting",
+    "input": "Write a C program for Raspberry Pi 4 Model B `pigpio` to activate a buzzer connected to GPIO 18 when a HC-SR501 PIR sensor (GPIO 23) detects motion, logging each activation timestamp (YYYY-MM-DD HH:MM:SS) to \"motion_log.txt\", handling potential `pigpio` initialization errors gracefully.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "0912",
+    "task": "Create a Pir Sensor Gpio Interrupt Activating Buzzer Interrupt_Driven Application for Threat Detection Node",
+    "input": "Write a C program for Raspberry Pi Zero W using the `pigpio` library to trigger a piezo buzzer connected to GPIO18 via interrupt when a HC-SR501 PIR motion sensor (connected to GPIO4) detects movement, implementing debounce and logging events with timestamps to `motion_log.txt`.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "441",
+    "task": "Create a Ir Sensor Sensor_Reading Application for Drone Navigation",
+    "input": "Write a C program for Raspberry Pi 5 to implement a proximity-triggered, servo-controlled bird feeder using an IR obstacle avoidance sensor (KY-032) connected to GPIO17 and a servo motor connected to GPIO18, logging feeding events with timestamps to \"feeding_log.txt\". Handle sensor read failures and servo control errors gracefully using `wiringPi` library.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "4220",
+    "task": "Create a Pir Sensor Gpio Interrupt Activating Buzzer Interrupt_Driven Application for Drone Navigation",
+    "input": "Write a C program for Raspberry Pi 3 Model B+ using `wiringPi` to trigger a buzzer via GPIO interrupt when a HC-SR501 PIR sensor on GPIO 25 detects motion, implementing interrupt-driven buzzer activation on GPIO 24, with robust error handling for GPIO initialization.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "3109",
+    "task": "GPIO Control with Button and LED",
+    "input": "Write a C program using WiringPi (BCM numbering) to turn an LED on when a button connected to GPIO pin 17 (BCM GPIO 17) is pressed and turn it off when released, using WiringPi numbering.",
+    "source": "validation_set"
+  },
+  {
+    "id": "0687",
+    "task": "Create a Ultrasonic Sensor Controlling Servo For Parking Assist Sensor_Actuator_Combo Application for Drone Navigation",
+    "input": "Write a C program for a Raspberry Pi Zero W using the `pigpio` library to implement a parking assist system utilizing a HC-SR04 ultrasonic sensor and an SG90 servo motor, where the servo sweeps 0-180 degrees, displaying distance readings from the HC-SR04 and triggering an alert if an object is within 30cm, handling potential `pigpio` initialization and sensor read errors.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "1483",
+    "task": "Create a Sensor Data Logging With Timestamps To Json File_Logging Application for Prosthetic Device Control",
+    "input": "Write a C program for Raspberry Pi Zero W to read temperature and humidity from a Sensirion SHT31-D sensor via I2C, timestamp each reading, and log the data in JSON format to a file named \"environmental_data.json\", implementing robust error handling for I2C communication failures using the `wiringPiI2C` library.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "0628",
+    "task": "Create a Temperature Sensor Controlling A Cooling Fan Sensor_Actuator_Combo Application for Home Automation",
+    "input": "Write a C program for Raspberry Pi 4 Model B to read temperature from an LM75 sensor connected via I2C, using the `wiringPi` library, controlling a PWM fan connected to GPIO18, logging temperature and fan speed to a file named `cooling_log.txt` with robust error handling for I2C communication failures.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "3073",
+    "task": "OLED Application - Digital Clock Display (Pigpio I2C Mode, Raspberry Pi, SSD1306)",
+    "input": "Write a C program for Raspberry Pi using Pigpio to initialize an SSD1306 OLED display and display the current time in HH:MM:SS format, updating every second.",
+    "source": "validation_set"
+  },
+  {
+    "id": "3339",
+    "task": "Create a Time Of Flight Sensor Sensor_Reading Application for Assistive Technology",
+    "input": "Write a C program for Raspberry Pi 5 to interface with a VL53L1X time-of-flight sensor via I2C, using the `wiringPi` library, to trigger a warning when an object is closer than 200mm, with robust error handling for I2C communication and distance readings, logging timestamps and distances to `distance_log.txt`.\n",
+    "source": "validation_set"
+  },
+  {
+    "id": "1288",
+    "task": "Create a Accelerometer Sensor_Reading Application for Professional Monitoring System",
+    "input": "Write a C program for Raspberry Pi 5 using the `wiringPi` library to read tri-axial acceleration data from an LSM303D accelerometer connected via I2C, triggering an LED on GPIO 17 when the magnitude of acceleration exceeds 1.5g, with robust error handling for I2C communication failures.\n",
+    "source": "validation_set"
+  }
+]

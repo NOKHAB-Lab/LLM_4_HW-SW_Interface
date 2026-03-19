@@ -1,0 +1,71 @@
+category,base_pass@1,finetuned_pass@1,base_pass@3,finetuned_pass@3,base_pass@5,finetuned_pass@5
+Si1133 UV/ALS/IR sensor interface on Raspberry Pi,0,1,0,1,0,1
+Motion Detection with HC-SR501 and Buzzer,0,1,0,1,0,1
+Temperature-based fan control for Raspberry Pi 5,0,1,0,1,0,1
+Temperature-controlled fan with UDP communication,0,1,0,1,0,1
+Airflow Monitoring with Alarm,0,0,0,1,0,1
+Aircraft Proximity Alert System,0,1,0,1,0,1
+Motion Detection System,0,0,0,1,0,1
+Motion detection and logging with multiple PIR sensors on Raspberry Pi,0,1,0,1,0,1
+Motion detection and buzzer activation with logging for Raspberry Pi,0,1,0,1,0,1
+Motion-activated buzzer and logging system for Raspberry Pi,0,0,0,1,0,1
+Threat detection node using PIR sensor and buzzer on Raspberry Pi Zero W,0,1,0,1,0,1
+"Proximity-triggered, servo-controlled bird feeder for Raspberry Pi 5",0,1,0,1,1,1
+Motion-activated buzzer for obstacle avoidance,0,1,0,1,0,1
+GPIO Control with Button and LED,0,1,0,1,1,1
+Drone Navigation System,0,1,0,1,0,1
+Environmental Monitoring,0,1,0,1,0,1
+Temperature monitoring and fan control for Raspberry Pi using LM75 sensors and PWM fan.,0,1,0,1,0,1
+"OLED Application - Digital Clock Display (Pigpio I2C Mode, Raspberry Pi, SSD1306)",0,0,0,1,0,1
+Distance sensing application for assistive technology,0,1,0,1,0,1
+Accelerometer Monitoring and LED Control,0,0,0,0,0,0
+Interactive Art Installation with Tilt Switches and LEDs,0,0,0,1,0,1
+Smart Irrigation System,0,1,0,1,0,1
+Vibration Monitoring System,0,1,0,1,0,1
+Vibration-triggered shutdown mechanism for Raspberry Pi,0,1,0,1,0,1
+Assistive Technology Gate System,0,1,0,1,0,1
+Temperature and Humidity Monitoring System,0,1,0,1,0,1
+Smart Chicken Coop Door Controller,0,0,0,1,0,1
+"ADC/DAC (Raspberry Pi, C Language)SSD1306 OLED Display Initialization and Test",0,1,0,1,0,1
+Periodic Actuation with Manual Interrupt - LED Blink Skipped During Button Press,0,0,0,1,0,1
+Soil Moisture Monitoring and Relay Control,0,1,0,1,0,1
+Distributed temperature and humidity monitoring system for industrial automation on Raspberry Pi 4,0,1,0,1,0,1
+Miniature CNC plotter for textiles using Raspberry Pi Zero W,0,0,0,0,0,1
+Environmental data logger for Raspberry Pi Zero W using SHT31-DIS sensor,0,0,0,1,0,1
+Relay control with touch sensors on Raspberry Pi Zero W,0,1,0,1,0,1
+Seismic event logger using Omron D7S sensor on Raspberry Pi Zero W,0,0,0,0,0,0
+Distributed Motion Detection System Node,0,1,0,1,0,1
+Home Security System,0,1,0,1,0,1
+Motion detection system for Raspberry Pi,0,1,0,1,0,1
+Distance monitoring with VL53L1X and PIR sensor on Raspberry Pi Zero W,0,1,0,1,0,1
+Motion detection and reporting to a central logging server using UDP.,0,1,0,1,0,1
+Automated Quality Control System using BMP180 sensors on Raspberry Pi,0,1,0,1,0,1
+Rain-activated window closer for Raspberry Pi,0,1,0,1,0,1
+Timed Access Control System for Raspberry Pi using pigpio,0,1,0,1,0,1
+Smart Lighting System,0,1,0,1,0,1
+Multi-sensor proximity-based musical alert system for industrial automation using Raspberry Pi Zero W and HC-SR04 sensors.,0,1,0,1,0,1
+LED Blinking with pigpio,0,1,0,1,0,1
+BME280 Sensor Logger,0,0,0,1,0,1
+"OLED Display Example - Static Text (Pigpio I2C Mode, Raspberry Pi, SSD1306)",0,0,0,1,0,1
+LED brightness control based on BH1750 light sensor readings on Raspberry Pi,0,1,0,1,0,1
+MCP4725 DAC Voltage Setting,0,0,0,0,0,1
+Vibration-triggered Shutdown,1,1,1,1,1,1
+Home Automation Humidity Monitor,0,1,0,1,0,1
+"Stepper Motor Control Example - Direction Toggle with Button (WiringPi Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)",0,0,0,0,0,0
+Seven-Segment Display,0,1,0,1,0,1
+Magnetometer and LED control on Raspberry Pi,0,0,0,0,0,0
+Safety Interlock System Monitor,0,1,0,1,0,1
+Motion-triggered sensor logging with Si1153 and PIR sensor on Raspberry Pi 5,0,1,0,1,0,1
+Door lock control system for Raspberry Pi using pigpio,0,1,0,1,0,1
+Capacitive Touch Sensor with LED Fading on Raspberry Pi,0,0,0,1,0,1
+Seven Segment Display with 74HC595,0,1,0,1,0,1
+"MCP3008 SPI - Log AIN0 to CSV (Raspberry Pi, C Language, spidev)",0,0,0,0,0,0
+Air Quality Monitoring and Ventilation Control,0,1,0,1,0,1
+Motion-triggered buzzer with MQTT integration on Raspberry Pi Zero W,0,1,0,1,0,1
+Home Automation Motion Detection System,0,1,0,1,0,1
+Motion Detection and Logging,0,1,0,1,0,1
+Motion detection using multiple PIR sensors on Raspberry Pi,0,1,1,1,1,1
+Environmental Monitoring System,0,1,0,1,0,1
+Motion detection and relay activation with logging,0,1,0,1,0,1
+Entry access logging system with PIR sensors and buzzer,0,1,0,1,0,1
+Motion Detection and Logging with Piezo Buzzer,0,1,0,1,0,1

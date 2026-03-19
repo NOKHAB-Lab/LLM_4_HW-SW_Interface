@@ -1,0 +1,3929 @@
+{
+  "total_objects_processed": 1066,
+  "total_unique_tags": 979,
+  "total_tag_instances": 7946,
+  "syntax_status_distribution": {
+    "success": 1066
+  },
+  "build_status_distribution": {
+    "success": 1066
+  },
+  "individual_tag_distribution": {
+    "Raspberry Pi": {
+      "count": 1047,
+      "percentage": "13.18%"
+    },
+    "C": {
+      "count": 774,
+      "percentage": "9.74%"
+    },
+    "GPIO": {
+      "count": 645,
+      "percentage": "8.12%"
+    },
+    "pigpio": {
+      "count": 349,
+      "percentage": "4.39%"
+    },
+    "WiringPi": {
+      "count": 226,
+      "percentage": "2.84%"
+    },
+    "wiringPi": {
+      "count": 194,
+      "percentage": "2.44%"
+    },
+    "I2C": {
+      "count": 173,
+      "percentage": "2.18%"
+    },
+    "LED": {
+      "count": 146,
+      "percentage": "1.84%"
+    },
+    "Timing": {
+      "count": 143,
+      "percentage": "1.80%"
+    },
+    "PWM": {
+      "count": 112,
+      "percentage": "1.41%"
+    },
+    "sensor_actuator_combo": {
+      "count": 94,
+      "percentage": "1.18%"
+    },
+    "actuators": {
+      "count": 93,
+      "percentage": "1.17%"
+    },
+    "raspberry-pi-zero-w": {
+      "count": 89,
+      "percentage": "1.12%"
+    },
+    "ADC": {
+      "count": 81,
+      "percentage": "1.02%"
+    },
+    "MCP3008": {
+      "count": 75,
+      "percentage": "0.94%"
+    },
+    "raspberry-pi-3-model-b+": {
+      "count": 73,
+      "percentage": "0.92%"
+    },
+    "SPI": {
+      "count": 71,
+      "percentage": "0.89%"
+    },
+    "raspberry-pi-4-model-b": {
+      "count": 70,
+      "percentage": "0.88%"
+    },
+    "sensor_reading": {
+      "count": 67,
+      "percentage": "0.84%"
+    },
+    "Buzzer": {
+      "count": 65,
+      "percentage": "0.82%"
+    },
+    "Button": {
+      "count": 64,
+      "percentage": "0.81%"
+    },
+    "raspberry-pi-5": {
+      "count": 62,
+      "percentage": "0.78%"
+    },
+    "Signal Handling": {
+      "count": 57,
+      "percentage": "0.72%"
+    },
+    "Sensor": {
+      "count": 48,
+      "percentage": "0.60%"
+    },
+    "PCF8591": {
+      "count": 44,
+      "percentage": "0.55%"
+    },
+    "Logging": {
+      "count": 38,
+      "percentage": "0.48%"
+    },
+    "technology": {
+      "count": 35,
+      "percentage": "0.44%"
+    },
+    "interrupt_driven": {
+      "count": 34,
+      "percentage": "0.43%"
+    },
+    "Interrupt": {
+      "count": 32,
+      "percentage": "0.40%"
+    },
+    "automation": {
+      "count": 32,
+      "percentage": "0.40%"
+    },
+    "ADS1115": {
+      "count": 32,
+      "percentage": "0.40%"
+    },
+    "Relay": {
+      "count": 31,
+      "percentage": "0.39%"
+    },
+    "project": {
+      "count": 30,
+      "percentage": "0.38%"
+    },
+    "File I/O": {
+      "count": 29,
+      "percentage": "0.36%"
+    },
+    "Interrupts": {
+      "count": 28,
+      "percentage": "0.35%"
+    },
+    "setting": {
+      "count": 28,
+      "percentage": "0.35%"
+    },
+    "bcm2835": {
+      "count": 27,
+      "percentage": "0.34%"
+    },
+    "HC-SR04": {
+      "count": 25,
+      "percentage": "0.31%"
+    },
+    "Fan Control": {
+      "count": 25,
+      "percentage": "0.31%"
+    },
+    "system": {
+      "count": 24,
+      "percentage": "0.30%"
+    },
+    "Motor Control": {
+      "count": 23,
+      "percentage": "0.29%"
+    },
+    "Temperature Sensor": {
+      "count": 23,
+      "percentage": "0.29%"
+    },
+    "Sysfs": {
+      "count": 23,
+      "percentage": "0.29%"
+    },
+    "application": {
+      "count": 23,
+      "percentage": "0.29%"
+    },
+    "Temperature": {
+      "count": 22,
+      "percentage": "0.28%"
+    },
+    "L293D": {
+      "count": 22,
+      "percentage": "0.28%"
+    },
+    "buzzer": {
+      "count": 22,
+      "percentage": "0.28%"
+    },
+    "agriculture": {
+      "count": 21,
+      "percentage": "0.26%"
+    },
+    "installation": {
+      "count": 21,
+      "percentage": "0.26%"
+    },
+    "Ultrasonic Sensor": {
+      "count": 20,
+      "percentage": "0.25%"
+    },
+    "BCM": {
+      "count": 20,
+      "percentage": "0.25%"
+    },
+    "science": {
+      "count": 20,
+      "percentage": "0.25%"
+    },
+    "Servo Motor": {
+      "count": 19,
+      "percentage": "0.24%"
+    },
+    "LED Matrix": {
+      "count": 19,
+      "percentage": "0.24%"
+    },
+    "Input": {
+      "count": 19,
+      "percentage": "0.24%"
+    },
+    "Sound Sensor": {
+      "count": 19,
+      "percentage": "0.24%"
+    },
+    "sysfs": {
+      "count": 19,
+      "percentage": "0.24%"
+    },
+    "Console Output": {
+      "count": 18,
+      "percentage": "0.23%"
+    },
+    "Error Handling": {
+      "count": 18,
+      "percentage": "0.23%"
+    },
+    "Functional Programming": {
+      "count": 17,
+      "percentage": "0.21%"
+    },
+    "Data Logging": {
+      "count": 16,
+      "percentage": "0.20%"
+    },
+    "Threading": {
+      "count": 15,
+      "percentage": "0.19%"
+    },
+    "Flame Sensor": {
+      "count": 15,
+      "percentage": "0.19%"
+    },
+    "sound sensor activating an alarm": {
+      "count": 15,
+      "percentage": "0.19%"
+    },
+    "RGB LED": {
+      "count": 14,
+      "percentage": "0.18%"
+    },
+    "DAC": {
+      "count": 14,
+      "percentage": "0.18%"
+    },
+    "Servo": {
+      "count": 14,
+      "percentage": "0.18%"
+    },
+    "7-Segment Display": {
+      "count": 13,
+      "percentage": "0.16%"
+    },
+    "Blinking": {
+      "count": 13,
+      "percentage": "0.16%"
+    },
+    "Smart Agriculture": {
+      "count": 13,
+      "percentage": "0.16%"
+    },
+    "MPU6050": {
+      "count": 13,
+      "percentage": "0.16%"
+    },
+    "Seven Segment Display": {
+      "count": 13,
+      "percentage": "0.16%"
+    },
+    "Stepper Motor": {
+      "count": 12,
+      "percentage": "0.15%"
+    },
+    "74HC595": {
+      "count": 12,
+      "percentage": "0.15%"
+    },
+    "Assistive Technology": {
+      "count": 12,
+      "percentage": "0.15%"
+    },
+    "ultrasonic sensor controlling servo for parking assist": {
+      "count": 12,
+      "percentage": "0.15%"
+    },
+    "UART": {
+      "count": 11,
+      "percentage": "0.14%"
+    },
+    "flame sensor activating buzzer and LED": {
+      "count": 11,
+      "percentage": "0.14%"
+    },
+    "Potentiometer": {
+      "count": 11,
+      "percentage": "0.14%"
+    },
+    "temperature sensor controlling a cooling fan": {
+      "count": 11,
+      "percentage": "0.14%"
+    },
+    "motor control": {
+      "count": 11,
+      "percentage": "0.14%"
+    },
+    "PIR sensor": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "Shift Register": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "LED Blinking": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "Alarm": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "Accelerometer": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "MAX31855": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "TCS34725": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "color sensor": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "Circular Buffer": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "Seven-Segment Display": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "SG90": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "DS18B20": {
+      "count": 10,
+      "percentage": "0.13%"
+    },
+    "Analog Input": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "Temperature Control": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "Color Sensor": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "Parking Assist": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "Motion Detection": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "Home Automation": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "Button Controlled On/Off LED": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "Rain Sensor": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "cooling fan": {
+      "count": 9,
+      "percentage": "0.11%"
+    },
+    "LCD": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "Output": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "OLED": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "IR sensor triggering a relay to open a door": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "Industrial Automation": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "BH1750": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "button": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "Thermocouple": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "logging": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "servo": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "AIN0": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "rain sensor closing a motorized window": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "Blink": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "PWM Controlled LED": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "Flow Sensor": {
+      "count": 8,
+      "percentage": "0.10%"
+    },
+    "Threshold": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "softPwm": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "Display": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "Serial Communication": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "instrumentation": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "humidity sensor triggering a dehumidifier": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "monitoring": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "C++": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "Read Button Input": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "accelerometer": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "relay": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "touch sensor": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "motion sensor using GPIO interrupt to turn on light": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "BMP280": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "Pressure Sensor": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "Tilt Sensor": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "stepper motor": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "fan": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "PIR motion sensor activating a light or buzzer": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "Servo Control": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "servo motor": {
+      "count": 7,
+      "percentage": "0.09%"
+    },
+    "Thermal Sensor": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Analog Output": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Raspberry Pi 3B+": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Debouncing": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "OLED screen": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Dehumidifier": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "vibration motor": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Embedded Systems": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "control": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "signal handling": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "DMA": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "heater": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "MPR121": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Touch Sensor": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "JSON": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "relay-controlled lamp": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Distance Measurement": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "D6F-PH": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "VL53L1X": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Event-Driven": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Motion Sensor": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "i2c-dev": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "external interrupt from a tilt switch": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Button Input": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "BMP180": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Gertboard": {
+      "count": 6,
+      "percentage": "0.08%"
+    },
+    "Motor": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "PiFace": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Soil Moisture": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Humidity": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Animation": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "RPM": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Multi-Channel": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "PID": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Temperature Monitoring": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "DC motor": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "mmap": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "MCP4725": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "DHT22": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Capacitive Touch": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "motion detection": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "maintenance": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Environmental Monitoring": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "raspberry pi": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "MCP23017": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Mutex": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "ultrasonic trigger using echo pin interrupt": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "time of flight sensor controlling a gate": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Irrigation": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Robotics": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "KY-038": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "Theremin": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "navigation": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "CSV": {
+      "count": 5,
+      "percentage": "0.06%"
+    },
+    "IR Remote": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "DC Motor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Rotary Encoder": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "AQI": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "PMS5003": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "PIR Sensor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "KY-026": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "light sensor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Sense HAT": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "node": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Memory Mapping": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "button interrupt to start or stop data logging": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Predictive Maintenance": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Piezo Buzzer": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "testing": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Gas Sensor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "management": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "pressure sensor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Performance": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Debounce": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Haptic Feedback": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Real-Time": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Button Controlled On/Off and PWM LED": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "HC-SR501": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Hall effect sensor rotation counting with interrupt": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Comparator": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Soil Moisture Sensor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Tamper Detection": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "ultrasonic sensor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "MCP3424": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "flame sensor": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Voltage Read": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Embedded": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "gpiod": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "Command-line Arguments": {
+      "count": 4,
+      "percentage": "0.05%"
+    },
+    "IR Receiver": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Digital I/O": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Digital Output": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "28BYJ-48": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Multiplexing": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Clock": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "PID control": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "SSD1306": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "libi2c-dev": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "TMP36": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "BME280": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Simulation": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "soil moisture sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "systems": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "CPU Load": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "MCP3202": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Vibration Sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "vibration sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Relay Control": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Alarm System": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Differential Pressure Sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "input": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Wearable": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Passive Buzzer Example - Continuous Tone": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Calibration": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "file_logging": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Solenoid Valve": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "valve actuator": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "capacitive touch sensor toggling a relay": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "electromagnetic lock": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "jansson": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Event Logging": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "gpio": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Voltage": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "tilt sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Multi-Servo Control - Button Input": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Passive Buzzer Melody Example - Simple Do Re Mi": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Callback": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "sound sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "libcurl": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "networking": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Smart Parking": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Averaging": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Morse Code": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "libgpiod": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "PIR sensor GPIO interrupt activating buzzer": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Analog": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Seven-segment display": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "spidev": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "AIN0\u2013AIN3": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Passive Buzzer": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "HX711": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Load Cell": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Hall Effect Sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "User Input": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Pan-Tilt": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Mood Lighting": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "telemetry": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "IR receiver decoding input via interrupt": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Music": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Sine Wave": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "CSV Logging": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Button Override": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "SHT31": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Serial Output": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "ALERT Pin": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "button input": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "diagnostics": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Alcohol Sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "MQ-3": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "alcohol sensor": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Bit-Banging": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Gyroscope": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "Omron D6F-PH": {
+      "count": 3,
+      "percentage": "0.04%"
+    },
+    "/dev/i2c-1": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "I2C-dev": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Decoding": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "LM35": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Motion detection": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Photoresistor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Traffic Light": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "ULN2003": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Joystick": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "DHT11": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "LCD1602": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Digital Read": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Time": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Parallel Interface": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Raspberry Pi 4": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "ESC": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Button Matrix": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "usleep": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "gettimeofday": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "console output": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Arduino": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Fan": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Median Filter": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Brightness Control": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Biomedical Instrumentation": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "surveillance": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "IR sensor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "ADXL345": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer Melody Example - Rising Scale": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Logger": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "active buzzer": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer Melody Example - Short Happy Tune": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "interrupt": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Framebuffer": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "save sensor calibration values to file": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer with Button - Double Press for Alarm": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Four Digit Seven-Segment Display Example - Stopwatch": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Baby Monitor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Solar Tracking": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Gnuplot": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Multi-Servo Control": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "gnuplot": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "button control": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "APA102": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "light sensor adjusting brightness of an LED strip": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Smart Lighting": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Active Buzzer - Single Beep Every Second": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Automation": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Ventilation": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "gas sensor activating a ventilation fan": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Frequency Counter": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Button Interrupt": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "TMP102": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Temperature Regulation": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Breathing Effect": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Smart Grid": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Latency": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "seven-segment display": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer Example - Short Beep Pattern": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Low-Pass Filter": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "IR Sensor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Vibration Motor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Channel Select": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Moving Average": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Serial": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "speaker": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "ADC Init": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "CPU temperature": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Siren": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Initialization": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Door Lock": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Scheduling": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Servo Control - Application-Based": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Sequencer": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "LSM303D": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Magnetometer": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "magnetometer": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Button Controlled Blinking LED": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Hall effect sensor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "poll": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "LM393": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Seven-Segment Display Example - Toggle Between 1 and 7 with Button": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "weight/load cell sensor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "soil moisture sensor turning on a water pump": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "7-segment display": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Random": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Bar Graph": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer with Button - Hold to Play Melody": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Timestamp": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Seven-Segment Display Example - Flashing 0-9 with Delay": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Telemetry": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Dual Motor Control Example - Independent Speed Control": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Signal Handler": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "benchmarking": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "NEC IR": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "PWM Control of LED": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer Example - Increasing Frequency Sweep": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Switch": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Capacitor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer Example - Beep Every Second": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Timer": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "BCM2835": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Root Privileges": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "fetch thresholds for sensors from a cloud endpoint": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "AIN1": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Door Strike": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Four Digit Seven-Segment Display Example - Random Number Generator": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Active Buzzer": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "random": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "LM75B": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Channel 0": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Parking Sensor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Frequency": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Solenoid": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "solenoid": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Pressure": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "melody": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "hardware timer interrupt for consistent sampling": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "GPIO Input": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Double Press": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Parallel Reading": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Test Read": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Environmental Science": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Seven-Segment Display Example - Counting Down 9-0": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Stepper Motor Control Example - Camera Pan-Tilt System (Pigpio Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "GPIO Control": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Binary Counter": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "NES Controller": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Passive Buzzer with Button - Play Random Melody": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "HTS221": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "temperature control": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Terminal Output": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Active Buzzer - Button Press": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Control": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Character Device": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "User Interface": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Audio": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Quick2Wire": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Game": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Scrolling Text": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "piGlow": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Command-line arguments": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "/dev/ttyAMA0": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Loopback": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Bit-banging": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "/dev/mem": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Raspberry Pi 5": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "1-Wire": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "/dev/gpiomem": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "GPIO15": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Pull-up Resistor": {
+      "count": 2,
+      "percentage": "0.03%"
+    },
+    "Omron D6T-32L-01A": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6T-44L-06": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "/dev/i2c": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PEC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Little-Endian": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6T-8L": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PTAT": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6T-8LH": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Robot Car": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "IR Remote Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Driver": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Looping": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "pcf8591": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Thresholding": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Random Number Generation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Morse code": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "delayMicroseconds": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "root privileges": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "initialization": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "cleanup": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Continuous Monitoring": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Digital Input": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Counter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Digital Write": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Bar Graph": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "HC595": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LCD128x64": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Date": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Terminal Input": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "BLDC motor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sliding Mode Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Polling": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Raspberry Pi Pico": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PIO": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Custom Libraries": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "HTML": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Door Unlock": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Toggle with Button": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "HTU21D": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Combined Logging": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Button Controlled LED": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Laser Tripwire": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "circular buffer": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "humidity sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Knight Rider": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ASCII Visualization": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ADC Simulation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Graph": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "SMC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Helicopter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Rotor Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "IRM": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Remote Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ADC Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Hardware Interface": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Address Scan": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Geiger Counter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Haptic": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Dual Motor Control Example - Differential Steering": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sun Tracking": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Automated Door System (WiringPi Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "sysinfo.h": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Combined CSV": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sensor Logging": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Countdown": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Systemd": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Shutdown": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "D6F-PH5050": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Static Display of 9": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Doorbell": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Proximity Sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - Water Pump Controller (Pigpio Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Flip Display Upside Down (WiringPi I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Invert Display Colors (WiringPi I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Low-pass Filter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Noise Filter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Analog Simulation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "CSV Log": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Barrier Gate": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "AHT20": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "assistive technology": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "automatic door": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "button interrupt": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "callback": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Static Display of 3": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Example - Short Beep Pattern": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Servo Control - Button Input": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Access Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Time Management": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Flip Display Upside Down (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Strip": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "musical scale": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ADC Mapping": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Plant Watering": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "BME688": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Example - Random Beep Pattern": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Adjustable Speed": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Button Controlled Direction": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Voltage Sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Real-time Clock": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Toggle Between 4 and 7 with Button": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Multithreading": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "half-step": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "turntable": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "RPM Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Humidity Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Adjusting Contrast Level (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Threshold Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Blinking Text Effect (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "capacitive touch sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Measurement": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Ripeness Classification": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sensor Noise": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Smart Door Opener": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Short Bursts of Movement": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "REST API": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Threat Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "receive configuration from HTTP API": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "SEN0230": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Voltage Alert": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "5s Interval": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "VEML6075": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Device Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Structural Monitoring": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "GPIO Switch": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Simulated ADC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "IIO": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Plotter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Hardware Test": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Channel Read": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - Button Controlled Relay (Pigpio Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Example - Increasing Beep Speed": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Drone Navigation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Loop": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "pull-up resistor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Lighting Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "File Locking": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "shiftOut": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - Timer Based Automation (Pigpio Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Conveyor Belt System": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "TTP229": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Min Max Tracking": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "pcf8591.h": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Smart Greenhouse": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Clear Screen": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Chasing Effect": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Button-Controlled Half-Step Rotation (Pigpio Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Gripper": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Basic Initialization and Pixel Display (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "DAC Sweep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Example - Beep Every Second": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Acceleration": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Drone": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Application - Display Static Welcome Message (Pigpio I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Passive Buzzer with Button - Press to Beep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Analog Read": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Passive Buzzer Melody Example - Random Melody": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Passive Buzzer Example - Random Frequency Beep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Blinking 6": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Response Check": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "stall detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "timer": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - Dual Button Control (WiringPi Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Serial Input": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "MCP3XXX": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ADC Read": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "All Channels": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Timeout": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Error Recovery": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PWM (simulated)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ttyAMA0": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "polling": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "tilt switch": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Melody": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Flash Number 8": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Brightness": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "load cell sensor triggering a locking mechanism": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "debounce": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Application - Simulated Temperature Display (Pigpio I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Alternating": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Weight measurement": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "shift register": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "MAX44009": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "log light and sound levels with date/time": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "robotic arm": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - User Input Controlled Relay (Pigpio Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Smart Watering": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Impact Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LSM303AGR": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LPG": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "MQ-6": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Application - Battery Level Indicator (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Separate ON and OFF Buttons": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Conveyor Belt": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "sensor fusion": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Diagonal Wave Pattern": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Heartbeat": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Smart Home": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Countdown from 3": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6T": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Dual Motor Control Example - Automated Conveyor Belt System": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Dynamic Contrast Adjustment (WiringPi I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Analog Trigger": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Dual Threshold": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Monitoring": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "HMC5883L": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Metal Detector": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "MCP3004": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Display Custom Digit with 74HC595": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Robotic Arm Movement": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Wearable Technology": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Dual Motor Control Example - Alternating Motor Movements": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - Light Automation System (Pigpio Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Automated Window Blinds": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Realtime Output": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Scan": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Burglar Alarm": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Vegetronix": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Ramp Signal": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Dual Motor Control Example - Robotic Vehicle Navigation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Display Number 0": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Vibration": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Anti-Tamper": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Scrolling Text Notification": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Single Read": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "BLDC Motor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "hall effect sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Servo Control - User Input": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Serial Streaming": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Plotting": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Python Integration": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Nanosecond Pulses": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Keyes KY-026": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Random Beeping": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Show Number Based on Button Press": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Overspeed": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Thread": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "overspeed alarm": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "pthreads": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Heart Rate Monitor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Countdown Timer": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Increasing and Decreasing Beep Speed": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Periodic Task": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Shift register": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Multi-Buzzer Example": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Display User Input Text (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Lissajous Curve": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ARMv6": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Random Interval": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Scanner": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ADC Mock": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED matrix": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Formatted Display": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Alternating Beep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Scrolling Light Row": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ALERT": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Precision Photography Turntable (Pigpio Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "X/Y Plotter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Vibration Monitoring": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Notification": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Lighting": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Blinking Plus Pattern": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "State Machine": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Full-Step Continuous Rotation (Pigpio Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Infrared Remote Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "DRV8833": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Access control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Dual-factor authentication": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Timed Movement": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Tone Generation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Application - Terminal Controlled Beeping": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Real-Time Clock Display": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stopwatch": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Test - Full White Screen (Pigpio I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Pneumatics": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "select": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Color Fading": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "FC-37": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "rain sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "biomedical instrumentation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Half-Step Continuous Rotation (Pigpio Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Streaming": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Half-step": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Embedded Safety": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Window Comparator": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Blink Number 3": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Double Press Activation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Scrolling Text (Pigpio I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PIR": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "passive buzzer": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Static Display of 1": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Conditional Write": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Python Plotting": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Button Controlled LED Activation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - User Input Controlled Relay (WiringPi Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Switch Input": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Channel Toggle": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Min/Max": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Toggle Between 2 and 8 with Button": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Contactless": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Door Opener": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "CH1": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "10 Minute Logging": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - Button Controlled Relay (WiringPi Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Static Pattern": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "user input": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Hello World": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "conveyor belt": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Periodic": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Binary Output": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Door Sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Speed Test": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LDR": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "traffic light": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Smart Garden": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Button-Controlled Full-Step Rotation (Pigpio Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "DAC Output": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Matrix Example - Wave Animation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Application - Button Press Beep (BCM Mode)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Window Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Tilt Switch": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Centered Static Text (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Timestamp Logging": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Example - Continuous Beep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Filter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "output": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Interface Check": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ADC Init Safety": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PID Controller": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "BAC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "error handling": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "signal handler": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "NEC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Min Max": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Data Logger": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "10s Window": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "beep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Increasing Beep Speed": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Toggle": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Event-Driven Programming": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Radar": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "blinking": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Device Driver": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ioctl": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Analog to LED": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Conditional Logic": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Display Static Text (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Scroll Text (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "servo control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Differential Steering": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Vehicle Telemetry": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Maze Navigation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Solar Tracker": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Four Digit Seven-Segment Display Example - Countdown Timer": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Basic Initialization and Clear Screen (WiringPi I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer with Button - Hold to Beep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Application - Morse Code Beeping (BCM Mode)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "time of flight sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Alert": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Inverted Display Mode (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Embedded C": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Switch Toggle": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Voltage Logging": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Closed-Loop Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "BCM Numbering": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Remote Patient Diagnostics": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Visualization": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Terminal UI": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "L298N": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "SDS011": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Art Installation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Keypad": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Failsafe": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Window Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Water Pump": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Counting 0-9": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sensor Read": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Speed Control Using Button": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Motor Control Example - Direction Control Using Button": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Serial Command": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Periodic Logger": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Stepper Motor Control Example - Button Controlled Rotation (WiringPi Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "BCM GPIO": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "C programming": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Passive Buzzer with Button - Toggle ON/OFF": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Two Buzzers Beeping Together": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Heater Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "MAX31865": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PI Controller": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "RTD": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Passive Buzzer Melody Example - Beep Beep Beep Tune": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer with Button - Separate ON/OFF Buttons": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LCD 1602": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Proximity Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Seven-Segment Display Example - Static Display of 4": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "MUX": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Register Read": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Config Verification": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Fading": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "door sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "embedded": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "motion sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Mock Data": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Relay Control Example - Timer Based Automation (WiringPi Mode, Raspberry Pi)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer - Three Buzzers in Sequence": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "AS5600": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Interrupt Handling": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Magnetic Encoder": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Heater": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "cJSON": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "functional programming": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LCD display": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Wind Direction": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Wind Speed": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "3D Printer": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OLED Display Example - Multi-Line Static Text (I2C Mode, Raspberry Pi, SSD1306)": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Rectangle": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Door Access": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Button Toggle": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Water Sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Scrolling Light": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LM75": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Solar Panel": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Tilt Monitoring": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Active Buzzer Application - Button Press Beep": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Fire Alarm": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Simulator": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sunrise": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sunset": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "timing": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "accuracy": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "delay": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Kalman Filter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "home automation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "night mode": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Low Power": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Communication Test": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "DS1302": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "RTC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Real-Time Clock": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "System Clock": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "RAM test": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "sa_driver_dev": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sound Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "WAV": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Screen": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "arecord": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "system call": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Vibration Module": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Humidity Sensor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "RGB565": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "/dev/fb1": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Raspberry Pi 3 B+": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LPS25H": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Oscillator": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Adafruit RGB LCD Plate": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Backlight Control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "HD44780": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Character LCD": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Custom Character": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Time Display": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "piFace": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "H-Bridge": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "piNes.h": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "SN3218": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PiGlow": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "LED Driver": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Reaction Timer": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "RHT03": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Scroll pHAT": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Display control": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "softServo": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Software PWM": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "softTone": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Benchmarking": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "scrollPhat": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Text Display": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Voltmeter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Microphone": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "VU meter": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Audio Processing": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "IMU": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ncurses": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Terminal": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "pipe": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "notification": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "SCL": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "SDA": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "monitor": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "hexadecimal format": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Sequence": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "PPS": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Waveform": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Signal Generation": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "curses": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "/proc/cpuinfo": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "GPIO initialization": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "GPIO mode": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "GPIO level": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "ATmega": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "DRC serial": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Frequency Measurement": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "GPCLK": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Divider": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Memory mapped registers": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "BSC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Peripheral access": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "GPIO access": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Register read": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Memory mapped I/O": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Bitbanging": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "CRC": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Resolution": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "drcSerial": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Gertduino": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Raspberry Pi 2": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "HIH8000": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Event Detection": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "drcNet": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "OMRON D6F-PH": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6F-PH0025": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6F-PH0505": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6F-PH5050": {
+      "count": 1,
+      "percentage": "0.01%"
+    },
+    "Omron D6T-1A": {
+      "count": 1,
+      "percentage": "0.01%"
+    }
+  }
+}

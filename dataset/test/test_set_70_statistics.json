@@ -1,0 +1,1599 @@
+{
+  "total_objects_processed": 70,
+  "total_unique_tags": 195,
+  "total_tag_instances": 824,
+  "individual_tag_distribution": {
+    "raspberry pi": {
+      "count": 70,
+      "percentage": "8.50%"
+    },
+    "c": {
+      "count": 65,
+      "percentage": "7.89%"
+    },
+    "gpio": {
+      "count": 59,
+      "percentage": "7.16%"
+    },
+    "pigpio": {
+      "count": 47,
+      "percentage": "5.70%"
+    },
+    "with-multiple-sensors": {
+      "count": 24,
+      "percentage": "2.91%"
+    },
+    "i2c": {
+      "count": 21,
+      "percentage": "2.55%"
+    },
+    "raspberry-pi-zero-w": {
+      "count": 21,
+      "percentage": "2.55%"
+    },
+    "signal handling": {
+      "count": 19,
+      "percentage": "2.31%"
+    },
+    "logging": {
+      "count": 18,
+      "percentage": "2.18%"
+    },
+    "motion detection": {
+      "count": 18,
+      "percentage": "2.18%"
+    },
+    "wiringpi": {
+      "count": 16,
+      "percentage": "1.94%"
+    },
+    "sensor_reading": {
+      "count": 15,
+      "percentage": "1.82%"
+    },
+    "raspberry-pi-3-model-b+": {
+      "count": 13,
+      "percentage": "1.58%"
+    },
+    "raspberry-pi-5": {
+      "count": 13,
+      "percentage": "1.58%"
+    },
+    "in-distributed-system": {
+      "count": 13,
+      "percentage": "1.58%"
+    },
+    "interrupt_driven": {
+      "count": 12,
+      "percentage": "1.46%"
+    },
+    "sensor_actuator_combo": {
+      "count": 12,
+      "percentage": "1.46%"
+    },
+    "raspberry-pi-4-model-b": {
+      "count": 12,
+      "percentage": "1.46%"
+    },
+    "interrupt": {
+      "count": 11,
+      "percentage": "1.33%"
+    },
+    "technology": {
+      "count": 10,
+      "percentage": "1.21%"
+    },
+    "pir sensor": {
+      "count": 10,
+      "percentage": "1.21%"
+    },
+    "automation": {
+      "count": 10,
+      "percentage": "1.21%"
+    },
+    "buzzer": {
+      "count": 9,
+      "percentage": "1.09%"
+    },
+    "actuators": {
+      "count": 9,
+      "percentage": "1.09%"
+    },
+    "relay": {
+      "count": 8,
+      "percentage": "0.97%"
+    },
+    "pir sensor gpio interrupt activating buzzer": {
+      "count": 7,
+      "percentage": "0.85%"
+    },
+    "pwm": {
+      "count": 6,
+      "percentage": "0.73%"
+    },
+    "project": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "system": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "file_logging": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "installation": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "setting": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "debouncing": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "ir sensor": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "led": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "functional programming": {
+      "count": 5,
+      "percentage": "0.61%"
+    },
+    "sensor": {
+      "count": 4,
+      "percentage": "0.49%"
+    },
+    "udp": {
+      "count": 4,
+      "percentage": "0.49%"
+    },
+    "home automation": {
+      "count": 4,
+      "percentage": "0.49%"
+    },
+    "vibration sensor": {
+      "count": 4,
+      "percentage": "0.49%"
+    },
+    "circular buffer": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "control": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "spi": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "mcp3008": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "pir motion sensor activating a light or buzzer": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "navigation": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "motion sensor": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "json": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "vl53l1x": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "accelerometer": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "syslog": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "industrial automation": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "jansson": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "electromagnetic lock": {
+      "count": 3,
+      "percentage": "0.36%"
+    },
+    "hc-sr501": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "temperature sensor controlling a cooling fan": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "fan control": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "alarm": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "surveillance": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "monitoring": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "proximity sensor": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "thread safety": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "sensor_simple": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "distributed system": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "button": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "environmental monitoring": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "assistive technology": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "time of flight sensor": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "external interrupt from a tilt switch": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "soil moisture sensor": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "shutdown": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "vibration sensor triggering a shutdown routine": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "threads": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "humidity sensor": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "mqtt": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "stepper motor": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "diagnostics": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "touch sensor": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "data logging": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "socket programming": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "interrupts": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "embedded systems": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "systems": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "sensor logging": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "seven-segment display": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "magnetometer": {
+      "count": 2,
+      "percentage": "0.24%"
+    },
+    "color and light sensors": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "si1133": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "silicon labs si1133 uv/als/ir optical sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "libi2c-dev": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "multithreading": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "temperature control": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "max31855": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "cooling fan": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "airflow sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "flow sensors": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "honeywell awm5000 series airflow sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ir sensor reading using gpio": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "log motion detection timestamps to a text file": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "application": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "node": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "servo": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "socket": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "bcm": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "drone navigation": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "servo motor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ultrasonic sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ultrasonic sensor controlling servo for parking assist": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "sht31-d": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "sensor data logging with timestamps to json": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "lm75": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "temperature monitoring": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "oled application - digital clock display (pigpio i2c mode, raspberry pi, ssd1306)": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "distance sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "lsm303d": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "tilt switch": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "irrigation": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "condition variable": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "mutex": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "threading": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "time of flight sensor controlling a gate": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "aht20": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "humidity": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "temperature": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "chicken coop": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ssd1306": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "oled display": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "override": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "relay control": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "sensors": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "soil moisture": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "dht22": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "mosquitto": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "watchdog": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "read configuration threshold values from a json file": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "hilbert curve": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "sht31-dis": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "generate structured logs with json schema": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ttp223": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "capacitive touch sensor toggling a relay": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "omron d7s": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "omron d7s vibration sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "seismic sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "vibration and tilt sensors": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "instrumentation": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "home security": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "distance measurement": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "motion sensor using gpio interrupt to turn on light": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "bmp180": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "quality control": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "pressure sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "dc motor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "rain sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "rain sensor closing a motorized window": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "access control": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "smart lighting": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "relay-controlled lamp": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "hc-sr04": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "blinking": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "bme280": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "read last known good sensor state from file on boot": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "oled display example - static text (pigpio i2c mode, raspberry pi, ssd1306)": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "bh1750": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "file i/o": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "light sensor adjusting brightness of an led strip": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "bcm2835": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "mcp4725": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "dac": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "lcd1602": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "sht31": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "libconfig": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "stepper motor control example - direction toggle with button (wiringpi mode, raspberry pi, 28byj-48 with l293d motor driver)": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "hmc5883l": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "timer": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "distance and tof sensors": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "si1153": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "silicon labs si115x proximity/als/uv sensor": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "door lock": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "capacitive touch": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "led fading": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "mpr121": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "74hc595": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "shift register": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "random number": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "csv logging": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ain0": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "spidev": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "air quality": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "mq-135": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ventilation": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "gas sensor activating a ventilation fan": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "libmosquitto": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "pir sensor with timestamp logging": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "ir sensor triggering a relay to open a door": {
+      "count": 1,
+      "percentage": "0.12%"
+    },
+    "science": {
+      "count": 1,
+      "percentage": "0.12%"
+    }
+  },
+  "categorized_tag_distribution": {
+    "Hardware/Context/Other": {
+      "count": 519,
+      "tags": {
+        "raspberry pi": {
+          "count": 70,
+          "percentage": "8.50%"
+        },
+        "c": {
+          "count": 65,
+          "percentage": "7.89%"
+        },
+        "gpio": {
+          "count": 59,
+          "percentage": "7.16%"
+        },
+        "raspberry-pi-zero-w": {
+          "count": 21,
+          "percentage": "2.55%"
+        },
+        "signal handling": {
+          "count": 19,
+          "percentage": "2.31%"
+        },
+        "logging": {
+          "count": 18,
+          "percentage": "2.18%"
+        },
+        "motion detection": {
+          "count": 18,
+          "percentage": "2.18%"
+        },
+        "raspberry-pi-3-model-b+": {
+          "count": 13,
+          "percentage": "1.58%"
+        },
+        "raspberry-pi-5": {
+          "count": 13,
+          "percentage": "1.58%"
+        },
+        "in-distributed-system": {
+          "count": 13,
+          "percentage": "1.58%"
+        },
+        "interrupt_driven": {
+          "count": 12,
+          "percentage": "1.46%"
+        },
+        "raspberry-pi-4-model-b": {
+          "count": 12,
+          "percentage": "1.46%"
+        },
+        "interrupt": {
+          "count": 11,
+          "percentage": "1.33%"
+        },
+        "technology": {
+          "count": 10,
+          "percentage": "1.21%"
+        },
+        "automation": {
+          "count": 10,
+          "percentage": "1.21%"
+        },
+        "project": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "system": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "file_logging": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "installation": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "setting": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "debouncing": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "functional programming": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "udp": {
+          "count": 4,
+          "percentage": "0.49%"
+        },
+        "home automation": {
+          "count": 4,
+          "percentage": "0.49%"
+        },
+        "control": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "mcp3008": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "navigation": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "json": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "vl53l1x": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "syslog": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "industrial automation": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "jansson": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "electromagnetic lock": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "hc-sr501": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "alarm": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "surveillance": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "monitoring": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "thread safety": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "distributed system": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "assistive technology": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "shutdown": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "threads": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "diagnostics": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "data logging": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "interrupts": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "embedded systems": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "systems": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "magnetometer": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "si1133": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "multithreading": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "max31855": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "log motion detection timestamps to a text file": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "application": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "node": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "bcm": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "drone navigation": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "sht31-d": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "lm75": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "lsm303d": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "condition variable": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "mutex": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "threading": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "aht20": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "chicken coop": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ssd1306": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "override": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "soil moisture": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "mosquitto": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "watchdog": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "read configuration threshold values from a json file": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "hilbert curve": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "sht31-dis": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "generate structured logs with json schema": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ttp223": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "omron d7s": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "instrumentation": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "home security": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "distance measurement": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "bmp180": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "quality control": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "access control": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "hc-sr04": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "blinking": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "bme280": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "bh1750": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "file i/o": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "mcp4725": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "dac": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "sht31": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "hmc5883l": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "timer": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "si1153": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "door lock": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "capacitive touch": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "mpr121": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "74hc595": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "shift register": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "random number": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "csv logging": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ain0": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "mq-135": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ventilation": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "science": {
+          "count": 1,
+          "percentage": "0.12%"
+        }
+      },
+      "percentage": "62.99%"
+    },
+    "Libraries/Frameworks": {
+      "count": 71,
+      "tags": {
+        "pigpio": {
+          "count": 47,
+          "percentage": "5.70%"
+        },
+        "wiringpi": {
+          "count": 16,
+          "percentage": "1.94%"
+        },
+        "libi2c-dev": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "oled application - digital clock display (pigpio i2c mode, raspberry pi, ssd1306)": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "oled display example - static text (pigpio i2c mode, raspberry pi, ssd1306)": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "bcm2835": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "libconfig": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "stepper motor control example - direction toggle with button (wiringpi mode, raspberry pi, 28byj-48 with l293d motor driver)": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "spidev": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "libmosquitto": {
+          "count": 1,
+          "percentage": "0.12%"
+        }
+      },
+      "percentage": "8.62%"
+    },
+    "Sensors": {
+      "count": 153,
+      "tags": {
+        "with-multiple-sensors": {
+          "count": 24,
+          "percentage": "2.91%"
+        },
+        "sensor_reading": {
+          "count": 15,
+          "percentage": "1.82%"
+        },
+        "sensor_actuator_combo": {
+          "count": 12,
+          "percentage": "1.46%"
+        },
+        "pir sensor": {
+          "count": 10,
+          "percentage": "1.21%"
+        },
+        "pir sensor gpio interrupt activating buzzer": {
+          "count": 7,
+          "percentage": "0.85%"
+        },
+        "ir sensor": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "sensor": {
+          "count": 4,
+          "percentage": "0.49%"
+        },
+        "vibration sensor": {
+          "count": 4,
+          "percentage": "0.49%"
+        },
+        "circular buffer": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "pir motion sensor activating a light or buzzer": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "motion sensor": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "accelerometer": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "temperature sensor controlling a cooling fan": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "proximity sensor": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "sensor_simple": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "button": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "environmental monitoring": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "time of flight sensor": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "external interrupt from a tilt switch": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "soil moisture sensor": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "vibration sensor triggering a shutdown routine": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "humidity sensor": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "touch sensor": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "sensor logging": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "color and light sensors": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "silicon labs si1133 uv/als/ir optical sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "temperature control": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "airflow sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "flow sensors": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "honeywell awm5000 series airflow sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ir sensor reading using gpio": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ultrasonic sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ultrasonic sensor controlling servo for parking assist": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "sensor data logging with timestamps to json": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "temperature monitoring": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "distance sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "tilt switch": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "irrigation": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "time of flight sensor controlling a gate": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "humidity": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "temperature": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "sensors": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "dht22": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "capacitive touch sensor toggling a relay": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "omron d7s vibration sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "seismic sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "vibration and tilt sensors": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "motion sensor using gpio interrupt to turn on light": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "pressure sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "rain sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "rain sensor closing a motorized window": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "smart lighting": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "read last known good sensor state from file on boot": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "light sensor adjusting brightness of an led strip": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "distance and tof sensors": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "silicon labs si115x proximity/als/uv sensor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "air quality": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "gas sensor activating a ventilation fan": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "pir sensor with timestamp logging": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "ir sensor triggering a relay to open a door": {
+          "count": 1,
+          "percentage": "0.12%"
+        }
+      },
+      "percentage": "18.57%"
+    },
+    "Communication": {
+      "count": 29,
+      "tags": {
+        "i2c": {
+          "count": 21,
+          "percentage": "2.55%"
+        },
+        "spi": {
+          "count": 3,
+          "percentage": "0.36%"
+        },
+        "mqtt": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "socket programming": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "socket": {
+          "count": 1,
+          "percentage": "0.12%"
+        }
+      },
+      "percentage": "3.52%"
+    },
+    "Actuators": {
+      "count": 52,
+      "tags": {
+        "buzzer": {
+          "count": 9,
+          "percentage": "1.09%"
+        },
+        "actuators": {
+          "count": 9,
+          "percentage": "1.09%"
+        },
+        "relay": {
+          "count": 8,
+          "percentage": "0.97%"
+        },
+        "pwm": {
+          "count": 6,
+          "percentage": "0.73%"
+        },
+        "led": {
+          "count": 5,
+          "percentage": "0.61%"
+        },
+        "fan control": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "stepper motor": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "seven-segment display": {
+          "count": 2,
+          "percentage": "0.24%"
+        },
+        "cooling fan": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "servo": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "servo motor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "oled display": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "relay control": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "dc motor": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "relay-controlled lamp": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "lcd1602": {
+          "count": 1,
+          "percentage": "0.12%"
+        },
+        "led fading": {
+          "count": 1,
+          "percentage": "0.12%"
+        }
+      },
+      "percentage": "6.31%"
+    }
+  }
+}

@@ -1,0 +1,2236 @@
+ID: 1599
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 1599
+  Inference Syntax Error: Syntax errors detected:
+si1133_logger.c: In function ‘main’:
+si1133_logger.c:52:9: warning: implicit declaration of function ‘wiringPiSetup’; did you mean ‘wiringPiI2CSetup’? [-Wimplicit-function-declaration]
+   52 |     if (wiringPiSetup() == -1) {
+      |         ^~~~~~~~~~~~~
+      |         wiringPiI2CSetup
+si1133_logger.c:75:13: error: void value not ignored as it ought to be
+   75 |         if (read_sensor_data(fd, &uv_index, &als_ir, &als_vis) != 0) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+si1133_logger.c:91:9: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+   91 |         delay(1000);
+      |         ^~~~~
+  Inference Build Error: Build errors detected:
+si1133_logger.c: In function ‘main’:
+si1133_logger.c:52:9: warning: implicit declaration of function ‘wiringPiSetup’; did you mean ‘wiringPiI2CSetup’? [-Wimplicit-function-declaration]
+   52 |     if (wiringPiSetup() == -1) {
+      |         ^~~~~~~~~~~~~
+      |         wiringPiI2CSetup
+si1133_logger.c:75:13: error: void value not ignored as it ought to be
+   75 |         if (read_sensor_data(fd, &uv_index, &als_ir, &als_vis) != 0) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+si1133_logger.c:91:9: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+   91 |         delay(1000);
+      |         ^~~~~
+----------------------------------------
+ID: 1599
+  Inference Syntax Error: Syntax errors detected:
+si1133_logger.c: In function ‘main’:
+si1133_logger.c:52:9: warning: implicit declaration of function ‘wiringPiSetup’; did you mean ‘wiringPiI2CSetup’? [-Wimplicit-function-declaration]
+   52 |     if (wiringPiSetup() == -1) {
+      |         ^~~~~~~~~~~~~
+      |         wiringPiI2CSetup
+si1133_logger.c:75:13: error: void value not ignored as it ought to be
+   75 |         if (read_sensor_data(fd, &uv_index, &als_ir, &als_vis) != 0) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+si1133_logger.c:91:9: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+   91 |         delay(1000);
+      |         ^~~~~
+  Inference Build Error: Build errors detected:
+si1133_logger.c: In function ‘main’:
+si1133_logger.c:52:9: warning: implicit declaration of function ‘wiringPiSetup’; did you mean ‘wiringPiI2CSetup’? [-Wimplicit-function-declaration]
+   52 |     if (wiringPiSetup() == -1) {
+      |         ^~~~~~~~~~~~~
+      |         wiringPiI2CSetup
+si1133_logger.c:75:13: error: void value not ignored as it ought to be
+   75 |         if (read_sensor_data(fd, &uv_index, &als_ir, &als_vis) != 0) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+si1133_logger.c:91:9: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+   91 |         delay(1000);
+      |         ^~~~~
+----------------------------------------
+ID: 26
+  Inference Syntax Error: Syntax errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:42:59: warning: passing argument 4 of ‘gpioSetISRFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~
+      |                                                           |
+      |                                                           void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from motion_sensor.c:4:
+/usr/local/include/pigpio.h:1595:20: note: expected ‘gpioISRFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1595 |    gpioISRFuncEx_t f,
+      |    ~~~~~~~~~~~~~~~~^
+motion_sensor.c:42:9: error: too few arguments to function ‘gpioSetISRFuncEx’
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |         ^~~~~~~~~~~~~~~~
+/usr/local/include/pigpio.h:1591:5: note: declared here
+ 1591 | int gpioSetISRFuncEx(
+      |     ^~~~~~~~~~~~~~~~
+  Inference Build Error: Build errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:42:59: warning: passing argument 4 of ‘gpioSetISRFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~
+      |                                                           |
+      |                                                           void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from motion_sensor.c:4:
+/usr/local/include/pigpio.h:1595:20: note: expected ‘gpioISRFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1595 |    gpioISRFuncEx_t f,
+      |    ~~~~~~~~~~~~~~~~^
+motion_sensor.c:42:9: error: too few arguments to function ‘gpioSetISRFuncEx’
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |         ^~~~~~~~~~~~~~~~
+/usr/local/include/pigpio.h:1591:5: note: declared here
+ 1591 | int gpioSetISRFuncEx(
+      |     ^~~~~~~~~~~~~~~~
+----------------------------------------
+ID: 26
+  Inference Syntax Error: Syntax errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:42:59: warning: passing argument 4 of ‘gpioSetISRFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~
+      |                                                           |
+      |                                                           void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from motion_sensor.c:4:
+/usr/local/include/pigpio.h:1595:20: note: expected ‘gpioISRFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1595 |    gpioISRFuncEx_t f,
+      |    ~~~~~~~~~~~~~~~~^
+motion_sensor.c:42:9: error: too few arguments to function ‘gpioSetISRFuncEx’
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |         ^~~~~~~~~~~~~~~~
+/usr/local/include/pigpio.h:1591:5: note: declared here
+ 1591 | int gpioSetISRFuncEx(
+      |     ^~~~~~~~~~~~~~~~
+  Inference Build Error: Build errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:42:59: warning: passing argument 4 of ‘gpioSetISRFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~
+      |                                                           |
+      |                                                           void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from motion_sensor.c:4:
+/usr/local/include/pigpio.h:1595:20: note: expected ‘gpioISRFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1595 |    gpioISRFuncEx_t f,
+      |    ~~~~~~~~~~~~~~~~^
+motion_sensor.c:42:9: error: too few arguments to function ‘gpioSetISRFuncEx’
+   42 |     if (gpioSetISRFuncEx(PIR_SENSOR_GPIO, RISING_EDGE, 0, pir_interrupt_handler) != 0) {
+      |         ^~~~~~~~~~~~~~~~
+/usr/local/include/pigpio.h:1591:5: note: declared here
+ 1591 | int gpioSetISRFuncEx(
+      |     ^~~~~~~~~~~~~~~~
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 862
+  Inference Syntax Error: Syntax errors detected:
+fan_controller.c: In function ‘read_max31855’:
+fan_controller.c:54:10: error: assignment to expression with array type
+   54 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:56:10: error: assignment to expression with array type
+   56 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:58:10: error: assignment to expression with array type
+   58 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:60:10: error: assignment to expression with array type
+   60 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:62:10: error: assignment to expression with array type
+   62 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:64:10: error: assignment to expression with array type
+   64 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:66:10: error: assignment to expression with array type
+   66 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:68:10: error: assignment to expression with array type
+   68 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:70:10: error: assignment to expression with array type
+   70 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:72:10: error: assignment to expression with array type
+   72 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:74:10: error: assignment to expression with array type
+   74 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:76:10: error: assignment to expression with array type
+   76 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:78:10: error: assignment to expression with array type
+   78 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:80:10: error: assignment to expression with array type
+   80 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:82:10: error: assignment to expression with array type
+   82 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:84:10: error: assignment to expression with array type
+   84 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:86:10: error: assignment to expression with array type
+   86 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:88:10: error: assignment to expression with array type
+   88 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:90:10: error: assignment to expression with array type
+   90 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:92:10: error: assignment to expression with array type
+   92 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:94:10: error: assignment to expression with array type
+   94 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:96:10: error: assignment to expression with array type
+   96 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:98:10: error: assignment to expression with array type
+   98 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:100:10: error: assignment to expression with array type
+  100 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:102:10: error: assignment to expression with array type
+  102 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:104:10: error: assignment to expression with array type
+  104 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:106:10: error: assignment to expression with array type
+  106 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:108:10: error: assignment to expression with array type
+  108 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:110:10: error: assignment to expression with array type
+  110 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:112:10: error: assignment to expression with array type
+  112 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:114:10: error: assignment to expression with array type
+  114 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:116:10: error: assignment to expression with array type
+  116 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:118:10: error: assignment to expression with array type
+  118 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:120:10: error: assignment to expression with array type
+  120 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:122:10: error: assignment to expression with array type
+  122 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:124:10: error: assignment to expression with array type
+  124 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:126:10: error: assignment to expression with array type
+  126 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:128:10: error: assignment to expression with array type
+  128 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:130:10: error: assignment to expression with array type
+  130 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:132:10: error: assignment to expression with array type
+  132 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:134:10: error: assignment to expression with array type
+  134 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:136:10: error: assignment to expression with array type
+  136 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:138:10: error: assignment to expression with array type
+  138 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:140:10: error: assignment to expression with array type
+  140 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:142:10: error: assignment to expression with array type
+  142 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:144:10: error: assignment to expression with array type
+  144 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:146:10: error: assignment to expression with array type
+  146 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:148:10: error: assignment to expression with array type
+  148 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:150:10: error: assignment to expression with array type
+  150 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:152:10: error: assignment to expression with array type
+  152 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:154:10: error: assignment to expression with array type
+  154 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:156:10: error: assignment to expression with array type
+  156 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:158:10: error: assignment to expression with array type
+  158 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:160:10: error: assignment to expression with array type
+  160 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:162:10: error: assignment to expression with array type
+  162 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:164:10: error: assignment to expression with array type
+  164 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:166:10: error: assignment to expression with array type
+  166 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:168:10: error: assignment to expression with array type
+  168 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:170:10: error: assignment to expression with array type
+  170 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:172:10: error: assignment to expression with array type
+  172 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:174:10: error: assignment to expression with array type
+  174 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:176:10: error: assignment to expression with array type
+  176 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:178:10: error: assignment to expression with array type
+  178 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:180:10: error: assignment to expression with array type
+  180 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:182:10: error: assignment to expression with array type
+  182 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:184:10: error: assignment to expression with array type
+  184 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:186:10: error: assignment to expression with array type
+  186 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:188:10: error: assignment to expression with array type
+  188 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:190:10: error: assignment to expression with array type
+  190 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:192:10: error: assignment to expression with array type
+  192 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:194:10: error: assignment to expression with array type
+  194 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:196:10: error: assignment to expression with array type
+  196 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:198:10: error: assignment to expression with array type
+  198 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:200:10: error: assignment to expression with array type
+  200 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:202:10: error: assignment to expression with array type
+  202 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:204:10: error: assignment to expression with array type
+  204 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:206:10: error: assignment to expression with array type
+  206 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:208:10: error: assignment to expression with array type
+  208 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:210:10: error: assignment to expression with array type
+  210 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:212:10: error: assignment to expression with array type
+  212 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:214:10: error: assignment to expression with array type
+  214 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:216:10: error: assignment to expression with array type
+  216 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:218:10: error: assignment to expression with array type
+  218 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:220:10: error: assignment to expression with array type
+  220 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:222:10: error: assignment to expression with array type
+  222 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:224:10: error: assignment to expression with array type
+  224 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:226:10: error: assignment to expression with array type
+  226 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:228:10: error: assignment to expression with array type
+  228 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:230:10: error: assignment to expression with array type
+  230 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:232:10: error: assignment to expression with array type
+  232 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:234:10: error: assignment to expression with array type
+  234 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:236:10: error: assignment to expression with array type
+  236 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:238:10: error: assignment to expression with array type
+  238 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:240:10: error: assignment to expression with array type
+  240 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:242:10: error: assignment to expression with array type
+  242 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:244:10: error: assignment to expression with array type
+  244 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:246:10: error: assignment to expression with array type
+  246 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:248:10: error: assignment to expression with array type
+  248 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:250:10: error: assignment to expression with array type
+  250 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:252:10: error: assignment to expression with array type
+  252 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:254:10: error: assignment to expression with array type
+  254 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:256:10: error: assignment to expression with array type
+  256 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:258:10: error: assignment to expression with array type
+  258 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:260:10: error: assignment to expression with array type
+  260 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:262:10: error: assignment to expression with array type
+  262 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:264:10: error: assignment to expression with array type
+  264 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:266:10: error: assignment to expression with array type
+  266 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:268:10: error: assignment to expression with array type
+  268 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:270:10: error: assignment to expression with array type
+  270 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:272:10: error: assignment to expression with array type
+  272 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:274:10: error: assignment to expression with array type
+  274 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:276:10: error: assignment to expression with array type
+  276 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:278:10: error: assignment to expression with array type
+  278 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:280:10: error: assignment to expression with array type
+  280 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:282:10: error: assignment to expression with array type
+  282 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:284:10: error: assignment to expression with array type
+  284 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:286:10: error: assignment to expression with array type
+  286 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:288:10: error: assignment to expression with array type
+  288 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:290:10: error: assignment to expression with array type
+  290 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:292:10: error: assignment to expression with array type
+  292 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:294:10: error: assignment to expression with array type
+  294 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:296:10: error: assignment to expression with array type
+  296 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:298:10: error: assignment to expression with array type
+  298 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:300:10: error: assignment to expression with array type
+  300 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:302:10: error: assignment to expression with array type
+  302 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:304:10: error: assignment to expression with array type
+  304 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:306:10: error: assignment to expression with array type
+  306 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:308:10: error: assignment to expression with array type
+  308 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:310:10: error: assignment to expression with array type
+  310 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:312:10: error: assignment to expression with array type
+  312 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:314:10: error: assignment to expression with array type
+  314 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:316:10: error: assignment to expression with array type
+  316 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:318:10: error: assignment to expression with array type
+  318 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:320:10: error: assignment to expression with array type
+  320 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:322:10: error: assignment to expression with array type
+  322 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:324:10: error: assignment to expression with array type
+  324 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:326:12: error: ‘wiringPiSPIData’ undeclared (first use in this function); did you mean ‘wiringPiSPIDataRW’?
+  326 |     data = wiringPiSPIData
+      |            ^~~~~~~~~~~~~~~
+      |            wiringPiSPIDataRW
+fan_controller.c:326:12: note: each undeclared identifier is reported only once for each function it appears in
+fan_controller.c:326:27: error: expected ‘;’ at end of input
+  326 |     data = wiringPiSPIData
+      |                           ^
+      |                           ;
+fan_controller.c:326:5: error: expected declaration or statement at end of input
+  326 |     data = wiringPiSPIData
+      |     ^~~~
+fan_controller.c:50:13: warning: unused variable ‘raw_temp’ [-Wunused-variable]
+   50 |     int32_t raw_temp;
+      |             ^~~~~~~~
+fan_controller.c:49:9: warning: unused variable ‘i’ [-Wunused-variable]
+   49 |     int i;
+      |         ^
+fan_controller.c:48:19: warning: variable ‘data’ set but not used [-Wunused-but-set-variable]
+   48 |     unsigned char data[4];
+      |                   ^~~~
+  Inference Build Error: Build errors detected:
+fan_controller.c: In function ‘read_max31855’:
+fan_controller.c:54:10: error: assignment to expression with array type
+   54 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:56:10: error: assignment to expression with array type
+   56 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:58:10: error: assignment to expression with array type
+   58 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:60:10: error: assignment to expression with array type
+   60 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:62:10: error: assignment to expression with array type
+   62 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:64:10: error: assignment to expression with array type
+   64 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:66:10: error: assignment to expression with array type
+   66 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:68:10: error: assignment to expression with array type
+   68 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:70:10: error: assignment to expression with array type
+   70 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:72:10: error: assignment to expression with array type
+   72 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:74:10: error: assignment to expression with array type
+   74 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:76:10: error: assignment to expression with array type
+   76 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:78:10: error: assignment to expression with array type
+   78 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:80:10: error: assignment to expression with array type
+   80 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:82:10: error: assignment to expression with array type
+   82 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:84:10: error: assignment to expression with array type
+   84 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:86:10: error: assignment to expression with array type
+   86 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:88:10: error: assignment to expression with array type
+   88 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:90:10: error: assignment to expression with array type
+   90 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:92:10: error: assignment to expression with array type
+   92 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:94:10: error: assignment to expression with array type
+   94 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:96:10: error: assignment to expression with array type
+   96 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:98:10: error: assignment to expression with array type
+   98 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:100:10: error: assignment to expression with array type
+  100 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:102:10: error: assignment to expression with array type
+  102 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:104:10: error: assignment to expression with array type
+  104 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:106:10: error: assignment to expression with array type
+  106 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:108:10: error: assignment to expression with array type
+  108 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:110:10: error: assignment to expression with array type
+  110 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:112:10: error: assignment to expression with array type
+  112 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:114:10: error: assignment to expression with array type
+  114 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:116:10: error: assignment to expression with array type
+  116 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:118:10: error: assignment to expression with array type
+  118 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:120:10: error: assignment to expression with array type
+  120 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:122:10: error: assignment to expression with array type
+  122 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:124:10: error: assignment to expression with array type
+  124 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:126:10: error: assignment to expression with array type
+  126 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:128:10: error: assignment to expression with array type
+  128 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:130:10: error: assignment to expression with array type
+  130 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:132:10: error: assignment to expression with array type
+  132 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:134:10: error: assignment to expression with array type
+  134 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:136:10: error: assignment to expression with array type
+  136 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:138:10: error: assignment to expression with array type
+  138 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:140:10: error: assignment to expression with array type
+  140 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:142:10: error: assignment to expression with array type
+  142 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:144:10: error: assignment to expression with array type
+  144 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:146:10: error: assignment to expression with array type
+  146 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:148:10: error: assignment to expression with array type
+  148 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:150:10: error: assignment to expression with array type
+  150 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:152:10: error: assignment to expression with array type
+  152 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:154:10: error: assignment to expression with array type
+  154 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:156:10: error: assignment to expression with array type
+  156 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:158:10: error: assignment to expression with array type
+  158 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:160:10: error: assignment to expression with array type
+  160 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:162:10: error: assignment to expression with array type
+  162 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:164:10: error: assignment to expression with array type
+  164 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:166:10: error: assignment to expression with array type
+  166 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:168:10: error: assignment to expression with array type
+  168 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:170:10: error: assignment to expression with array type
+  170 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:172:10: error: assignment to expression with array type
+  172 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:174:10: error: assignment to expression with array type
+  174 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:176:10: error: assignment to expression with array type
+  176 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:178:10: error: assignment to expression with array type
+  178 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:180:10: error: assignment to expression with array type
+  180 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:182:10: error: assignment to expression with array type
+  182 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:184:10: error: assignment to expression with array type
+  184 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:186:10: error: assignment to expression with array type
+  186 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:188:10: error: assignment to expression with array type
+  188 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:190:10: error: assignment to expression with array type
+  190 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:192:10: error: assignment to expression with array type
+  192 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:194:10: error: assignment to expression with array type
+  194 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:196:10: error: assignment to expression with array type
+  196 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:198:10: error: assignment to expression with array type
+  198 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:200:10: error: assignment to expression with array type
+  200 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:202:10: error: assignment to expression with array type
+  202 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:204:10: error: assignment to expression with array type
+  204 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:206:10: error: assignment to expression with array type
+  206 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:208:10: error: assignment to expression with array type
+  208 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:210:10: error: assignment to expression with array type
+  210 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:212:10: error: assignment to expression with array type
+  212 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:214:10: error: assignment to expression with array type
+  214 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:216:10: error: assignment to expression with array type
+  216 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:218:10: error: assignment to expression with array type
+  218 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:220:10: error: assignment to expression with array type
+  220 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:222:10: error: assignment to expression with array type
+  222 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:224:10: error: assignment to expression with array type
+  224 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:226:10: error: assignment to expression with array type
+  226 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:228:10: error: assignment to expression with array type
+  228 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:230:10: error: assignment to expression with array type
+  230 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:232:10: error: assignment to expression with array type
+  232 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:234:10: error: assignment to expression with array type
+  234 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:236:10: error: assignment to expression with array type
+  236 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:238:10: error: assignment to expression with array type
+  238 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:240:10: error: assignment to expression with array type
+  240 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:242:10: error: assignment to expression with array type
+  242 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:244:10: error: assignment to expression with array type
+  244 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:246:10: error: assignment to expression with array type
+  246 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:248:10: error: assignment to expression with array type
+  248 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:250:10: error: assignment to expression with array type
+  250 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:252:10: error: assignment to expression with array type
+  252 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:254:10: error: assignment to expression with array type
+  254 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:256:10: error: assignment to expression with array type
+  256 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:258:10: error: assignment to expression with array type
+  258 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:260:10: error: assignment to expression with array type
+  260 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:262:10: error: assignment to expression with array type
+  262 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:264:10: error: assignment to expression with array type
+  264 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:266:10: error: assignment to expression with array type
+  266 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:268:10: error: assignment to expression with array type
+  268 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:270:10: error: assignment to expression with array type
+  270 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:272:10: error: assignment to expression with array type
+  272 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:274:10: error: assignment to expression with array type
+  274 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:276:10: error: assignment to expression with array type
+  276 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:278:10: error: assignment to expression with array type
+  278 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:280:10: error: assignment to expression with array type
+  280 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:282:10: error: assignment to expression with array type
+  282 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:284:10: error: assignment to expression with array type
+  284 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:286:10: error: assignment to expression with array type
+  286 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:288:10: error: assignment to expression with array type
+  288 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:290:10: error: assignment to expression with array type
+  290 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:292:10: error: assignment to expression with array type
+  292 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:294:10: error: assignment to expression with array type
+  294 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:296:10: error: assignment to expression with array type
+  296 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:298:10: error: assignment to expression with array type
+  298 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:300:10: error: assignment to expression with array type
+  300 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:302:10: error: assignment to expression with array type
+  302 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:304:10: error: assignment to expression with array type
+  304 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:306:10: error: assignment to expression with array type
+  306 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:308:10: error: assignment to expression with array type
+  308 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:310:10: error: assignment to expression with array type
+  310 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:312:10: error: assignment to expression with array type
+  312 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:314:10: error: assignment to expression with array type
+  314 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:316:10: error: assignment to expression with array type
+  316 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:318:10: error: assignment to expression with array type
+  318 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:320:10: error: assignment to expression with array type
+  320 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:322:10: error: assignment to expression with array type
+  322 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:324:10: error: assignment to expression with array type
+  324 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:326:12: error: ‘wiringPiSPIData’ undeclared (first use in this function); did you mean ‘wiringPiSPIDataRW’?
+  326 |     data = wiringPiSPIData
+      |            ^~~~~~~~~~~~~~~
+      |            wiringPiSPIDataRW
+fan_controller.c:326:12: note: each undeclared identifier is reported only once for each function it appears in
+fan_controller.c:326:27: error: expected ‘;’ at end of input
+  326 |     data = wiringPiSPIData
+      |                           ^
+      |                           ;
+fan_controller.c:326:5: error: expected declaration or statement at end of input
+  326 |     data = wiringPiSPIData
+      |     ^~~~
+----------------------------------------
+ID: 862
+  Inference Syntax Error: Syntax errors detected:
+fan_controller.c: In function ‘read_max31855’:
+fan_controller.c:54:10: error: assignment to expression with array type
+   54 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:56:10: error: assignment to expression with array type
+   56 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:58:10: error: assignment to expression with array type
+   58 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:60:10: error: assignment to expression with array type
+   60 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:62:10: error: assignment to expression with array type
+   62 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:64:10: error: assignment to expression with array type
+   64 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:66:10: error: assignment to expression with array type
+   66 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:68:10: error: assignment to expression with array type
+   68 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:70:10: error: assignment to expression with array type
+   70 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:72:10: error: assignment to expression with array type
+   72 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:74:10: error: assignment to expression with array type
+   74 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:76:10: error: assignment to expression with array type
+   76 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:78:10: error: assignment to expression with array type
+   78 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:80:10: error: assignment to expression with array type
+   80 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:82:10: error: assignment to expression with array type
+   82 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:84:10: error: assignment to expression with array type
+   84 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:86:10: error: assignment to expression with array type
+   86 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:88:10: error: assignment to expression with array type
+   88 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:90:10: error: assignment to expression with array type
+   90 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:92:10: error: assignment to expression with array type
+   92 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:94:10: error: assignment to expression with array type
+   94 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:96:10: error: assignment to expression with array type
+   96 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:98:10: error: assignment to expression with array type
+   98 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:100:10: error: assignment to expression with array type
+  100 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:102:10: error: assignment to expression with array type
+  102 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:104:10: error: assignment to expression with array type
+  104 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:106:10: error: assignment to expression with array type
+  106 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:108:10: error: assignment to expression with array type
+  108 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:110:10: error: assignment to expression with array type
+  110 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:112:10: error: assignment to expression with array type
+  112 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:114:10: error: assignment to expression with array type
+  114 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:116:10: error: assignment to expression with array type
+  116 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:118:10: error: assignment to expression with array type
+  118 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:120:10: error: assignment to expression with array type
+  120 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:122:10: error: assignment to expression with array type
+  122 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:124:10: error: assignment to expression with array type
+  124 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:126:10: error: assignment to expression with array type
+  126 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:128:10: error: assignment to expression with array type
+  128 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:130:10: error: assignment to expression with array type
+  130 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:132:10: error: assignment to expression with array type
+  132 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:134:10: error: assignment to expression with array type
+  134 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:136:10: error: assignment to expression with array type
+  136 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:138:10: error: assignment to expression with array type
+  138 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:140:10: error: assignment to expression with array type
+  140 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:142:10: error: assignment to expression with array type
+  142 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:144:10: error: assignment to expression with array type
+  144 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:146:10: error: assignment to expression with array type
+  146 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:148:10: error: assignment to expression with array type
+  148 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:150:10: error: assignment to expression with array type
+  150 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:152:10: error: assignment to expression with array type
+  152 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:154:10: error: assignment to expression with array type
+  154 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:156:10: error: assignment to expression with array type
+  156 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:158:10: error: assignment to expression with array type
+  158 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:160:10: error: assignment to expression with array type
+  160 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:162:10: error: assignment to expression with array type
+  162 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:164:10: error: assignment to expression with array type
+  164 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:166:10: error: assignment to expression with array type
+  166 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:168:10: error: assignment to expression with array type
+  168 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:170:10: error: assignment to expression with array type
+  170 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:172:10: error: assignment to expression with array type
+  172 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:174:10: error: assignment to expression with array type
+  174 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:176:10: error: assignment to expression with array type
+  176 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:178:10: error: assignment to expression with array type
+  178 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:180:10: error: assignment to expression with array type
+  180 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:182:10: error: assignment to expression with array type
+  182 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:184:10: error: assignment to expression with array type
+  184 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:186:10: error: assignment to expression with array type
+  186 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:188:10: error: assignment to expression with array type
+  188 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:190:10: error: assignment to expression with array type
+  190 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:192:10: error: assignment to expression with array type
+  192 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:194:10: error: assignment to expression with array type
+  194 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:196:10: error: assignment to expression with array type
+  196 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:198:10: error: assignment to expression with array type
+  198 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:200:10: error: assignment to expression with array type
+  200 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:202:10: error: assignment to expression with array type
+  202 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:204:10: error: assignment to expression with array type
+  204 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:206:10: error: assignment to expression with array type
+  206 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:208:10: error: assignment to expression with array type
+  208 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:210:10: error: assignment to expression with array type
+  210 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:212:10: error: assignment to expression with array type
+  212 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:214:10: error: assignment to expression with array type
+  214 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:216:10: error: assignment to expression with array type
+  216 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:218:10: error: assignment to expression with array type
+  218 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:220:10: error: assignment to expression with array type
+  220 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:222:10: error: assignment to expression with array type
+  222 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:224:10: error: assignment to expression with array type
+  224 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:226:10: error: assignment to expression with array type
+  226 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:228:10: error: assignment to expression with array type
+  228 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:230:10: error: assignment to expression with array type
+  230 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:232:10: error: assignment to expression with array type
+  232 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:234:10: error: assignment to expression with array type
+  234 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:236:10: error: assignment to expression with array type
+  236 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:238:10: error: assignment to expression with array type
+  238 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:240:10: error: assignment to expression with array type
+  240 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:242:10: error: assignment to expression with array type
+  242 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:244:10: error: assignment to expression with array type
+  244 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:246:10: error: assignment to expression with array type
+  246 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:248:10: error: assignment to expression with array type
+  248 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:250:10: error: assignment to expression with array type
+  250 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:252:10: error: assignment to expression with array type
+  252 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:254:10: error: assignment to expression with array type
+  254 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:256:10: error: assignment to expression with array type
+  256 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:258:10: error: assignment to expression with array type
+  258 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:260:10: error: assignment to expression with array type
+  260 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:262:10: error: assignment to expression with array type
+  262 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:264:10: error: assignment to expression with array type
+  264 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:266:10: error: assignment to expression with array type
+  266 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:268:10: error: assignment to expression with array type
+  268 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:270:10: error: assignment to expression with array type
+  270 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:272:10: error: assignment to expression with array type
+  272 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:274:10: error: assignment to expression with array type
+  274 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:276:10: error: assignment to expression with array type
+  276 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:278:10: error: assignment to expression with array type
+  278 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:280:10: error: assignment to expression with array type
+  280 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:282:10: error: assignment to expression with array type
+  282 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:284:10: error: assignment to expression with array type
+  284 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:286:10: error: assignment to expression with array type
+  286 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:288:10: error: assignment to expression with array type
+  288 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:290:10: error: assignment to expression with array type
+  290 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:292:10: error: assignment to expression with array type
+  292 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:294:10: error: assignment to expression with array type
+  294 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:296:10: error: assignment to expression with array type
+  296 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:298:10: error: assignment to expression with array type
+  298 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:300:10: error: assignment to expression with array type
+  300 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:302:10: error: assignment to expression with array type
+  302 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:304:10: error: assignment to expression with array type
+  304 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:306:10: error: assignment to expression with array type
+  306 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:308:10: error: assignment to expression with array type
+  308 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:310:10: error: assignment to expression with array type
+  310 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:312:10: error: assignment to expression with array type
+  312 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:314:10: error: assignment to expression with array type
+  314 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:316:10: error: assignment to expression with array type
+  316 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:318:10: error: assignment to expression with array type
+  318 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:320:10: error: assignment to expression with array type
+  320 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:322:10: error: assignment to expression with array type
+  322 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:324:10: error: assignment to expression with array type
+  324 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:326:12: error: ‘wiringPiSPIData’ undeclared (first use in this function); did you mean ‘wiringPiSPIDataRW’?
+  326 |     data = wiringPiSPIData
+      |            ^~~~~~~~~~~~~~~
+      |            wiringPiSPIDataRW
+fan_controller.c:326:12: note: each undeclared identifier is reported only once for each function it appears in
+fan_controller.c:326:27: error: expected ‘;’ at end of input
+  326 |     data = wiringPiSPIData
+      |                           ^
+      |                           ;
+fan_controller.c:326:5: error: expected declaration or statement at end of input
+  326 |     data = wiringPiSPIData
+      |     ^~~~
+fan_controller.c:50:13: warning: unused variable ‘raw_temp’ [-Wunused-variable]
+   50 |     int32_t raw_temp;
+      |             ^~~~~~~~
+fan_controller.c:49:9: warning: unused variable ‘i’ [-Wunused-variable]
+   49 |     int i;
+      |         ^
+fan_controller.c:48:19: warning: variable ‘data’ set but not used [-Wunused-but-set-variable]
+   48 |     unsigned char data[4];
+      |                   ^~~~
+  Inference Build Error: Build errors detected:
+fan_controller.c: In function ‘read_max31855’:
+fan_controller.c:54:10: error: assignment to expression with array type
+   54 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:56:10: error: assignment to expression with array type
+   56 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:58:10: error: assignment to expression with array type
+   58 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:60:10: error: assignment to expression with array type
+   60 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:62:10: error: assignment to expression with array type
+   62 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:64:10: error: assignment to expression with array type
+   64 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:66:10: error: assignment to expression with array type
+   66 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:68:10: error: assignment to expression with array type
+   68 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:70:10: error: assignment to expression with array type
+   70 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:72:10: error: assignment to expression with array type
+   72 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:74:10: error: assignment to expression with array type
+   74 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:76:10: error: assignment to expression with array type
+   76 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:78:10: error: assignment to expression with array type
+   78 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:80:10: error: assignment to expression with array type
+   80 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:82:10: error: assignment to expression with array type
+   82 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:84:10: error: assignment to expression with array type
+   84 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:86:10: error: assignment to expression with array type
+   86 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:88:10: error: assignment to expression with array type
+   88 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:90:10: error: assignment to expression with array type
+   90 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:92:10: error: assignment to expression with array type
+   92 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:94:10: error: assignment to expression with array type
+   94 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:96:10: error: assignment to expression with array type
+   96 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:98:10: error: assignment to expression with array type
+   98 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:100:10: error: assignment to expression with array type
+  100 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:102:10: error: assignment to expression with array type
+  102 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:104:10: error: assignment to expression with array type
+  104 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:106:10: error: assignment to expression with array type
+  106 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:108:10: error: assignment to expression with array type
+  108 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:110:10: error: assignment to expression with array type
+  110 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:112:10: error: assignment to expression with array type
+  112 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:114:10: error: assignment to expression with array type
+  114 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:116:10: error: assignment to expression with array type
+  116 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:118:10: error: assignment to expression with array type
+  118 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:120:10: error: assignment to expression with array type
+  120 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:122:10: error: assignment to expression with array type
+  122 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:124:10: error: assignment to expression with array type
+  124 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:126:10: error: assignment to expression with array type
+  126 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:128:10: error: assignment to expression with array type
+  128 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:130:10: error: assignment to expression with array type
+  130 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:132:10: error: assignment to expression with array type
+  132 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:134:10: error: assignment to expression with array type
+  134 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:136:10: error: assignment to expression with array type
+  136 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:138:10: error: assignment to expression with array type
+  138 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:140:10: error: assignment to expression with array type
+  140 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:142:10: error: assignment to expression with array type
+  142 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:144:10: error: assignment to expression with array type
+  144 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:146:10: error: assignment to expression with array type
+  146 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:148:10: error: assignment to expression with array type
+  148 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:150:10: error: assignment to expression with array type
+  150 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:152:10: error: assignment to expression with array type
+  152 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:154:10: error: assignment to expression with array type
+  154 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:156:10: error: assignment to expression with array type
+  156 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:158:10: error: assignment to expression with array type
+  158 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:160:10: error: assignment to expression with array type
+  160 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:162:10: error: assignment to expression with array type
+  162 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:164:10: error: assignment to expression with array type
+  164 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:166:10: error: assignment to expression with array type
+  166 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:168:10: error: assignment to expression with array type
+  168 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:170:10: error: assignment to expression with array type
+  170 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:172:10: error: assignment to expression with array type
+  172 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:174:10: error: assignment to expression with array type
+  174 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:176:10: error: assignment to expression with array type
+  176 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:178:10: error: assignment to expression with array type
+  178 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:180:10: error: assignment to expression with array type
+  180 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:182:10: error: assignment to expression with array type
+  182 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:184:10: error: assignment to expression with array type
+  184 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:186:10: error: assignment to expression with array type
+  186 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:188:10: error: assignment to expression with array type
+  188 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:190:10: error: assignment to expression with array type
+  190 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:192:10: error: assignment to expression with array type
+  192 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:194:10: error: assignment to expression with array type
+  194 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:196:10: error: assignment to expression with array type
+  196 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:198:10: error: assignment to expression with array type
+  198 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:200:10: error: assignment to expression with array type
+  200 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:202:10: error: assignment to expression with array type
+  202 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:204:10: error: assignment to expression with array type
+  204 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:206:10: error: assignment to expression with array type
+  206 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:208:10: error: assignment to expression with array type
+  208 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:210:10: error: assignment to expression with array type
+  210 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:212:10: error: assignment to expression with array type
+  212 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:214:10: error: assignment to expression with array type
+  214 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:216:10: error: assignment to expression with array type
+  216 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:218:10: error: assignment to expression with array type
+  218 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:220:10: error: assignment to expression with array type
+  220 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:222:10: error: assignment to expression with array type
+  222 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:224:10: error: assignment to expression with array type
+  224 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:226:10: error: assignment to expression with array type
+  226 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:228:10: error: assignment to expression with array type
+  228 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:230:10: error: assignment to expression with array type
+  230 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:232:10: error: assignment to expression with array type
+  232 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:234:10: error: assignment to expression with array type
+  234 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:236:10: error: assignment to expression with array type
+  236 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:238:10: error: assignment to expression with array type
+  238 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:240:10: error: assignment to expression with array type
+  240 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:242:10: error: assignment to expression with array type
+  242 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:244:10: error: assignment to expression with array type
+  244 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:246:10: error: assignment to expression with array type
+  246 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:248:10: error: assignment to expression with array type
+  248 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:250:10: error: assignment to expression with array type
+  250 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:252:10: error: assignment to expression with array type
+  252 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:254:10: error: assignment to expression with array type
+  254 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:256:10: error: assignment to expression with array type
+  256 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:258:10: error: assignment to expression with array type
+  258 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:260:10: error: assignment to expression with array type
+  260 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:262:10: error: assignment to expression with array type
+  262 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:264:10: error: assignment to expression with array type
+  264 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:266:10: error: assignment to expression with array type
+  266 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:268:10: error: assignment to expression with array type
+  268 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:270:10: error: assignment to expression with array type
+  270 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:272:10: error: assignment to expression with array type
+  272 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:274:10: error: assignment to expression with array type
+  274 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:276:10: error: assignment to expression with array type
+  276 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:278:10: error: assignment to expression with array type
+  278 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:280:10: error: assignment to expression with array type
+  280 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:282:10: error: assignment to expression with array type
+  282 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:284:10: error: assignment to expression with array type
+  284 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:286:10: error: assignment to expression with array type
+  286 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:288:10: error: assignment to expression with array type
+  288 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:290:10: error: assignment to expression with array type
+  290 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:292:10: error: assignment to expression with array type
+  292 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:294:10: error: assignment to expression with array type
+  294 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:296:10: error: assignment to expression with array type
+  296 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:298:10: error: assignment to expression with array type
+  298 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:300:10: error: assignment to expression with array type
+  300 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:302:10: error: assignment to expression with array type
+  302 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:304:10: error: assignment to expression with array type
+  304 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:306:10: error: assignment to expression with array type
+  306 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:308:10: error: assignment to expression with array type
+  308 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:310:10: error: assignment to expression with array type
+  310 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:312:10: error: assignment to expression with array type
+  312 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:314:10: error: assignment to expression with array type
+  314 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:316:10: error: assignment to expression with array type
+  316 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:318:10: error: assignment to expression with array type
+  318 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:320:10: error: assignment to expression with array type
+  320 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:322:10: error: assignment to expression with array type
+  322 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:324:10: error: assignment to expression with array type
+  324 |     data = wiringPiSPIDataRW(SPI_CHANNEL, NULL, 0);
+      |          ^
+fan_controller.c:326:12: error: ‘wiringPiSPIData’ undeclared (first use in this function); did you mean ‘wiringPiSPIDataRW’?
+  326 |     data = wiringPiSPIData
+      |            ^~~~~~~~~~~~~~~
+      |            wiringPiSPIDataRW
+fan_controller.c:326:12: note: each undeclared identifier is reported only once for each function it appears in
+fan_controller.c:326:27: error: expected ‘;’ at end of input
+  326 |     data = wiringPiSPIData
+      |                           ^
+      |                           ;
+fan_controller.c:326:5: error: expected declaration or statement at end of input
+  326 |     data = wiringPiSPIData
+      |     ^~~~
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 0210
+  Inference Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `read_airflow':
+airflow_monitor.c:(.text+0x44): undefined reference to `spiXfer'
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `trigger_alarm':
+airflow_monitor.c:(.text+0xe8): undefined reference to `gpioWrite'
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `signal_handler':
+airflow_monitor.c:(.text+0x224): undefined reference to `spiClose'
+/usr/bin/ld: airflow_monitor.c:(.text+0x228): undefined reference to `gpioTerminate'
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `main':
+airflow_monitor.c:(.text+0x23c): undefined reference to `gpioInitialise'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2d0): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2e4): undefined reference to `gpioSetMode'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2f8): undefined reference to `spiOpen'
+/usr/bin/ld: airflow_monitor.c:(.text+0x354): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3bc): undefined reference to `gpioDelay'
+/usr/bin/ld: airflow_monitor.c:(.text+0x41c): undefined reference to `gpioDelay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0210
+  Inference Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `read_airflow':
+airflow_monitor.c:(.text+0x44): undefined reference to `spiXfer'
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `trigger_alarm':
+airflow_monitor.c:(.text+0xe8): undefined reference to `gpioWrite'
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `signal_handler':
+airflow_monitor.c:(.text+0x224): undefined reference to `spiClose'
+/usr/bin/ld: airflow_monitor.c:(.text+0x228): undefined reference to `gpioTerminate'
+/usr/bin/ld: /tmp/ccYEiY0B.o: in function `main':
+airflow_monitor.c:(.text+0x23c): undefined reference to `gpioInitialise'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2d0): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2e4): undefined reference to `gpioSetMode'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2f8): undefined reference to `spiOpen'
+/usr/bin/ld: airflow_monitor.c:(.text+0x354): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3bc): undefined reference to `gpioDelay'
+/usr/bin/ld: airflow_monitor.c:(.text+0x41c): undefined reference to `gpioDelay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0210
+  Inference Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccZImFsf.o: in function `read_mcp3008':
+airflow_monitor.c:(.text+0xa4): undefined reference to `spiXfer'
+/usr/bin/ld: /tmp/ccZImFsf.o: in function `activate_alarm':
+airflow_monitor.c:(.text+0x1a8): undefined reference to `gpioWrite'
+/usr/bin/ld: airflow_monitor.c:(.text+0x1b0): undefined reference to `gpioDelay'
+/usr/bin/ld: airflow_monitor.c:(.text+0x1bc): undefined reference to `gpioWrite'
+/usr/bin/ld: /tmp/ccZImFsf.o: in function `main':
+airflow_monitor.c:(.text+0x20c): undefined reference to `gpioInitialise'
+/usr/bin/ld: airflow_monitor.c:(.text+0x288): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x29c): undefined reference to `gpioSetMode'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2b0): undefined reference to `spiOpen'
+/usr/bin/ld: airflow_monitor.c:(.text+0x30c): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3b8): undefined reference to `gpioDelay'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3e8): undefined reference to `spiClose'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3fc): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0210
+  Inference Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccZImFsf.o: in function `read_mcp3008':
+airflow_monitor.c:(.text+0xa4): undefined reference to `spiXfer'
+/usr/bin/ld: /tmp/ccZImFsf.o: in function `activate_alarm':
+airflow_monitor.c:(.text+0x1a8): undefined reference to `gpioWrite'
+/usr/bin/ld: airflow_monitor.c:(.text+0x1b0): undefined reference to `gpioDelay'
+/usr/bin/ld: airflow_monitor.c:(.text+0x1bc): undefined reference to `gpioWrite'
+/usr/bin/ld: /tmp/ccZImFsf.o: in function `main':
+airflow_monitor.c:(.text+0x20c): undefined reference to `gpioInitialise'
+/usr/bin/ld: airflow_monitor.c:(.text+0x288): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x29c): undefined reference to `gpioSetMode'
+/usr/bin/ld: airflow_monitor.c:(.text+0x2b0): undefined reference to `spiOpen'
+/usr/bin/ld: airflow_monitor.c:(.text+0x30c): undefined reference to `gpioTerminate'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3b8): undefined reference to `gpioDelay'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3e8): undefined reference to `spiClose'
+/usr/bin/ld: airflow_monitor.c:(.text+0x3fc): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0099
+----------------------------------------
+ID: 0099
+----------------------------------------
+ID: 0099
+  Inference Syntax Error: Syntax errors detected:
+motion_sensor_log.c: In function ‘si1153_init’:
+motion_sensor_log.c:169:5: error: expected expression at end of input
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+motion_sensor_log.c:169:9: error: too few arguments to function ‘wiringPiI2CWriteReg8’
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from motion_sensor_log.c:8:
+/usr/local/include/wiringPiI2C.h:38:12: note: declared here
+   38 | extern int wiringPiI2CWriteReg8      (int fd, int reg, int data) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:169:5: note: ‘-Wmisleading-indentation’ is disabled from this point onwards, since column-tracking was disabled due to the size of the code/headers
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+motion_sensor_log.c:169:5: note: adding ‘-flarge-source-files’ will allow for more column-tracking support, at the expense of compilation time and memory
+motion_sensor_log.c:169:5: error: expected declaration or statement at end of input
+  Inference Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘si1153_init’:
+motion_sensor_log.c:169:5: error: expected expression at end of input
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+motion_sensor_log.c:169:9: error: too few arguments to function ‘wiringPiI2CWriteReg8’
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from motion_sensor_log.c:8:
+/usr/local/include/wiringPiI2C.h:38:12: note: declared here
+   38 | extern int wiringPiI2CWriteReg8      (int fd, int reg, int data) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:169:5: error: expected declaration or statement at end of input
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+----------------------------------------
+ID: 0099
+  Inference Syntax Error: Syntax errors detected:
+motion_sensor_log.c: In function ‘si1153_init’:
+motion_sensor_log.c:169:5: error: expected expression at end of input
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+motion_sensor_log.c:169:9: error: too few arguments to function ‘wiringPiI2CWriteReg8’
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from motion_sensor_log.c:8:
+/usr/local/include/wiringPiI2C.h:38:12: note: declared here
+   38 | extern int wiringPiI2CWriteReg8      (int fd, int reg, int data) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:169:5: note: ‘-Wmisleading-indentation’ is disabled from this point onwards, since column-tracking was disabled due to the size of the code/headers
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+motion_sensor_log.c:169:5: note: adding ‘-flarge-source-files’ will allow for more column-tracking support, at the expense of compilation time and memory
+motion_sensor_log.c:169:5: error: expected declaration or statement at end of input
+  Inference Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘si1153_init’:
+motion_sensor_log.c:169:5: error: expected expression at end of input
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+motion_sensor_log.c:169:9: error: too few arguments to function ‘wiringPiI2CWriteReg8’
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from motion_sensor_log.c:8:
+/usr/local/include/wiringPiI2C.h:38:12: note: declared here
+   38 | extern int wiringPiI2CWriteReg8      (int fd, int reg, int data) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:169:5: error: expected declaration or statement at end of input
+  169 |     if (wiringPiI2CWriteReg8(fd,
+      |     ^~
+----------------------------------------
+ID: 0099
+  Inference Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:114:9: warning: implicit declaration of function ‘wiringPiSetup’; did you mean ‘wiringPiI2CSetup’? [-Wimplicit-function-declaration]
+  114 |     if (wiringPiSetup() == -1) {
+      |         ^~~~~~~~~~~~~
+      |         wiringPiI2CSetup
+motion_sensor_log.c:153:9: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+  153 |         delay(1000);
+      |         ^~~~~
+motion_sensor_log.c:158:9: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+  158 |         close(i2c_fd);
+      |         ^~~~~
+      |         pclose
+/usr/bin/ld: /tmp/ccL1G37u.o: in function `si1153_read_register':
+motion_sensor_log.c:(.text+0x60): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: /tmp/ccL1G37u.o: in function `si1153_write_register':
+motion_sensor_log.c:(.text+0xb4): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: /tmp/ccL1G37u.o: in function `main':
+motion_sensor_log.c:(.text+0x304): undefined reference to `wiringPiSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x340): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x47c): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0099
+  Inference Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:114:9: warning: implicit declaration of function ‘wiringPiSetup’; did you mean ‘wiringPiI2CSetup’? [-Wimplicit-function-declaration]
+  114 |     if (wiringPiSetup() == -1) {
+      |         ^~~~~~~~~~~~~
+      |         wiringPiI2CSetup
+motion_sensor_log.c:153:9: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+  153 |         delay(1000);
+      |         ^~~~~
+motion_sensor_log.c:158:9: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+  158 |         close(i2c_fd);
+      |         ^~~~~
+      |         pclose
+/usr/bin/ld: /tmp/ccL1G37u.o: in function `si1153_read_register':
+motion_sensor_log.c:(.text+0x60): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: /tmp/ccL1G37u.o: in function `si1153_write_register':
+motion_sensor_log.c:(.text+0xb4): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: /tmp/ccL1G37u.o: in function `main':
+motion_sensor_log.c:(.text+0x304): undefined reference to `wiringPiSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x340): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x47c): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Inference Build Error: Build errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:52:42: warning: passing argument 2 of ‘gpioSetAlertFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     gpioSetAlertFuncEx(TILT_SWITCH_GPIO, tilt_switch_callback, NULL);
+      |                                          ^~~~~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from interlock_monitor.c:6:
+/usr/local/include/pigpio.h:1484:42: note: expected ‘gpioAlertFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1484 |    unsigned user_gpio, gpioAlertFuncEx_t f, void *userdata);
+      |                        ~~~~~~~~~~~~~~~~~~^
+/usr/bin/ld: /tmp/cc8AG12p.o: in function `main':
+interlock_monitor.c:(.text+0x44): undefined reference to `gpioInitialise'
+/usr/bin/ld: interlock_monitor.c:(.text+0x84): undefined reference to `gpioSetMode'
+/usr/bin/ld: interlock_monitor.c:(.text+0x90): undefined reference to `gpioSetPullUpDown'
+/usr/bin/ld: interlock_monitor.c:(.text+0xa4): undefined reference to `gpioSetAlertFuncEx'
+/usr/bin/ld: interlock_monitor.c:(.text+0x118): undefined reference to `gpioDelay'
+/usr/bin/ld: /tmp/cc8AG12p.o: in function `cleanup_gpio':
+interlock_monitor.c:(.text+0x174): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Inference Build Error: Build errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:52:42: warning: passing argument 2 of ‘gpioSetAlertFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     gpioSetAlertFuncEx(TILT_SWITCH_GPIO, tilt_switch_callback, NULL);
+      |                                          ^~~~~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from interlock_monitor.c:6:
+/usr/local/include/pigpio.h:1484:42: note: expected ‘gpioAlertFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1484 |    unsigned user_gpio, gpioAlertFuncEx_t f, void *userdata);
+      |                        ~~~~~~~~~~~~~~~~~~^
+/usr/bin/ld: /tmp/cc8AG12p.o: in function `main':
+interlock_monitor.c:(.text+0x44): undefined reference to `gpioInitialise'
+/usr/bin/ld: interlock_monitor.c:(.text+0x84): undefined reference to `gpioSetMode'
+/usr/bin/ld: interlock_monitor.c:(.text+0x90): undefined reference to `gpioSetPullUpDown'
+/usr/bin/ld: interlock_monitor.c:(.text+0xa4): undefined reference to `gpioSetAlertFuncEx'
+/usr/bin/ld: interlock_monitor.c:(.text+0x118): undefined reference to `gpioDelay'
+/usr/bin/ld: /tmp/cc8AG12p.o: in function `cleanup_gpio':
+interlock_monitor.c:(.text+0x174): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Inference Build Error: Build errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:104:38: warning: passing argument 2 of ‘gpioSetAlertFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |     if (gpioSetAlertFuncEx(GPIO_PIN, interrupt_handler, NULL) != 0) {
+      |                                      ^~~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from interlock_monitor.c:6:
+/usr/local/include/pigpio.h:1484:42: note: expected ‘gpioAlertFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1484 |    unsigned user_gpio, gpioAlertFuncEx_t f, void *userdata);
+      |                        ~~~~~~~~~~~~~~~~~~^
+/usr/bin/ld: /tmp/ccp0euVi.o: in function `interrupt_handler':
+interlock_monitor.c:(.text+0x24c): undefined reference to `gpioRead'
+/usr/bin/ld: /tmp/ccp0euVi.o: in function `signal_handler':
+interlock_monitor.c:(.text+0x2c8): undefined reference to `gpioTerminate'
+/usr/bin/ld: /tmp/ccp0euVi.o: in function `main':
+interlock_monitor.c:(.text+0x2dc): undefined reference to `gpioInitialise'
+/usr/bin/ld: interlock_monitor.c:(.text+0x31c): undefined reference to `gpioSetMode'
+/usr/bin/ld: interlock_monitor.c:(.text+0x328): undefined reference to `gpioSetPullUpDown'
+/usr/bin/ld: interlock_monitor.c:(.text+0x344): undefined reference to `gpioSetAlertFuncEx'
+/usr/bin/ld: interlock_monitor.c:(.text+0x374): undefined reference to `gpioTerminate'
+/usr/bin/ld: interlock_monitor.c:(.text+0x3b4): undefined reference to `gpioDelay'
+/usr/bin/ld: interlock_monitor.c:(.text+0x3cc): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Inference Build Error: Build errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:104:38: warning: passing argument 2 of ‘gpioSetAlertFuncEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |     if (gpioSetAlertFuncEx(GPIO_PIN, interrupt_handler, NULL) != 0) {
+      |                                      ^~~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      void (*)(int,  int,  uint32_t) {aka void (*)(int,  int,  unsigned int)}
+In file included from interlock_monitor.c:6:
+/usr/local/include/pigpio.h:1484:42: note: expected ‘gpioAlertFuncEx_t’ {aka ‘void (*)(int,  int,  unsigned int,  void *)’} but argument is of type ‘void (*)(int,  int,  uint32_t)’ {aka ‘void (*)(int,  int,  unsigned int)’}
+ 1484 |    unsigned user_gpio, gpioAlertFuncEx_t f, void *userdata);
+      |                        ~~~~~~~~~~~~~~~~~~^
+/usr/bin/ld: /tmp/ccp0euVi.o: in function `interrupt_handler':
+interlock_monitor.c:(.text+0x24c): undefined reference to `gpioRead'
+/usr/bin/ld: /tmp/ccp0euVi.o: in function `signal_handler':
+interlock_monitor.c:(.text+0x2c8): undefined reference to `gpioTerminate'
+/usr/bin/ld: /tmp/ccp0euVi.o: in function `main':
+interlock_monitor.c:(.text+0x2dc): undefined reference to `gpioInitialise'
+/usr/bin/ld: interlock_monitor.c:(.text+0x31c): undefined reference to `gpioSetMode'
+/usr/bin/ld: interlock_monitor.c:(.text+0x328): undefined reference to `gpioSetPullUpDown'
+/usr/bin/ld: interlock_monitor.c:(.text+0x344): undefined reference to `gpioSetAlertFuncEx'
+/usr/bin/ld: interlock_monitor.c:(.text+0x374): undefined reference to `gpioTerminate'
+/usr/bin/ld: interlock_monitor.c:(.text+0x3b4): undefined reference to `gpioDelay'
+/usr/bin/ld: interlock_monitor.c:(.text+0x3cc): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Inference Build Error: Build errors detected:
+interlock_monitor.c:32:28: warning: missing braces around initializer [-Wmissing-braces]
+   32 | EventBuffer event_buffer = {{0}, 0, 0};
+      |                            ^
+      |                              {}
+/usr/bin/ld: /tmp/ccRc8YHu.o: in function `init_gpio':
+interlock_monitor.c:(.text+0x8): undefined reference to `gpioInitialise'
+/usr/bin/ld: interlock_monitor.c:(.text+0x48): undefined reference to `gpioSetMode'
+/usr/bin/ld: interlock_monitor.c:(.text+0x54): undefined reference to `gpioSetPullUpDown'
+/usr/bin/ld: /tmp/ccRc8YHu.o: in function `read_switch_state':
+interlock_monitor.c:(.text+0x70): undefined reference to `gpioRead'
+/usr/bin/ld: /tmp/ccRc8YHu.o: in function `main':
+interlock_monitor.c:(.text+0x2b8): undefined reference to `gpioSetAlertFunc'
+/usr/bin/ld: interlock_monitor.c:(.text+0x2e4): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Inference Build Error: Build errors detected:
+interlock_monitor.c:32:28: warning: missing braces around initializer [-Wmissing-braces]
+   32 | EventBuffer event_buffer = {{0}, 0, 0};
+      |                            ^
+      |                              {}
+/usr/bin/ld: /tmp/ccRc8YHu.o: in function `init_gpio':
+interlock_monitor.c:(.text+0x8): undefined reference to `gpioInitialise'
+/usr/bin/ld: interlock_monitor.c:(.text+0x48): undefined reference to `gpioSetMode'
+/usr/bin/ld: interlock_monitor.c:(.text+0x54): undefined reference to `gpioSetPullUpDown'
+/usr/bin/ld: /tmp/ccRc8YHu.o: in function `read_switch_state':
+interlock_monitor.c:(.text+0x70): undefined reference to `gpioRead'
+/usr/bin/ld: /tmp/ccRc8YHu.o: in function `main':
+interlock_monitor.c:(.text+0x2b8): undefined reference to `gpioSetAlertFunc'
+/usr/bin/ld: interlock_monitor.c:(.text+0x2e4): undefined reference to `gpioTerminate'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4244
+----------------------------------------
+ID: 4244
+----------------------------------------
+ID: 4244
+----------------------------------------
+ID: 4244
+----------------------------------------
+ID: 4244
+----------------------------------------
+ID: 4244
+----------------------------------------

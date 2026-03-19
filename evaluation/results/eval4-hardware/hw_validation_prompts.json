@@ -1,0 +1,62 @@
+[
+  {
+    "id": "5001",
+    "task": "Create a DHT11 Temperature And Humidity Console Reading Sensor_Reading Application for Home Automation",
+    "input": "Write a C program for Raspberry Pi 4 Model B using the `pigpio` library to read temperature and humidity data from a DHT11 sensor connected to GPIO 7, displaying readings to console every 5 seconds with timestamps, implementing robust error handling for sensor communication failures and invalid data readings.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5002", 
+    "task": "Create a Periodic Active Buzzer Control Simple_Actuator Application for Testing Purpose",
+    "input": "Write a C program for Raspberry Pi 4 Model B using the `wiringPi` library to control an active buzzer connected to GPIO 18, turning it on for 2 seconds and off for 3 seconds in a continuous loop, displaying the current state to console with timestamps, handling GPIO initialization errors gracefully.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5003",
+    "task": "Create a Simple LED Blinking Pattern Display Simple_Actuator Application for Visual Indication",
+    "input": "Write a C program for Raspberry Pi 4 Model B using `pigpio` library to control three LEDs connected to GPIO pins 16, 20, and 21, creating a sequential blinking pattern where each LED lights up for 1 second in sequence, printing the active LED number to console every second, with robust error handling for `pigpio` initialization.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5004",
+    "task": "Create a IR Obstacle Avoidance Sensor Motion Detection File_Logging Application for Robot Navigation",
+    "input": "Write a C program for Raspberry Pi 4 Model B using `pigpio` to continuously monitor an IR obstacle avoidance sensor with LM393 comparator connected to GPIO 22, logging obstacle detection events with timestamps and distance status to 'obstacle_log.txt', implementing debounce logic and handling sensor read errors with appropriate retry mechanisms.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5005",
+    "task": "Create a LDR Photoresistor Threshold LED Control Sensor_Actuator_Combo Application for Automatic Lighting",
+    "input": "Write a C program for Raspberry Pi 4 Model B using the `wiringPi` library to read light intensity from an LDR photoresistor via MCP3008 ADC connected to GPIO 22, turning on an LED connected to GPIO 18 when light level drops below threshold and turning it off when above threshold, printing light values and LED status to console every 2 seconds with error handling for SPI communication.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5006",
+    "task": "Create a Capacitive Touch Sensor Triggering Relay Module Interrupt_Driven Application for Smart Switch",
+    "input": "Write a C program for Raspberry Pi 4 Model B using `pigpio` library to implement touch-activated relay control, where a TTP223 capacitive touch sensor on GPIO 25 triggers interrupts to toggle a 5V relay module connected to GPIO 26, logging each touch event and relay state change with timestamps to 'touch_relay.log', handling interrupt setup errors gracefully.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5007", 
+    "task": "Create a DS18B20 Digital Temperature Sensor Threshold Alert System Sensor_Reading Application for Environmental Monitoring",
+    "input": "Write a C program for Raspberry Pi 4 Model B using the `wiringPi` library to monitor temperature using a DS18B20 digital temperature sensor on GPIO 21 via 1-Wire protocol, triggering visual alerts via 5mm RGB LED when temperature exceeds configurable thresholds, logging all temperature readings and alert events to 'temp_monitor.txt' with comprehensive 1-Wire communication error handling.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5008",
+    "task": "Create a Rotary Encoder Controlling Passive Buzzer Tones Sensor_Actuator_Combo Application for Audio Interface",
+    "input": "Write a C program for Raspberry Pi 4 Model B using `pigpio` to read rotation data from a rotary encoder with CLK and DT pins connected to GPIO pins 23 and 24, generating different frequency tones on a passive buzzer connected to GPIO 20 based on encoder position, implementing interrupt-driven encoder reading with robust error handling for GPIO setup and PWM generation.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5009",
+    "task": "Create a Flame Sensor Emergency Alert System Sensor_Reading Application for Fire Detection",
+    "input": "Write a C program for Raspberry Pi 4 Model B using the `wiringPi` library to continuously monitor an IR flame sensor with LM393 comparator connected to GPIO 27, triggering immediate alerts via active buzzer on GPIO 16 when flame is detected, logging all flame detection events with precise timestamps to 'fire_alerts.log', implementing sensor calibration and communication error recovery.",
+    "source": "sensor_kit_set"
+  },
+  {
+    "id": "5010",
+    "task": "Create a SW-420 Vibration Sensor Monitoring With Data Logging File_Logging Application for Security Monitoring",
+    "input": "Write a C program for Raspberry Pi 4 Model B using `pigpio` library to detect vibrations using a SW-420 vibration sensor on GPIO 15, implementing interrupt-driven detection to log shock events with timestamps and intensity levels to 'vibration_log.txt', activating a two-color LED warning system on GPIO pins 5 and 6, with comprehensive error handling for interrupt setup and file operations.",
+    "source": "sensor_kit_set"
+  }
+]

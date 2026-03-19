@@ -1,0 +1,9 @@
+Model,Accuracy
+CodeLLaMA-7B-HF,80.9
+Mistral-7B-Instructv0.3,89.3
+StarCoder2-7B,86.6
+DeepSeek-Coder 6.7B-Instruct,90.05
+Qwen2.5-7B-Instruct,87.72
+Falcon3-7B-Instruct,85.6
+GPT-4o,89.29
+Gemini-Flash-2.0,87.22

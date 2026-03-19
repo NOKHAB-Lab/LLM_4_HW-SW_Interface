@@ -1,0 +1,1266 @@
+ID: 1599
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0777
+  Inference Syntax Error: Syntax errors detected:
+proximity_alert.c: In function ‘generate_tone’:
+proximity_alert.c:17:9: warning: implicit declaration of function ‘gpioWaveAddPulse’; did you mean ‘gpioWaveGetPulses’? [-Wimplicit-function-declaration]
+   17 |         gpioWaveAddPulse(gpioPulse(pin, 0, period / 2));
+      |         ^~~~~~~~~~~~~~~~
+      |         gpioWaveGetPulses
+proximity_alert.c:17:26: warning: implicit declaration of function ‘gpioPulse’ [-Wimplicit-function-declaration]
+   17 |         gpioWaveAddPulse(gpioPulse(pin, 0, period / 2));
+      |                          ^~~~~~~~~
+proximity_alert.c:23:37: error: ‘PI_WAVE_MODE_LOOP’ undeclared (first use in this function); did you mean ‘PI_WAVE_MODE_REPEAT’?
+   23 |             gpioWaveTxSend(wave_id, PI_WAVE_MODE_LOOP);
+      |                                     ^~~~~~~~~~~~~~~~~
+      |                                     PI_WAVE_MODE_REPEAT
+proximity_alert.c:23:37: note: each undeclared identifier is reported only once for each function it appears in
+  Inference Build Error: Build errors detected:
+proximity_alert.c: In function ‘generate_tone’:
+proximity_alert.c:17:9: warning: implicit declaration of function ‘gpioWaveAddPulse’; did you mean ‘gpioWaveGetPulses’? [-Wimplicit-function-declaration]
+   17 |         gpioWaveAddPulse(gpioPulse(pin, 0, period / 2));
+      |         ^~~~~~~~~~~~~~~~
+      |         gpioWaveGetPulses
+proximity_alert.c:17:26: warning: implicit declaration of function ‘gpioPulse’ [-Wimplicit-function-declaration]
+   17 |         gpioWaveAddPulse(gpioPulse(pin, 0, period / 2));
+      |                          ^~~~~~~~~
+proximity_alert.c:23:37: error: ‘PI_WAVE_MODE_LOOP’ undeclared (first use in this function); did you mean ‘PI_WAVE_MODE_REPEAT’?
+   23 |             gpioWaveTxSend(wave_id, PI_WAVE_MODE_LOOP);
+      |                                     ^~~~~~~~~~~~~~~~~
+      |                                     PI_WAVE_MODE_REPEAT
+proximity_alert.c:23:37: note: each undeclared identifier is reported only once for each function it appears in
+----------------------------------------
+ID: 0647
+----------------------------------------
+ID: 2693
+  Inference Syntax Error: Syntax errors detected:
+motion_detector.c: In function ‘main’:
+motion_detector.c:17:55: warning: implicit declaration of function ‘strerror’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+   17 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                       ^~~~~~~~
+      |                                                       perror
+motion_detector.c:17:49: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   17 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                ~^     ~~~~~~~~~~~~~~~
+      |                                                 |     |
+      |                                                 |     int
+      |                                                 char *
+      |                                                %d
+motion_detector.c:21:48: error: ‘motionDetected’ undeclared (first use in this function)
+   21 |     if (wiringPiISR(PIR_PIN, INT_EDGE_RISING, &motionDetected) < 0) {
+      |                                                ^~~~~~~~~~~~~~
+motion_detector.c:21:48: note: each undeclared identifier is reported only once for each function it appears in
+motion_detector.c:22:48: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   22 |         fprintf(stderr, "Unable to setup ISR: %s\n", strerror(errno));
+      |                                               ~^     ~~~~~~~~~~~~~~~
+      |                                                |     |
+      |                                                |     int
+      |                                                char *
+      |                                               %d
+motion_detector.c:38:58: warning: format ‘%s’ expects argument of type ‘char *’, but argument 4 has type ‘int’ [-Wformat=]
+   38 |                 fprintf(stderr, "Error opening file %s: %s\n", LOG_FILE, strerror(errno));
+      |                                                         ~^               ~~~~~~~~~~~~~~~
+      |                                                          |               |
+      |                                                          char *          int
+      |                                                         %d
+motion_detector.c:46:58: warning: format ‘%s’ expects argument of type ‘char *’, but argument 4 has type ‘int’ [-Wformat=]
+   46 |                 fprintf(stderr, "Error closing file %s: %s\n", LOG_FILE, strerror(errno));
+      |                                                         ~^               ~~~~~~~~~~~~~~~
+      |                                                          |               |
+      |                                                          char *          int
+      |                                                         %d
+  Inference Build Error: Build errors detected:
+motion_detector.c: In function ‘main’:
+motion_detector.c:17:55: warning: implicit declaration of function ‘strerror’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+   17 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                       ^~~~~~~~
+      |                                                       perror
+motion_detector.c:21:48: error: ‘motionDetected’ undeclared (first use in this function)
+   21 |     if (wiringPiISR(PIR_PIN, INT_EDGE_RISING, &motionDetected) < 0) {
+      |                                                ^~~~~~~~~~~~~~
+motion_detector.c:21:48: note: each undeclared identifier is reported only once for each function it appears in
+----------------------------------------
+ID: 1507
+----------------------------------------
+ID: 1097
+----------------------------------------
+ID: 0912
+  Inference Syntax Error: Syntax errors detected:
+motion_sensor.c: In function ‘pir_callback’:
+motion_sensor.c:30:24: error: too few arguments to function ‘gpioTime’
+   30 |     int current_time = gpioTime();
+      |                        ^~~~~~~~
+In file included from motion_sensor.c:3:
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+  Inference Build Error: Build errors detected:
+motion_sensor.c: In function ‘pir_callback’:
+motion_sensor.c:30:24: error: too few arguments to function ‘gpioTime’
+   30 |     int current_time = gpioTime();
+      |                        ^~~~~~~~
+In file included from motion_sensor.c:3:
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+----------------------------------------
+ID: 441
+----------------------------------------
+ID: 4220
+  Inference Syntax Error: Syntax errors detected:
+pir_buzzer.c: In function ‘main’:
+pir_buzzer.c:41:55: warning: implicit declaration of function ‘strerror’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+   41 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                       ^~~~~~~~
+      |                                                       perror
+pir_buzzer.c:41:64: error: ‘errno’ undeclared (first use in this function)
+   41 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+pir_buzzer.c:5:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    4 | #include <signal.h>
+  +++ |+#include <errno.h>
+    5 | 
+pir_buzzer.c:41:64: note: each undeclared identifier is reported only once for each function it appears in
+   41 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+  Inference Build Error: Build errors detected:
+pir_buzzer.c: In function ‘main’:
+pir_buzzer.c:41:55: warning: implicit declaration of function ‘strerror’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+   41 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                       ^~~~~~~~
+      |                                                       perror
+pir_buzzer.c:41:64: error: ‘errno’ undeclared (first use in this function)
+   41 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+pir_buzzer.c:5:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    4 | #include <signal.h>
+  +++ |+#include <errno.h>
+    5 | 
+pir_buzzer.c:41:64: note: each undeclared identifier is reported only once for each function it appears in
+   41 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+----------------------------------------
+ID: 3109
+----------------------------------------
+ID: 0687
+  Inference Syntax Error: Syntax errors detected:
+parking_assist.c: In function ‘getDistance’:
+parking_assist.c:103:24: error: too few arguments to function ‘gpioTime’
+  103 |     double startTime = gpioTime();
+      |                        ^~~~~~~~
+In file included from parking_assist.c:3:
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:104:40: error: too few arguments to function ‘gpioTime’
+  104 |     while (gpioRead(ECHO_PIN) == 0 && (gpioTime() - startTime) < 0.1) {
+      |                                        ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:107:17: error: too few arguments to function ‘gpioTime’
+  107 |     startTime = gpioTime();
+      |                 ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:109:22: error: too few arguments to function ‘gpioTime’
+  109 |     double endTime = gpioTime();
+      |                      ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:110:40: error: too few arguments to function ‘gpioTime’
+  110 |     while (gpioRead(ECHO_PIN) == 1 && (gpioTime() - endTime) < 0.1) {
+      |                                        ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:112:19: error: too few arguments to function ‘gpioTime’
+  112 |         endTime = gpioTime();
+      |                   ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:114:15: error: too few arguments to function ‘gpioTime’
+  114 |     endTime = gpioTime();
+      |               ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:102:12: warning: unused variable ‘start’ [-Wunused-variable]
+  102 |     double start = gpioRead(ECHO_PIN);
+      |            ^~~~~
+  Inference Build Error: Build errors detected:
+parking_assist.c: In function ‘getDistance’:
+parking_assist.c:103:24: error: too few arguments to function ‘gpioTime’
+  103 |     double startTime = gpioTime();
+      |                        ^~~~~~~~
+In file included from parking_assist.c:3:
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:104:40: error: too few arguments to function ‘gpioTime’
+  104 |     while (gpioRead(ECHO_PIN) == 0 && (gpioTime() - startTime) < 0.1) {
+      |                                        ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:107:17: error: too few arguments to function ‘gpioTime’
+  107 |     startTime = gpioTime();
+      |                 ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:109:22: error: too few arguments to function ‘gpioTime’
+  109 |     double endTime = gpioTime();
+      |                      ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:110:40: error: too few arguments to function ‘gpioTime’
+  110 |     while (gpioRead(ECHO_PIN) == 1 && (gpioTime() - endTime) < 0.1) {
+      |                                        ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:112:19: error: too few arguments to function ‘gpioTime’
+  112 |         endTime = gpioTime();
+      |                   ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+parking_assist.c:114:15: error: too few arguments to function ‘gpioTime’
+  114 |     endTime = gpioTime();
+      |               ^~~~~~~~
+/usr/local/include/pigpio.h:4165:5: note: declared here
+ 4165 | int gpioTime(unsigned timetype, int *seconds, int *micros);
+      |     ^~~~~~~~
+----------------------------------------
+ID: 1483
+----------------------------------------
+ID: 0628
+----------------------------------------
+ID: 3073
+  Inference Syntax Error: Syntax errors detected:
+oled_clock.c:6:10: fatal error: ssd1306.h: No such file or directory
+    6 | #include "ssd1306.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+oled_clock.c:6:10: fatal error: ssd1306.h: No such file or directory
+    6 | #include "ssd1306.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+cc1: fatal error: ssd1306.c: No such file or directory
+compilation terminated.
+----------------------------------------
+ID: 3339
+----------------------------------------
+ID: 1288
+----------------------------------------
+ID: 108
+  Inference Syntax Error: Syntax errors detected:
+tilt_detector.c: In function ‘tilt_interrupt’:
+tilt_detector.c:32:38: error: ‘PI_FALLING_EDGE’ undeclared (first use in this function); did you mean ‘FALLING_EDGE’?
+   32 |     if (gpio == TILT_PIN && level == PI_FALLING_EDGE) {
+      |                                      ^~~~~~~~~~~~~~~
+      |                                      FALLING_EDGE
+tilt_detector.c:32:38: note: each undeclared identifier is reported only once for each function it appears in
+  Inference Build Error: Build errors detected:
+tilt_detector.c: In function ‘tilt_interrupt’:
+tilt_detector.c:32:38: error: ‘PI_FALLING_EDGE’ undeclared (first use in this function); did you mean ‘FALLING_EDGE’?
+   32 |     if (gpio == TILT_PIN && level == PI_FALLING_EDGE) {
+      |                                      ^~~~~~~~~~~~~~~
+      |                                      FALLING_EDGE
+tilt_detector.c:32:38: note: each undeclared identifier is reported only once for each function it appears in
+----------------------------------------
+ID: 474
+  Inference Syntax Error: Syntax errors detected:
+smart_irrigation.c: In function ‘read_mcp3008’:
+smart_irrigation.c:125:25: warning: pointer targets in passing argument 2 of ‘spiXfer’ differ in signedness [-Wpointer-sign]
+  125 |     if (spiXfer(handle, tx_buffer, rx_buffer, 3) == 3) {
+      |                         ^~~~~~~~~
+      |                         |
+      |                         unsigned char *
+In file included from smart_irrigation.c:6:
+/usr/local/include/pigpio.h:3408:36: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+ 3408 | int spiXfer(unsigned handle, char *txBuf, char *rxBuf, unsigned count);
+      |                              ~~~~~~^~~~~
+smart_irrigation.c:125:36: warning: pointer targets in passing argument 3 of ‘spiXfer’ differ in signedness [-Wpointer-sign]
+  125 |     if (spiXfer(handle, tx_buffer, rx_buffer, 3) == 3) {
+      |                                    ^~~~~~~~~
+      |                                    |
+      |                                    unsigned char *
+/usr/local/include/pigpio.h:3408:49: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+ 3408 | int spiXfer(unsigned handle, char *txBuf, char *rxBuf, unsigned count);
+      |                                           ~~~~~~^~~~~
+smart_irrigation.c: In function ‘log_activation’:
+smart_irrigation.c:175:25: warning: missing terminating " character
+  175 |             fprintf(fp, "{\n  \"irrigation_events\": [
+      |                         ^
+smart_irrigation.c:175:25: error: missing terminating " character
+  175 |             fprintf(fp, "{\n  \"irrigation_events\": [
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:176:5: error: expected expression before ‘{’ token
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |     ^
+smart_irrigation.c:176:6: error: stray ‘\’ in program
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |      ^
+smart_irrigation.c:176:14: error: stray ‘\’ in program
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |              ^
+smart_irrigation.c:176:15: warning: missing terminating " character
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |               ^
+smart_irrigation.c:176:15: error: missing terminating " character
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:177:1: warning: missing terminating " character
+  177 | ", timestamp_str, zone_number);
+      | ^
+smart_irrigation.c:177:1: error: missing terminating " character
+  177 | ", timestamp_str, zone_number);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:180:25: warning: missing terminating " character
+  180 |             fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |                         ^
+smart_irrigation.c:180:25: error: missing terminating " character
+  180 |             fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:181:1: warning: missing terminating " character
+  181 | ", timestamp_str, zone_number);
+      | ^
+smart_irrigation.c:181:1: error: missing terminating " character
+  181 | ", timestamp_str, zone_number);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:189:21: warning: missing terminating " character
+  189 |         fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"end\"\n    }
+      |                     ^
+smart_irrigation.c:189:21: error: missing terminating " character
+  189 |         fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"end\"\n    }
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:190:1: warning: missing terminating " character
+  190 | ", timestamp_str, zone_number);
+      | ^
+smart_irrigation.c:190:1: error: missing terminating " character
+  190 | ", timestamp_str, zone_number);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:201:1: error: expected declaration or statement at end of input
+  201 | }
+      | ^
+smart_irrigation.c:201:1: error: expected declaration or statement at end of input
+smart_irrigation.c:201:1: error: expected declaration or statement at end of input
+  Inference Build Error: Build errors detected:
+smart_irrigation.c: In function ‘log_activation’:
+smart_irrigation.c:175:25: warning: missing terminating " character
+  175 |             fprintf(fp, "{\n  \"irrigation_events\": [
+      |                         ^
+smart_irrigation.c:175:25: error: missing terminating " character
+  175 |             fprintf(fp, "{\n  \"irrigation_events\": [
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:176:5: error: expected expression before ‘{’ token
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |     ^
+smart_irrigation.c:176:6: error: stray ‘\’ in program
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |      ^
+smart_irrigation.c:176:14: error: stray ‘\’ in program
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |              ^
+smart_irrigation.c:176:15: warning: missing terminating " character
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |               ^
+smart_irrigation.c:176:15: error: missing terminating " character
+  176 |     {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:177:1: warning: missing terminating " character
+  177 | ", timestamp_str, zone_number);
+      | ^
+smart_irrigation.c:177:1: error: missing terminating " character
+  177 | ", timestamp_str, zone_number);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:180:25: warning: missing terminating " character
+  180 |             fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |                         ^
+smart_irrigation.c:180:25: error: missing terminating " character
+  180 |             fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"start\"\n    }
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:181:1: warning: missing terminating " character
+  181 | ", timestamp_str, zone_number);
+      | ^
+smart_irrigation.c:181:1: error: missing terminating " character
+  181 | ", timestamp_str, zone_number);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:189:21: warning: missing terminating " character
+  189 |         fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"end\"\n    }
+      |                     ^
+smart_irrigation.c:189:21: error: missing terminating " character
+  189 |         fprintf(fp, ",\n    {\n      \"timestamp\": \"%s\",\n      \"zone\": %d,\n      \"status\": \"end\"\n    }
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:190:1: warning: missing terminating " character
+  190 | ", timestamp_str, zone_number);
+      | ^
+smart_irrigation.c:190:1: error: missing terminating " character
+  190 | ", timestamp_str, zone_number);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_irrigation.c:201:1: error: expected declaration or statement at end of input
+  201 | }
+      | ^
+smart_irrigation.c:201:1: error: expected declaration or statement at end of input
+smart_irrigation.c:201:1: error: expected declaration or statement at end of input
+----------------------------------------
+ID: 4398
+----------------------------------------
+ID: 431
+----------------------------------------
+ID: 4587
+  Inference Syntax Error: Syntax errors detected:
+gate_control.c:7:10: fatal error: vl53l1x_api.h: No such file or directory
+    7 | #include <vl53l1x_api.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+gate_control.c:7:10: fatal error: vl53l1x_api.h: No such file or directory
+    7 | #include <vl53l1x_api.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 224
+  Inference Build Error: Build errors detected:
+aht20_fan_control.c: In function ‘aht20_init’:
+aht20_fan_control.c:20:9: warning: implicit declaration of function ‘i2cWriteI2C’; did you mean ‘i2cWriteByte’? [-Wimplicit-function-declaration]
+   20 |     if (i2cWriteI2C(i2c_handle, init_cmd, 3) != 0) {
+      |         ^~~~~~~~~~~
+      |         i2cWriteByte
+aht20_fan_control.c: In function ‘aht20_read’:
+aht20_fan_control.c:39:9: warning: implicit declaration of function ‘i2cReadI2C’ [-Wimplicit-function-declaration]
+   39 |     if (i2cReadI2C(i2c_handle, (char *)data, 6) != 6) {
+      |         ^~~~~~~~~~
+/usr/bin/ld: /tmp/ccfxI0aR.o: in function `aht20_init':
+aht20_fan_control.c:(.text+0x38): undefined reference to `i2cWriteI2C'
+/usr/bin/ld: /tmp/ccfxI0aR.o: in function `aht20_read':
+aht20_fan_control.c:(.text+0xc4): undefined reference to `i2cWriteI2C'
+/usr/bin/ld: aht20_fan_control.c:(.text+0x114): undefined reference to `i2cReadI2C'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 414
+  Inference Syntax Error: Syntax errors detected:
+chicken_coop_door.c: In function ‘main’:
+chicken_coop_door.c:52:64: error: ‘errno’ undeclared (first use in this function)
+   52 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+chicken_coop_door.c:6:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    5 | #include <wiringPi.h>
+  +++ |+#include <errno.h>
+    6 | 
+chicken_coop_door.c:52:64: note: each undeclared identifier is reported only once for each function it appears in
+   52 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+  Inference Build Error: Build errors detected:
+chicken_coop_door.c: In function ‘main’:
+chicken_coop_door.c:52:64: error: ‘errno’ undeclared (first use in this function)
+   52 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+chicken_coop_door.c:6:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    5 | #include <wiringPi.h>
+  +++ |+#include <errno.h>
+    6 | 
+chicken_coop_door.c:52:64: note: each undeclared identifier is reported only once for each function it appears in
+   52 |         fprintf(stderr, "wiringPiSetup failed: %s\n", strerror(errno));
+      |                                                                ^~~~~
+----------------------------------------
+ID: 3202
+----------------------------------------
+ID: 2931
+----------------------------------------
+ID: 3275
+  Inference Syntax Error: Syntax errors detected:
+soil_moisture_sensor.c: In function ‘logData’:
+soil_moisture_sensor.c:43:17: warning: missing terminating " character
+   43 |     fprintf(fp, "%d-%02d-%02d %02d:%02d:%02d, Moisture: %d%%
+      |                 ^
+soil_moisture_sensor.c:43:17: error: missing terminating " character
+   43 |     fprintf(fp, "%d-%02d-%02d %02d:%02d:%02d, Moisture: %d%%
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+soil_moisture_sensor.c:44:1: warning: missing terminating " character
+   44 | ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, moisture);
+      | ^
+soil_moisture_sensor.c:44:1: error: missing terminating " character
+   44 | ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, moisture);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+soil_moisture_sensor.c:46:15: error: expected ‘)’ before ‘;’ token
+   46 |     fclose(fp);
+      |               ^
+      |               )
+soil_moisture_sensor.c:43:12: note: to match this ‘(’
+   43 |     fprintf(fp, "%d-%02d-%02d %02d:%02d:%02d, Moisture: %d%%
+      |            ^
+soil_moisture_sensor.c:46:5: warning: passing argument 2 of ‘fprintf’ makes pointer from integer without a cast [-Wint-conversion]
+   46 |     fclose(fp);
+      |     ^~~~~~~~~~
+      |     |
+      |     int
+In file included from soil_moisture_sensor.c:1:
+/usr/include/stdio.h:351:44: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  351 |                     const char *__restrict __format, ...);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+soil_moisture_sensor.c:46:16: error: expected ‘;’ before ‘}’ token
+   46 |     fclose(fp);
+      |                ^
+      |                ;
+   47 | }
+      | ~               
+soil_moisture_sensor.c:42:15: warning: unused variable ‘tm’ [-Wunused-variable]
+   42 |     struct tm tm = *localtime(&t);
+      |               ^~
+  Inference Build Error: Build errors detected:
+soil_moisture_sensor.c: In function ‘logData’:
+soil_moisture_sensor.c:43:17: warning: missing terminating " character
+   43 |     fprintf(fp, "%d-%02d-%02d %02d:%02d:%02d, Moisture: %d%%
+      |                 ^
+soil_moisture_sensor.c:43:17: error: missing terminating " character
+   43 |     fprintf(fp, "%d-%02d-%02d %02d:%02d:%02d, Moisture: %d%%
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+soil_moisture_sensor.c:44:1: warning: missing terminating " character
+   44 | ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, moisture);
+      | ^
+soil_moisture_sensor.c:44:1: error: missing terminating " character
+   44 | ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, moisture);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+soil_moisture_sensor.c:46:15: error: expected ‘)’ before ‘;’ token
+   46 |     fclose(fp);
+      |               ^
+      |               )
+soil_moisture_sensor.c:43:12: note: to match this ‘(’
+   43 |     fprintf(fp, "%d-%02d-%02d %02d:%02d:%02d, Moisture: %d%%
+      |            ^
+soil_moisture_sensor.c:46:5: warning: passing argument 2 of ‘fprintf’ makes pointer from integer without a cast [-Wint-conversion]
+   46 |     fclose(fp);
+      |     ^~~~~~~~~~
+      |     |
+      |     int
+In file included from soil_moisture_sensor.c:1:
+/usr/include/stdio.h:351:44: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  351 |                     const char *__restrict __format, ...);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+soil_moisture_sensor.c:46:16: error: expected ‘;’ before ‘}’ token
+   46 |     fclose(fp);
+      |                ^
+      |                ;
+   47 | }
+      | ~
+----------------------------------------
+ID: 3277
+  Inference Syntax Error: Syntax errors detected:
+dht22_logger.c:5:10: fatal error: dht22.h: No such file or directory
+    5 | #include <dht22.h>
+      |          ^~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+dht22_logger.c:5:10: fatal error: dht22.h: No such file or directory
+    5 | #include <dht22.h>
+      |          ^~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 0610
+----------------------------------------
+ID: 1428
+----------------------------------------
+ID: 0421
+----------------------------------------
+ID: 1996
+----------------------------------------
+ID: 3115
+----------------------------------------
+ID: 2053
+  Inference Syntax Error: Syntax errors detected:
+pir_buzzer.c: In function ‘main’:
+pir_buzzer.c:45:71: error: ‘errno’ undeclared (first use in this function)
+   45 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+pir_buzzer.c:6:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    5 | #include <string.h>
+  +++ |+#include <errno.h>
+    6 | 
+pir_buzzer.c:45:71: note: each undeclared identifier is reported only once for each function it appears in
+   45 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+  Inference Build Error: Build errors detected:
+pir_buzzer.c: In function ‘main’:
+pir_buzzer.c:45:71: error: ‘errno’ undeclared (first use in this function)
+   45 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+pir_buzzer.c:6:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    5 | #include <string.h>
+  +++ |+#include <errno.h>
+    6 | 
+pir_buzzer.c:45:71: note: each undeclared identifier is reported only once for each function it appears in
+   45 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+----------------------------------------
+ID: 0223
+----------------------------------------
+ID: 4446
+  Inference Syntax Error: Syntax errors detected:
+vl53l1x_pir_logger.c:7:10: fatal error: vl53l1x_api.h: No such file or directory
+    7 | #include "vl53l1x_api.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+vl53l1x_pir_logger.c:7:10: fatal error: vl53l1x_api.h: No such file or directory
+    7 | #include "vl53l1x_api.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 1913
+----------------------------------------
+ID: 0234
+  Inference Syntax Error: Syntax errors detected:
+bmp180_pressure_monitor.c: In function ‘readCalibrationData’:
+bmp180_pressure_monitor.c:71:18: error: ‘BMP180_REG_CAL_MB’ undeclared (first use in this function); did you mean ‘BMP180_REG_CAL_B1’?
+   71 |     mb = readS16(BMP180_REG_CAL_MB);
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  BMP180_REG_CAL_B1
+bmp180_pressure_monitor.c:71:18: note: each undeclared identifier is reported only once for each function it appears in
+bmp180_pressure_monitor.c:72:18: error: ‘BMP180_REG_CAL_MC’ undeclared (first use in this function); did you mean ‘BMP180_REG_CAL_AC6’?
+   72 |     mc = readS16(BMP180_REG_CAL_MC);
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  BMP180_REG_CAL_AC6
+bmp180_pressure_monitor.c:73:18: error: ‘BMP180_REG_CAL_MD’ undeclared (first use in this function); did you mean ‘BMP180_REG_CAL_B1’?
+   73 |     md = readS16(BMP180_REG_CAL_MD);
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  BMP180_REG_CAL_B1
+bmp180_pressure_monitor.c: In function ‘calculatePressure’:
+bmp180_pressure_monitor.c:123:13: warning: unused variable ‘x4’ [-Wunused-variable]
+  123 |     int32_t x4 = ((int32_t)ac2 * b6) >> 11;
+      |             ^~
+bmp180_pressure_monitor.c: In function ‘main’:
+bmp180_pressure_monitor.c:194:43: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘__suseconds_t’ {aka ‘long int’} [-Wformat=]
+  194 |         snprintf(buf, sizeof(buf), "%s.%06d", tmbuf, tv.tv_usec);
+      |                                        ~~~^          ~~~~~~~~~~
+      |                                           |            |
+      |                                           int          __suseconds_t {aka long int}
+      |                                        %06ld
+  Inference Build Error: Build errors detected:
+bmp180_pressure_monitor.c: In function ‘readCalibrationData’:
+bmp180_pressure_monitor.c:71:18: error: ‘BMP180_REG_CAL_MB’ undeclared (first use in this function); did you mean ‘BMP180_REG_CAL_B1’?
+   71 |     mb = readS16(BMP180_REG_CAL_MB);
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  BMP180_REG_CAL_B1
+bmp180_pressure_monitor.c:71:18: note: each undeclared identifier is reported only once for each function it appears in
+bmp180_pressure_monitor.c:72:18: error: ‘BMP180_REG_CAL_MC’ undeclared (first use in this function); did you mean ‘BMP180_REG_CAL_AC6’?
+   72 |     mc = readS16(BMP180_REG_CAL_MC);
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  BMP180_REG_CAL_AC6
+bmp180_pressure_monitor.c:73:18: error: ‘BMP180_REG_CAL_MD’ undeclared (first use in this function); did you mean ‘BMP180_REG_CAL_B1’?
+   73 |     md = readS16(BMP180_REG_CAL_MD);
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  BMP180_REG_CAL_B1
+----------------------------------------
+ID: 3816
+----------------------------------------
+ID: 1378
+----------------------------------------
+ID: 0374
+----------------------------------------
+ID: 1400
+  Inference Build Error: Build errors detected:
+proximity_doorbell.c: In function ‘play_melody’:
+proximity_doorbell.c:80:9: warning: implicit declaration of function ‘gpioSetPWMFrequency’; did you mean ‘gpioSetPWMfrequency’? [-Wimplicit-function-declaration]
+   80 |         gpioSetPWMFrequency(BUZZER_PIN, melody[i]);
+      |         ^~~~~~~~~~~~~~~~~~~
+      |         gpioSetPWMfrequency
+/usr/bin/ld: /tmp/ccewf1Vy.o: in function `play_melody':
+proximity_doorbell.c:(.text+0x1b8): undefined reference to `gpioSetPWMFrequency'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 1519
+----------------------------------------
+ID: 0957
+  Inference Build Error: Build errors detected:
+bme280_logger.c: In function ‘main’:
+bme280_logger.c:64:9: warning: implicit declaration of function ‘wiringPiSetup’; did you mean ‘wiringPiI2CSetup’? [-Wimplicit-function-declaration]
+   64 |     if (wiringPiSetup() == -1) {
+      |         ^~~~~~~~~~~~~
+      |         wiringPiI2CSetup
+bme280_logger.c:105:9: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+  105 |         delay(1000);
+      |         ^~~~~
+bme280_logger.c: In function ‘bme280_read_calibration_data’:
+bme280_logger.c:129:14: warning: implicit declaration of function ‘wiringPiI2CReadReg16LE’; did you mean ‘wiringPiI2CReadReg16’? [-Wimplicit-function-declaration]
+  129 |     dig_T1 = wiringPiI2CReadReg16LE(fd, BME280_REG_CALIB_00);
+      |              ^~~~~~~~~~~~~~~~~~~~~~
+      |              wiringPiI2CReadReg16
+/usr/bin/ld: /tmp/ccVHySVc.o: in function `bme280_read_calibration_data':
+bme280_logger.c:(.text+0x26c): undefined reference to `wiringPiI2CReadReg16LE'
+/usr/bin/ld: bme280_logger.c:(.text+0x290): undefined reference to `wiringPiI2CReadReg16LE'
+/usr/bin/ld: bme280_logger.c:(.text+0x2b4): undefined reference to `wiringPiI2CReadReg16LE'
+/usr/bin/ld: bme280_logger.c:(.text+0x2d8): undefined reference to `wiringPiI2CReadReg16LE'
+/usr/bin/ld: bme280_logger.c:(.text+0x2fc): undefined reference to `wiringPiI2CReadReg16LE'
+/usr/bin/ld: /tmp/ccVHySVc.o:bme280_logger.c:(.text+0x320): more undefined references to `wiringPiI2CReadReg16LE' follow
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 483
+  Inference Syntax Error: Syntax errors detected:
+oled_test.c:5:10: fatal error: ssd1306.h: No such file or directory
+    5 | #include "ssd1306.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+oled_test.c:5:10: fatal error: ssd1306.h: No such file or directory
+    5 | #include "ssd1306.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+cc1: fatal error: ssd1306.c: No such file or directory
+compilation terminated.
+----------------------------------------
+ID: 4244
+----------------------------------------
+ID: 1374
+----------------------------------------
+ID: 4363
+----------------------------------------
+ID: 1373
+----------------------------------------
+ID: 1533
+----------------------------------------
+ID: 2144
+----------------------------------------
+ID: 4623
+  Inference Syntax Error: Syntax errors detected:
+hmc5883l_led.c: In function ‘i2c_write_reg’:
+hmc5883l_led.c:31:9: warning: implicit declaration of function ‘i2cWriteI2C’; did you mean ‘i2cWriteByte’? [-Wimplicit-function-declaration]
+   31 |     if (i2cWriteI2C(handle, buf, 2) != 2) {
+      |         ^~~~~~~~~~~
+      |         i2cWriteByte
+hmc5883l_led.c: In function ‘i2c_read_reg’:
+hmc5883l_led.c:44:9: warning: implicit declaration of function ‘i2cReadI2C’ [-Wimplicit-function-declaration]
+   44 |     if (i2cReadI2C(handle, (char *)value, 1) != 1) {
+      |         ^~~~~~~~~~
+hmc5883l_led.c: In function ‘main’:
+hmc5883l_led.c:80:59: error: expected ‘)’ before ‘;’ token
+   80 |     if (i2c_write_reg(handle, HMC5883L_CONFIG_B, 0xA0) < 0;
+      |        ~                                                  ^
+      |                                                           )
+hmc5883l_led.c:134:1: error: expected expression before ‘}’ token
+  134 | }
+      | ^
+  Inference Build Error: Build errors detected:
+hmc5883l_led.c: In function ‘i2c_write_reg’:
+hmc5883l_led.c:31:9: warning: implicit declaration of function ‘i2cWriteI2C’; did you mean ‘i2cWriteByte’? [-Wimplicit-function-declaration]
+   31 |     if (i2cWriteI2C(handle, buf, 2) != 2) {
+      |         ^~~~~~~~~~~
+      |         i2cWriteByte
+hmc5883l_led.c: In function ‘i2c_read_reg’:
+hmc5883l_led.c:44:9: warning: implicit declaration of function ‘i2cReadI2C’ [-Wimplicit-function-declaration]
+   44 |     if (i2cReadI2C(handle, (char *)value, 1) != 1) {
+      |         ^~~~~~~~~~
+hmc5883l_led.c: In function ‘main’:
+hmc5883l_led.c:80:59: error: expected ‘)’ before ‘;’ token
+   80 |     if (i2c_write_reg(handle, HMC5883L_CONFIG_B, 0xA0) < 0;
+      |        ~                                                  ^
+      |                                                           )
+hmc5883l_led.c:134:1: error: expected expression before ‘}’ token
+  134 | }
+      | ^
+----------------------------------------
+ID: 4801
+----------------------------------------
+ID: 0099
+----------------------------------------
+ID: 0850
+  Inference Build Error: Build errors detected:
+door_lock_control.c: In function ‘button_callback’:
+door_lock_control.c:68:9: warning: implicit declaration of function ‘gpioTickDiff’; did you mean ‘gpioTick’? [-Wimplicit-function-declaration]
+   68 |     if (gpioTickDiff(last_tick, tick) > DEBOUNCE_DELAY * 1000) {
+      |         ^~~~~~~~~~~~
+      |         gpioTick
+/usr/bin/ld: /tmp/ccd9mL0o.o: in function `button_callback':
+door_lock_control.c:(.text+0x1ac): undefined reference to `gpioTickDiff'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 42
+----------------------------------------
+ID: 402
+----------------------------------------
+ID: 302
+----------------------------------------
+ID: 850
+----------------------------------------
+ID: 4856
+----------------------------------------
+ID: 1484
+----------------------------------------
+ID: 355
+  Inference Syntax Error: Syntax errors detected:
+motion_detector.c: In function ‘main’:
+motion_detector.c:39:62: warning: implicit declaration of function ‘strerror’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+   39 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                              ^~~~~~~~
+      |                                                              perror
+motion_detector.c:39:71: error: ‘errno’ undeclared (first use in this function)
+   39 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+motion_detector.c:6:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    5 | #include <wiringPi.h>
+  +++ |+#include <errno.h>
+    6 | 
+motion_detector.c:39:71: note: each undeclared identifier is reported only once for each function it appears in
+   39 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+  Inference Build Error: Build errors detected:
+motion_detector.c: In function ‘main’:
+motion_detector.c:39:62: warning: implicit declaration of function ‘strerror’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+   39 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                              ^~~~~~~~
+      |                                                              perror
+motion_detector.c:39:71: error: ‘errno’ undeclared (first use in this function)
+   39 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+motion_detector.c:6:1: note: ‘errno’ is defined in header ‘<errno.h>’; did you forget to ‘#include <errno.h>’?
+    5 | #include <wiringPi.h>
+  +++ |+#include <errno.h>
+    6 | 
+motion_detector.c:39:71: note: each undeclared identifier is reported only once for each function it appears in
+   39 |         fprintf(stderr, "Error initializing wiringPi: %s\n", strerror(errno));
+      |                                                                       ^~~~~
+----------------------------------------
+ID: 0446
+----------------------------------------
+ID: 664
+----------------------------------------
+ID: 1085
+  Inference Syntax Error: Syntax errors detected:
+motion_detector.c: In function ‘log_motion’:
+motion_detector.c:22:21: warning: missing terminating " character
+   22 |         fprintf(fp, "%s: Motion detected!
+      |                     ^
+motion_detector.c:22:21: error: missing terminating " character
+   22 |         fprintf(fp, "%s: Motion detected!
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:23:1: warning: missing terminating " character
+   23 | ", timestamp);
+      | ^
+motion_detector.c:23:1: error: missing terminating " character
+   23 | ", timestamp);
+      | ^~~~~~~~~~~~~~
+motion_detector.c:24:19: error: expected ‘)’ before ‘;’ token
+   24 |         fclose(fp);
+      |                   ^
+      |                   )
+motion_detector.c:22:16: note: to match this ‘(’
+   22 |         fprintf(fp, "%s: Motion detected!
+      |                ^
+motion_detector.c:24:9: warning: passing argument 2 of ‘fprintf’ makes pointer from integer without a cast [-Wint-conversion]
+   24 |         fclose(fp);
+      |         ^~~~~~~~~~
+      |         |
+      |         int
+In file included from motion_detector.c:1:
+/usr/include/stdio.h:351:44: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  351 |                     const char *__restrict __format, ...);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+motion_detector.c:24:20: error: expected ‘;’ before ‘}’ token
+   24 |         fclose(fp);
+      |                    ^
+      |                    ;
+   25 |     } else {
+      |     ~               
+motion_detector.c: In function ‘motion_detected_callback’:
+motion_detector.c:32:16: warning: missing terminating " character
+   32 |         printf("Motion detected!
+      |                ^
+motion_detector.c:32:16: error: missing terminating " character
+   32 |         printf("Motion detected!
+      |                ^~~~~~~~~~~~~~~~~
+motion_detector.c:33:1: warning: missing terminating " character
+   33 | ");
+      | ^
+motion_detector.c:33:1: error: missing terminating " character
+   33 | ");
+      | ^~~
+motion_detector.c:34:21: error: expected ‘)’ before ‘;’ token
+   34 |         log_motion();
+      |                     ^
+      |                     )
+motion_detector.c:32:15: note: to match this ‘(’
+   32 |         printf("Motion detected!
+      |               ^
+motion_detector.c:38:16: warning: missing terminating " character
+   38 |         printf("Relay deactivated.
+      |                ^
+motion_detector.c:38:16: error: missing terminating " character
+   38 |         printf("Relay deactivated.
+      |                ^~~~~~~~~~~~~~~~~~~
+motion_detector.c:39:1: warning: missing terminating " character
+   39 | ");
+      | ^
+motion_detector.c:39:1: error: missing terminating " character
+   39 | ");
+      | ^~~
+motion_detector.c:34:9: error: invalid use of void expression
+   34 |         log_motion();
+      |         ^~~~~~~~~~~~
+motion_detector.c:40:6: error: expected ‘;’ before ‘}’ token
+   40 |     }
+      |      ^
+      |      ;
+   41 | }
+      | ~     
+motion_detector.c:43:5: warning: ‘main’ is normally a non-static function [-Wmain]
+   43 | int main(void) {
+      |     ^~~~
+motion_detector.c: In function ‘main’:
+motion_detector.c:45:25: warning: missing terminating " character
+   45 |         fprintf(stderr, "pigpio initialisation failed
+      |                         ^
+motion_detector.c:45:25: error: missing terminating " character
+   45 |         fprintf(stderr, "pigpio initialisation failed
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:46:1: warning: missing terminating " character
+   46 | ");
+      | ^
+motion_detector.c:46:1: error: missing terminating " character
+   46 | ");
+      | ^~~
+motion_detector.c:47:9: error: expected expression before ‘return’
+   47 |         return 1;
+      |         ^~~~~~
+motion_detector.c:47:18: error: expected ‘;’ before ‘}’ token
+   47 |         return 1;
+      |                  ^
+      |                  ;
+   48 |     }
+      |     ~             
+motion_detector.c:51:25: warning: missing terminating " character
+   51 |         fprintf(stderr, "Failed to set PIR_PIN to input mode
+      |                         ^
+motion_detector.c:51:25: error: missing terminating " character
+   51 |         fprintf(stderr, "Failed to set PIR_PIN to input mode
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:52:1: warning: missing terminating " character
+   52 | ");
+      | ^
+motion_detector.c:52:1: error: missing terminating " character
+   52 | ");
+      | ^~~
+motion_detector.c:53:24: error: expected ‘)’ before ‘;’ token
+   53 |         gpioTerminate();
+      |                        ^
+      |                        )
+motion_detector.c:51:16: note: to match this ‘(’
+   51 |         fprintf(stderr, "Failed to set PIR_PIN to input mode
+      |                ^
+motion_detector.c:53:9: error: invalid use of void expression
+   53 |         gpioTerminate();
+      |         ^~~~~~~~~~~~~~~
+motion_detector.c:54:18: error: expected ‘;’ before ‘}’ token
+   54 |         return 1;
+      |                  ^
+      |                  ;
+   55 |     }
+      |     ~             
+motion_detector.c:58:25: warning: missing terminating " character
+   58 |         fprintf(stderr, "Failed to set RELAY_PIN to output mode
+      |                         ^
+motion_detector.c:58:25: error: missing terminating " character
+   58 |         fprintf(stderr, "Failed to set RELAY_PIN to output mode
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:59:1: warning: missing terminating " character
+   59 | ");
+      | ^
+motion_detector.c:59:1: error: missing terminating " character
+   59 | ");
+      | ^~~
+motion_detector.c:60:24: error: expected ‘)’ before ‘;’ token
+   60 |         gpioTerminate();
+      |                        ^
+      |                        )
+motion_detector.c:58:16: note: to match this ‘(’
+   58 |         fprintf(stderr, "Failed to set RELAY_PIN to output mode
+      |                ^
+motion_detector.c:60:9: error: invalid use of void expression
+   60 |         gpioTerminate();
+      |         ^~~~~~~~~~~~~~~
+motion_detector.c:61:18: error: expected ‘;’ before ‘}’ token
+   61 |         return 1;
+      |                  ^
+      |                  ;
+   62 |     }
+      |     ~             
+motion_detector.c:67:25: warning: missing terminating " character
+   67 |         fprintf(stderr, "Failed to set alert function for PIR_PIN
+      |                         ^
+motion_detector.c:67:25: error: missing terminating " character
+   67 |         fprintf(stderr, "Failed to set alert function for PIR_PIN
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:68:1: warning: missing terminating " character
+   68 | ");
+      | ^
+motion_detector.c:68:1: error: missing terminating " character
+   68 | ");
+      | ^~~
+motion_detector.c:69:24: error: expected ‘)’ before ‘;’ token
+   69 |         gpioTerminate();
+      |                        ^
+      |                        )
+motion_detector.c:67:16: note: to match this ‘(’
+   67 |         fprintf(stderr, "Failed to set alert function for PIR_PIN
+      |                ^
+motion_detector.c:69:9: error: invalid use of void expression
+   69 |         gpioTerminate();
+      |         ^~~~~~~~~~~~~~~
+motion_detector.c:70:18: error: expected ‘;’ before ‘}’ token
+   70 |         return 1;
+      |                  ^
+      |                  ;
+   71 |     }
+      |     ~             
+motion_detector.c:73:12: warning: missing terminating " character
+   73 |     printf("Motion detection started. Press Ctrl+C to exit.
+      |            ^
+motion_detector.c:73:12: error: missing terminating " character
+   73 |     printf("Motion detection started. Press Ctrl+C to exit.
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:74:1: warning: missing terminating " character
+   74 | ");
+      | ^
+motion_detector.c:74:1: error: missing terminating " character
+   74 | ");
+      | ^~~
+motion_detector.c:76:5: error: expected expression before ‘while’
+   76 |     while (1) {
+      |     ^~~~~
+motion_detector.c:81:14: error: expected ‘;’ before ‘}’ token
+   81 |     return 0;
+      |              ^
+      |              ;
+   82 | }
+      | ~             
+motion_detector.c: In function ‘motion_detected_callback’:
+motion_detector.c:82:1: error: expected declaration or statement at end of input
+   82 | }
+      | ^
+  Inference Build Error: Build errors detected:
+motion_detector.c: In function ‘log_motion’:
+motion_detector.c:22:21: warning: missing terminating " character
+   22 |         fprintf(fp, "%s: Motion detected!
+      |                     ^
+motion_detector.c:22:21: error: missing terminating " character
+   22 |         fprintf(fp, "%s: Motion detected!
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:23:1: warning: missing terminating " character
+   23 | ", timestamp);
+      | ^
+motion_detector.c:23:1: error: missing terminating " character
+   23 | ", timestamp);
+      | ^~~~~~~~~~~~~~
+motion_detector.c:24:19: error: expected ‘)’ before ‘;’ token
+   24 |         fclose(fp);
+      |                   ^
+      |                   )
+motion_detector.c:22:16: note: to match this ‘(’
+   22 |         fprintf(fp, "%s: Motion detected!
+      |                ^
+motion_detector.c:24:9: warning: passing argument 2 of ‘fprintf’ makes pointer from integer without a cast [-Wint-conversion]
+   24 |         fclose(fp);
+      |         ^~~~~~~~~~
+      |         |
+      |         int
+In file included from motion_detector.c:1:
+/usr/include/stdio.h:351:44: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  351 |                     const char *__restrict __format, ...);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+motion_detector.c:24:20: error: expected ‘;’ before ‘}’ token
+   24 |         fclose(fp);
+      |                    ^
+      |                    ;
+   25 |     } else {
+      |     ~               
+motion_detector.c: In function ‘motion_detected_callback’:
+motion_detector.c:32:16: warning: missing terminating " character
+   32 |         printf("Motion detected!
+      |                ^
+motion_detector.c:32:16: error: missing terminating " character
+   32 |         printf("Motion detected!
+      |                ^~~~~~~~~~~~~~~~~
+motion_detector.c:33:1: warning: missing terminating " character
+   33 | ");
+      | ^
+motion_detector.c:33:1: error: missing terminating " character
+   33 | ");
+      | ^~~
+motion_detector.c:34:21: error: expected ‘)’ before ‘;’ token
+   34 |         log_motion();
+      |                     ^
+      |                     )
+motion_detector.c:32:15: note: to match this ‘(’
+   32 |         printf("Motion detected!
+      |               ^
+motion_detector.c:38:16: warning: missing terminating " character
+   38 |         printf("Relay deactivated.
+      |                ^
+motion_detector.c:38:16: error: missing terminating " character
+   38 |         printf("Relay deactivated.
+      |                ^~~~~~~~~~~~~~~~~~~
+motion_detector.c:39:1: warning: missing terminating " character
+   39 | ");
+      | ^
+motion_detector.c:39:1: error: missing terminating " character
+   39 | ");
+      | ^~~
+motion_detector.c:34:9: error: invalid use of void expression
+   34 |         log_motion();
+      |         ^~~~~~~~~~~~
+motion_detector.c:40:6: error: expected ‘;’ before ‘}’ token
+   40 |     }
+      |      ^
+      |      ;
+   41 | }
+      | ~     
+motion_detector.c: In function ‘main’:
+motion_detector.c:45:25: warning: missing terminating " character
+   45 |         fprintf(stderr, "pigpio initialisation failed
+      |                         ^
+motion_detector.c:45:25: error: missing terminating " character
+   45 |         fprintf(stderr, "pigpio initialisation failed
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:46:1: warning: missing terminating " character
+   46 | ");
+      | ^
+motion_detector.c:46:1: error: missing terminating " character
+   46 | ");
+      | ^~~
+motion_detector.c:47:9: error: expected expression before ‘return’
+   47 |         return 1;
+      |         ^~~~~~
+motion_detector.c:47:18: error: expected ‘;’ before ‘}’ token
+   47 |         return 1;
+      |                  ^
+      |                  ;
+   48 |     }
+      |     ~             
+motion_detector.c:51:25: warning: missing terminating " character
+   51 |         fprintf(stderr, "Failed to set PIR_PIN to input mode
+      |                         ^
+motion_detector.c:51:25: error: missing terminating " character
+   51 |         fprintf(stderr, "Failed to set PIR_PIN to input mode
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:52:1: warning: missing terminating " character
+   52 | ");
+      | ^
+motion_detector.c:52:1: error: missing terminating " character
+   52 | ");
+      | ^~~
+motion_detector.c:53:24: error: expected ‘)’ before ‘;’ token
+   53 |         gpioTerminate();
+      |                        ^
+      |                        )
+motion_detector.c:51:16: note: to match this ‘(’
+   51 |         fprintf(stderr, "Failed to set PIR_PIN to input mode
+      |                ^
+motion_detector.c:53:9: error: invalid use of void expression
+   53 |         gpioTerminate();
+      |         ^~~~~~~~~~~~~~~
+motion_detector.c:54:18: error: expected ‘;’ before ‘}’ token
+   54 |         return 1;
+      |                  ^
+      |                  ;
+   55 |     }
+      |     ~             
+motion_detector.c:58:25: warning: missing terminating " character
+   58 |         fprintf(stderr, "Failed to set RELAY_PIN to output mode
+      |                         ^
+motion_detector.c:58:25: error: missing terminating " character
+   58 |         fprintf(stderr, "Failed to set RELAY_PIN to output mode
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:59:1: warning: missing terminating " character
+   59 | ");
+      | ^
+motion_detector.c:59:1: error: missing terminating " character
+   59 | ");
+      | ^~~
+motion_detector.c:60:24: error: expected ‘)’ before ‘;’ token
+   60 |         gpioTerminate();
+      |                        ^
+      |                        )
+motion_detector.c:58:16: note: to match this ‘(’
+   58 |         fprintf(stderr, "Failed to set RELAY_PIN to output mode
+      |                ^
+motion_detector.c:60:9: error: invalid use of void expression
+   60 |         gpioTerminate();
+      |         ^~~~~~~~~~~~~~~
+motion_detector.c:61:18: error: expected ‘;’ before ‘}’ token
+   61 |         return 1;
+      |                  ^
+      |                  ;
+   62 |     }
+      |     ~             
+motion_detector.c:67:25: warning: missing terminating " character
+   67 |         fprintf(stderr, "Failed to set alert function for PIR_PIN
+      |                         ^
+motion_detector.c:67:25: error: missing terminating " character
+   67 |         fprintf(stderr, "Failed to set alert function for PIR_PIN
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:68:1: warning: missing terminating " character
+   68 | ");
+      | ^
+motion_detector.c:68:1: error: missing terminating " character
+   68 | ");
+      | ^~~
+motion_detector.c:69:24: error: expected ‘)’ before ‘;’ token
+   69 |         gpioTerminate();
+      |                        ^
+      |                        )
+motion_detector.c:67:16: note: to match this ‘(’
+   67 |         fprintf(stderr, "Failed to set alert function for PIR_PIN
+      |                ^
+motion_detector.c:69:9: error: invalid use of void expression
+   69 |         gpioTerminate();
+      |         ^~~~~~~~~~~~~~~
+motion_detector.c:70:18: error: expected ‘;’ before ‘}’ token
+   70 |         return 1;
+      |                  ^
+      |                  ;
+   71 |     }
+      |     ~             
+motion_detector.c:73:12: warning: missing terminating " character
+   73 |     printf("Motion detection started. Press Ctrl+C to exit.
+      |            ^
+motion_detector.c:73:12: error: missing terminating " character
+   73 |     printf("Motion detection started. Press Ctrl+C to exit.
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+motion_detector.c:74:1: warning: missing terminating " character
+   74 | ");
+      | ^
+motion_detector.c:74:1: error: missing terminating " character
+   74 | ");
+      | ^~~
+motion_detector.c:76:5: error: expected expression before ‘while’
+   76 |     while (1) {
+      |     ^~~~~
+motion_detector.c:81:14: error: expected ‘;’ before ‘}’ token
+   81 |     return 0;
+      |              ^
+      |              ;
+   82 | }
+      | ~             
+motion_detector.c: In function ‘motion_detected_callback’:
+motion_detector.c:82:1: error: expected declaration or statement at end of input
+   82 | }
+      | ^
+----------------------------------------
+ID: 1178
+----------------------------------------
+ID: 415
+----------------------------------------

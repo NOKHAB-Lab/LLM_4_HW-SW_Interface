@@ -1,0 +1,1184 @@
+ID: 1599
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 1599
+  Base Syntax Error: Syntax errors detected:
+si1133_logger.c:16:20: error: expected parameter name, found """"
+   16 | #define SI1133_REG("")]
+      |                    ^~
+si1133_logger.c: In function ‘main’:
+si1133_logger.c:100:73: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  100 |         snprintf(data_log, sizeof(data_log), "UV Index: %.2f, ALS Lux: %d, IR Raw: %d",
+      |                                                                        ~^
+      |                                                                         |
+      |                                                                         int
+      |                                                                        %f
+  101 |                  uv_index, als_lux, ir_raw);
+      |                            ~~~~~~~                                       
+      |                            |
+      |                            double
+si1133_logger.c:61:9: warning: unused variable ‘i’ [-Wunused-variable]
+   61 |     int i;
+      |         ^
+  Base Build Error: Build errors detected:
+si1133_logger.c:16:20: error: expected parameter name, found """"
+   16 | #define SI1133_REG("")]
+      |                    ^~
+----------------------------------------
+ID: 1599
+  Base Syntax Error: Syntax errors detected:
+si1133_logger.c: In function ‘main’:
+si1133_logger.c:95:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+   95 |         wiringPiI2CReadReg8(fd, SI1133_REG_ALS_HIGH, &als);
+      |         ^~~~~~~~~~~~~~~~~~~
+In file included from si1133_logger.c:4:
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:96:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+   96 |         wiringPiI2CReadReg8(fd, SI1133_REG_ALS_LOW, &als);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:101:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  101 |         wiringPiI2CReadReg8(fd, SI1133_REG_UV_HIGH, &uv_index);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:102:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  102 |         wiringPiI2CReadReg8(fd, SI1133_REG_UV_LOW, &uv_index);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:107:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  107 |         wiringPiI2CReadReg8(fd, SI1133_REG_IR_HIGH, &ir);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:108:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  108 |         wiringPiI2CReadReg8(fd, SI1133_REG_IR_LOW, &ir);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:117:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+  117 |         sleep(1);
+      |         ^~~~~
+  Base Build Error: Build errors detected:
+si1133_logger.c: In function ‘main’:
+si1133_logger.c:95:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+   95 |         wiringPiI2CReadReg8(fd, SI1133_REG_ALS_HIGH, &als);
+      |         ^~~~~~~~~~~~~~~~~~~
+In file included from si1133_logger.c:4:
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:96:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+   96 |         wiringPiI2CReadReg8(fd, SI1133_REG_ALS_LOW, &als);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:101:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  101 |         wiringPiI2CReadReg8(fd, SI1133_REG_UV_HIGH, &uv_index);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:102:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  102 |         wiringPiI2CReadReg8(fd, SI1133_REG_UV_LOW, &uv_index);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:107:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  107 |         wiringPiI2CReadReg8(fd, SI1133_REG_IR_HIGH, &ir);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:108:9: error: too many arguments to function ‘wiringPiI2CReadReg8’
+  108 |         wiringPiI2CReadReg8(fd, SI1133_REG_IR_LOW, &ir);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:32:12: note: declared here
+   32 | extern int wiringPiI2CReadReg8       (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~
+si1133_logger.c:117:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+  117 |         sleep(1);
+      |         ^~~~~
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 1599
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 26
+  Base Build Error: Build errors detected:
+motion_sensor.c: In function ‘handle_interrupt’:
+motion_sensor.c:13:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   13 |         sleep(1);
+      |         ^~~~~
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:28:5: warning: implicit declaration of function ‘gpioSetPullUpDn’; did you mean ‘gpioSetPullUpDown’? [-Wimplicit-function-declaration]
+   28 |     gpioSetPullUpDn(PIR_PIN, PI_PUD_UP);
+      |     ^~~~~~~~~~~~~~~
+      |     gpioSetPullUpDown
+motion_sensor.c:34:31: warning: passing argument 2 of ‘gpioSetAlertFunc’ from incompatible pointer type [-Wincompatible-pointer-types]
+   34 |     gpioSetAlertFunc(PIR_PIN, handle_interrupt);
+      |                               ^~~~~~~~~~~~~~~~
+      |                               |
+      |                               void (*)(int,  unsigned int,  uint32_t) {aka void (*)(int,  unsigned int,  unsigned int)}
+In file included from motion_sensor.c:2:
+/usr/local/include/pigpio.h:1402:58: note: expected ‘gpioAlertFunc_t’ {aka ‘void (*)(int,  int,  unsigned int)’} but argument is of type ‘void (*)(int,  unsigned int,  uint32_t)’ {aka ‘void (*)(int,  unsigned int,  unsigned int)’}
+ 1402 | int gpioSetAlertFunc(unsigned user_gpio, gpioAlertFunc_t f);
+      |                                          ~~~~~~~~~~~~~~~~^
+/usr/bin/ld: /tmp/ccvlQd1c.o: in function `main':
+motion_sensor.c:(.text+0xac): undefined reference to `gpioSetPullUpDn'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 26
+  Base Build Error: Build errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:27:9: warning: implicit declaration of function ‘gpioWaitForInterrupt’ [-Wimplicit-function-declaration]
+   27 |         gpioWaitForInterrupt(PIR_PIN);
+      |         ^~~~~~~~~~~~~~~~~~~~
+/usr/bin/ld: /tmp/ccO9tnw4.o: in function `main':
+motion_sensor.c:(.text+0x40): undefined reference to `gpioWaitForInterrupt'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 26
+  Base Syntax Error: Syntax errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:27:9: error: invalid use of void expression
+   27 |     if (!setupGPIO()) {
+      |         ^
+motion_sensor.c:35:9: warning: implicit declaration of function ‘pigpio_wait_for_event’ [-Wimplicit-function-declaration]
+   35 |         pigpio_wait_for_event();
+      |         ^~~~~~~~~~~~~~~~~~~~~
+motion_sensor.c: In function ‘setupGPIO’:
+motion_sensor.c:47:65: warning: implicit declaration of function ‘pigpio_last_error’ [-Wimplicit-function-declaration]
+   47 |         fprintf(stderr, "Failed to set PIR_PIN as input: %s\n", pigpio_last_error());
+      |                                                                 ^~~~~~~~~~~~~~~~~
+motion_sensor.c:47:59: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   47 |         fprintf(stderr, "Failed to set PIR_PIN as input: %s\n", pigpio_last_error());
+      |                                                          ~^     ~~~~~~~~~~~~~~~~~~~
+      |                                                           |     |
+      |                                                           |     int
+      |                                                           char *
+      |                                                          %d
+motion_sensor.c:52:66: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   52 |         fprintf(stderr, "Failed to set pull-up/down on PIR_PIN: %s\n", pigpio_last_error());
+      |                                                                 ~^     ~~~~~~~~~~~~~~~~~~~
+      |                                                                  |     |
+      |                                                                  |     int
+      |                                                                  char *
+      |                                                                 %d
+motion_sensor.c:56:42: warning: passing argument 2 of ‘gpioSetAlertFunc’ from incompatible pointer type [-Wincompatible-pointer-types]
+   56 |     if ((err = gpioSetAlertFunc(PIR_PIN, PIR_ISR)) < 0) {
+      |                                          ^~~~~~~
+      |                                          |
+      |                                          void (*)(void *)
+In file included from motion_sensor.c:3:
+/usr/local/include/pigpio.h:1402:58: note: expected ‘gpioAlertFunc_t’ {aka ‘void (*)(int,  int,  unsigned int)’} but argument is of type ‘void (*)(void *)’
+ 1402 | int gpioSetAlertFunc(unsigned user_gpio, gpioAlertFunc_t f);
+      |                                          ~~~~~~~~~~~~~~~~^
+motion_sensor.c:57:68: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   57 |         fprintf(stderr, "Failed to set alert function on PIR_PIN: %s\n", pigpio_last_error());
+      |                                                                   ~^     ~~~~~~~~~~~~~~~~~~~
+      |                                                                    |     |
+      |                                                                    |     int
+      |                                                                    char *
+      |                                                                   %d
+motion_sensor.c:64:63: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   64 |         fprintf(stderr, "Failed to set BUZZER_PIN as output: %s\n", pigpio_last_error());
+      |                                                              ~^     ~~~~~~~~~~~~~~~~~~~
+      |                                                               |     |
+      |                                                               |     int
+      |                                                               char *
+      |                                                              %d
+  Base Build Error: Build errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:27:9: error: invalid use of void expression
+   27 |     if (!setupGPIO()) {
+      |         ^
+motion_sensor.c:35:9: warning: implicit declaration of function ‘pigpio_wait_for_event’ [-Wimplicit-function-declaration]
+   35 |         pigpio_wait_for_event();
+      |         ^~~~~~~~~~~~~~~~~~~~~
+motion_sensor.c: In function ‘setupGPIO’:
+motion_sensor.c:47:65: warning: implicit declaration of function ‘pigpio_last_error’ [-Wimplicit-function-declaration]
+   47 |         fprintf(stderr, "Failed to set PIR_PIN as input: %s\n", pigpio_last_error());
+      |                                                                 ^~~~~~~~~~~~~~~~~
+motion_sensor.c:56:42: warning: passing argument 2 of ‘gpioSetAlertFunc’ from incompatible pointer type [-Wincompatible-pointer-types]
+   56 |     if ((err = gpioSetAlertFunc(PIR_PIN, PIR_ISR)) < 0) {
+      |                                          ^~~~~~~
+      |                                          |
+      |                                          void (*)(void *)
+In file included from motion_sensor.c:3:
+/usr/local/include/pigpio.h:1402:58: note: expected ‘gpioAlertFunc_t’ {aka ‘void (*)(int,  int,  unsigned int)’} but argument is of type ‘void (*)(void *)’
+ 1402 | int gpioSetAlertFunc(unsigned user_gpio, gpioAlertFunc_t f);
+      |                                          ~~~~~~~~~~~~~~~~^
+----------------------------------------
+ID: 26
+  Base Build Error: Build errors detected:
+motion_sensor.c: In function ‘cbFunc’:
+motion_sensor.c:15:9: warning: implicit declaration of function ‘gpioToneStart’ [-Wimplicit-function-declaration]
+   15 |         gpioToneStart(BUZZER_PIN, 1000);
+      |         ^~~~~~~~~~~~~
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:24:60: warning: implicit declaration of function ‘pigpio_error’ [-Wimplicit-function-declaration]
+   24 |         fprintf(stderr, "Error initializing pigpio: %s\n", pigpio_error(err));
+      |                                                            ^~~~~~~~~~~~
+motion_sensor.c:37:5: warning: implicit declaration of function ‘gpioToneInit’ [-Wimplicit-function-declaration]
+   37 |     gpioToneInit(BUZZER_PIN);
+      |     ^~~~~~~~~~~~
+motion_sensor.c:43:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   43 |         sleep(1000);
+      |         ^~~~~
+motion_sensor.c: In function ‘init_pigpio’:
+motion_sensor.c:56:16: warning: implicit declaration of function ‘pigpio_start’ [-Wimplicit-function-declaration]
+   56 |     if ((err = pigpio_start(NULL, NULL)) < 0) {
+      |                ^~~~~~~~~~~~
+motion_sensor.c: In function ‘cleanup’:
+motion_sensor.c:65:5: warning: implicit declaration of function ‘gpioToneStop’; did you mean ‘gpioWaveTxStop’? [-Wimplicit-function-declaration]
+   65 |     gpioToneStop(BUZZER_PIN);
+      |     ^~~~~~~~~~~~
+      |     gpioWaveTxStop
+/usr/bin/ld: /tmp/ccPO7xBf.o: in function `cbFunc':
+motion_sensor.c:(.text+0x34): undefined reference to `gpioToneStart'
+/usr/bin/ld: /tmp/ccPO7xBf.o: in function `main':
+motion_sensor.c:(.text+0x74): undefined reference to `pigpio_error'
+/usr/bin/ld: motion_sensor.c:(.text+0xcc): undefined reference to `gpioToneInit'
+/usr/bin/ld: /tmp/ccPO7xBf.o: in function `init_pigpio':
+motion_sensor.c:(.text+0x104): undefined reference to `pigpio_start'
+/usr/bin/ld: /tmp/ccPO7xBf.o: in function `cleanup':
+motion_sensor.c:(.text+0x138): undefined reference to `gpioToneStop'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 2841
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 2841
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 2841
+  Base Syntax Error: Syntax errors detected:
+thermal_control.c: In function ‘readLM75B’:
+thermal_control.c:34:19: error: ‘I2C_READ’ undeclared (first use in this function)
+   34 |     if (ioctl(fd, I2C_READ, buf) != 2) {
+      |                   ^~~~~~~~
+thermal_control.c:34:19: note: each undeclared identifier is reported only once for each function it appears in
+  Base Build Error: Build errors detected:
+thermal_control.c: In function ‘readLM75B’:
+thermal_control.c:34:19: error: ‘I2C_READ’ undeclared (first use in this function)
+   34 |     if (ioctl(fd, I2C_READ, buf) != 2) {
+      |                   ^~~~~~~~
+thermal_control.c:34:19: note: each undeclared identifier is reported only once for each function it appears in
+----------------------------------------
+ID: 2841
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 2841
+  Base Build Error: Build errors detected:
+thermal_control.c: In function ‘lm75b_init’:
+thermal_control.c:9:9: warning: implicit declaration of function ‘perror’ [-Wimplicit-function-declaration]
+    9 |         perror("Failed to open I2C device");
+      |         ^~~~~~
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+/usr/bin/ld: /tmp/ccDHN7t3.o: in function `lm75b_init':
+thermal_control.c:(.text+0xc): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: /tmp/ccDHN7t3.o: in function `lm75b_read_temp':
+thermal_control.c:(.text+0x54): undefined reference to `wiringPiI2CReadReg8'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 862
+  Base Syntax Error: Syntax errors detected:
+fan_controller.c: In function ‘set_fan_speed’:
+fan_controller.c:51:5: warning: implicit declaration of function ‘wiringPiPwmWrite’ [-Wimplicit-function-declaration]
+   51 |     wiringPiPwmWrite(FAN_PIN, duty_cycle);
+      |     ^~~~~~~~~~~~~~~~
+fan_controller.c: In function ‘main’:
+fan_controller.c:75:85: warning: implicit declaration of function ‘ctime’ [-Wimplicit-function-declaration]
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                     ^~~~~
+fan_controller.c:8:1: note: ‘ctime’ is defined in header ‘<time.h>’; did you forget to ‘#include <time.h>’?
+    7 | #include <wiringPiSPI.h>
+  +++ |+#include <time.h>
+    8 | 
+fan_controller.c:75:92: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                            ^~~~
+fan_controller.c:75:92: note: ‘time’ is defined in header ‘<time.h>’; did you forget to ‘#include <time.h>’?
+fan_controller.c:75:91: error: lvalue required as unary ‘&’ operand
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                           ^
+fan_controller.c:75:111: error: invalid use of void expression
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Base Build Error: Build errors detected:
+fan_controller.c: In function ‘set_fan_speed’:
+fan_controller.c:51:5: warning: implicit declaration of function ‘wiringPiPwmWrite’ [-Wimplicit-function-declaration]
+   51 |     wiringPiPwmWrite(FAN_PIN, duty_cycle);
+      |     ^~~~~~~~~~~~~~~~
+fan_controller.c: In function ‘main’:
+fan_controller.c:75:85: warning: implicit declaration of function ‘ctime’ [-Wimplicit-function-declaration]
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                     ^~~~~
+fan_controller.c:8:1: note: ‘ctime’ is defined in header ‘<time.h>’; did you forget to ‘#include <time.h>’?
+    7 | #include <wiringPiSPI.h>
+  +++ |+#include <time.h>
+    8 | 
+fan_controller.c:75:92: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                            ^~~~
+fan_controller.c:75:92: note: ‘time’ is defined in header ‘<time.h>’; did you forget to ‘#include <time.h>’?
+fan_controller.c:75:91: error: lvalue required as unary ‘&’ operand
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                           ^
+fan_controller.c:75:111: error: invalid use of void expression
+   75 |             fprintf(log_file, "Time: %s, Temperature: %.2f C, Fan Speed: %.2f%%\n", ctime(&time(NULL)), temp, set_fan_speed(temp > 70 ? 1.0 : 0.0));
+      |                                                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
+ID: 862
+  Base Build Error: Build errors detected:
+fan_controller.c: In function ‘readTemperature’:
+fan_controller.c:72:26: warning: passing argument 2 of ‘wiringPiSPIDataRW’ from incompatible pointer type [-Wincompatible-pointer-types]
+   72 |     wiringPiSPIDataRW(0, value, 4);
+      |                          ^~~~~
+      |                          |
+      |                          int *
+In file included from fan_controller.c:6:
+/usr/local/include/wiringPiSPI.h:32:55: note: expected ‘unsigned char *’ but argument is of type ‘int *’
+   32 | int wiringPiSPIDataRW    (int channel, unsigned char *data, int len) ;
+      |                                        ~~~~~~~~~~~~~~~^~~~
+fan_controller.c: In function ‘setupPWM’:
+fan_controller.c:84:5: warning: implicit declaration of function ‘wiringPiPCAsetup’; did you mean ‘wiringPiSPIxSetup’? [-Wimplicit-function-declaration]
+   84 |     wiringPiPCAsetup(0, 0);
+      |     ^~~~~~~~~~~~~~~~
+      |     wiringPiSPIxSetup
+/usr/bin/ld: /tmp/ccBXxWvr.o: in function `setupPWM':
+fan_controller.c:(.text+0x1a8): undefined reference to `wiringPiPCAsetup'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 862
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 862
+  Base Syntax Error: Syntax errors detected:
+fan_controller.c:7:10: fatal error: Adafruit_MAX31855.h: No such file or directory
+    7 | #include <Adafruit_MAX31855.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+  Base Build Error: Build errors detected:
+fan_controller.c:7:10: fatal error: Adafruit_MAX31855.h: No such file or directory
+    7 | #include <Adafruit_MAX31855.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 862
+  Base Syntax Error: Syntax errors detected:
+fan_controller.c: In function ‘main’:
+fan_controller.c:22:9: warning: unused variable ‘fd’ [-Wunused-variable]
+   22 |     int fd;
+      |         ^~
+fan_controller.c: In function ‘initSPI’:
+fan_controller.c:64:5: error: ‘fd’ undeclared (first use in this function)
+   64 |     fd = wiringPiSPISetup(SPI_DEVICE, SPI_SPEED);
+      |     ^~
+fan_controller.c:64:5: note: each undeclared identifier is reported only once for each function it appears in
+fan_controller.c: In function ‘readTemperature’:
+fan_controller.c:72:9: warning: unused variable ‘i’ [-Wunused-variable]
+   72 |     int i;
+      |         ^
+  Base Build Error: Build errors detected:
+fan_controller.c: In function ‘initSPI’:
+fan_controller.c:64:5: error: ‘fd’ undeclared (first use in this function)
+   64 |     fd = wiringPiSPISetup(SPI_DEVICE, SPI_SPEED);
+      |     ^~
+fan_controller.c:64:5: note: each undeclared identifier is reported only once for each function it appears in
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0777
+  Base Syntax Error: Syntax errors detected:
+proximity_alert.c: In function ‘main’:
+proximity_alert.c:18:43: error: ‘PI_OK’ undeclared (first use in this function); did you mean ‘PI_ON’?
+   18 |     if ((status = initialize_pigpio()) != PI_OK) {
+      |                                           ^~~~~
+      |                                           PI_ON
+proximity_alert.c:18:43: note: each undeclared identifier is reported only once for each function it appears in
+proximity_alert.c:19:62: warning: implicit declaration of function ‘pigpio_error’ [-Wimplicit-function-declaration]
+   19 |         fprintf(stderr, "Failed to initialize pigpio: %s\n", pigpio_error(status));
+      |                                                              ^~~~~~~~~~~~
+proximity_alert.c:19:56: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   19 |         fprintf(stderr, "Failed to initialize pigpio: %s\n", pigpio_error(status));
+      |                                                       ~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                                        |     |
+      |                                                        |     int
+      |                                                        char *
+      |                                                       %d
+proximity_alert.c: In function ‘play_alarm’:
+proximity_alert.c:72:9: warning: implicit declaration of function ‘usleep’ [-Wimplicit-function-declaration]
+   72 |         usleep(500000);
+      |         ^~~~~~
+  Base Build Error: Build errors detected:
+proximity_alert.c: In function ‘main’:
+proximity_alert.c:18:43: error: ‘PI_OK’ undeclared (first use in this function); did you mean ‘PI_ON’?
+   18 |     if ((status = initialize_pigpio()) != PI_OK) {
+      |                                           ^~~~~
+      |                                           PI_ON
+proximity_alert.c:18:43: note: each undeclared identifier is reported only once for each function it appears in
+proximity_alert.c:19:62: warning: implicit declaration of function ‘pigpio_error’ [-Wimplicit-function-declaration]
+   19 |         fprintf(stderr, "Failed to initialize pigpio: %s\n", pigpio_error(status));
+      |                                                              ^~~~~~~~~~~~
+proximity_alert.c: In function ‘play_alarm’:
+proximity_alert.c:72:9: warning: implicit declaration of function ‘usleep’ [-Wimplicit-function-declaration]
+   72 |         usleep(500000);
+      |         ^~~~~~
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+  Base Build Error: Build errors detected:
+proximity_alert.c: In function ‘set_buzzer_frequency’:
+proximity_alert.c:10:5: warning: implicit declaration of function ‘gpioSetPWMFreq’; did you mean ‘gpioSetPWMrange’? [-Wimplicit-function-declaration]
+   10 |     gpioSetPWMFreq(pin, 50);
+      |     ^~~~~~~~~~~~~~
+      |     gpioSetPWMrange
+proximity_alert.c: In function ‘main’:
+proximity_alert.c:20:63: warning: implicit declaration of function ‘pigpioGetError’ [-Wimplicit-function-declaration]
+   20 |         fprintf(stderr, "pigpio initialization failed: %s\n", pigpioGetError(ret));
+      |                                                               ^~~~~~~~~~~~~~
+/usr/bin/ld: /tmp/ccJLyxJI.o: in function `set_buzzer_frequency':
+proximity_alert.c:(.text+0x18): undefined reference to `gpioSetPWMFreq'
+/usr/bin/ld: /tmp/ccJLyxJI.o: in function `main':
+proximity_alert.c:(.text+0x64): undefined reference to `pigpioGetError'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+  Base Build Error: Build errors detected:
+proximity_alert.c: In function ‘set_buzzer_frequency’:
+proximity_alert.c:74:5: warning: implicit declaration of function ‘gpioFrequency’; did you mean ‘gpioGetPWMfrequency’? [-Wimplicit-function-declaration]
+   74 |     gpioFrequency(pin, freq);
+      |     ^~~~~~~~~~~~~
+      |     gpioGetPWMfrequency
+/usr/bin/ld: /tmp/ccRU2H7Y.o: in function `set_buzzer_frequency':
+proximity_alert.c:(.text+0x1dc): undefined reference to `gpioFrequency'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0850
+  Base Build Error: Build errors detected:
+door_control.c: In function ‘main’:
+door_control.c:52:26: warning: implicit declaration of function ‘micros’ [-Wimplicit-function-declaration]
+   52 |             start_time = micros();
+      |                          ^~~~~~
+/usr/bin/ld: /tmp/cchAhOEj.o: in function `main':
+door_control.c:(.text+0x134): undefined reference to `micros'
+/usr/bin/ld: door_control.c:(.text+0x15c): undefined reference to `micros'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0850
+  Base Syntax Error: Syntax errors detected:
+door_control.c: In function ‘main’:
+door_control.c:25:13: warning: implicit declaration of function ‘digitalRead’ [-Wimplicit-function-declaration]
+   25 |         if (digitalRead(BUTTON_GPIO) == PI_GPIO_LOW) {
+      |             ^~~~~~~~~~~
+door_control.c:25:41: error: ‘PI_GPIO_LOW’ undeclared (first use in this function); did you mean ‘PIGPIO_H’?
+   25 |         if (digitalRead(BUTTON_GPIO) == PI_GPIO_LOW) {
+      |                                         ^~~~~~~~~~~
+      |                                         PIGPIO_H
+door_control.c:25:41: note: each undeclared identifier is reported only once for each function it appears in
+door_control.c:35:13: warning: implicit declaration of function ‘digitalWrite’ [-Wimplicit-function-declaration]
+   35 |             digitalWrite(LOCK_1_GPIO, !state);
+      |             ^~~~~~~~~~~~
+door_control.c:40:13: error: too many arguments to function ‘logEvent’
+   40 |             logEvent("Lock toggled, Lock 1: %d, Lock 2: %d", !state, !state);
+      |             ^~~~~~~~
+door_control.c:14:6: note: declared here
+   14 | void logEvent(char* message);
+      |      ^~~~~~~~
+door_control.c: At top level:
+door_control.c:72:6: error: conflicting types for ‘logEvent’; have ‘void(const char *, ...)’
+   72 | void logEvent(const char* format, ...) {
+      |      ^~~~~~~~
+door_control.c:14:6: note: previous declaration of ‘logEvent’ with type ‘void(char *)’
+   14 | void logEvent(char* message);
+      |      ^~~~~~~~
+door_control.c: In function ‘logEvent’:
+door_control.c:83:5: warning: implicit declaration of function ‘va_start’ [-Wimplicit-function-declaration]
+   83 |     va_start(args, format);
+      |     ^~~~~~~~
+door_control.c:84:24: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   84 |     vsnprintf(buffer + strlen(buffer), sizeof(buffer) - strlen(buffer), format, args);
+      |                        ^~~~~~
+door_control.c:6:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    5 | #include <pigpio.h>
+  +++ |+#include <string.h>
+    6 | 
+door_control.c:84:24: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   84 |     vsnprintf(buffer + strlen(buffer), sizeof(buffer) - strlen(buffer), format, args);
+      |                        ^~~~~~
+door_control.c:84:24: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+door_control.c:85:5: warning: implicit declaration of function ‘va_end’ [-Wimplicit-function-declaration]
+   85 |     va_end(args);
+      |     ^~~~~~
+  Base Build Error: Build errors detected:
+door_control.c: In function ‘main’:
+door_control.c:25:13: warning: implicit declaration of function ‘digitalRead’ [-Wimplicit-function-declaration]
+   25 |         if (digitalRead(BUTTON_GPIO) == PI_GPIO_LOW) {
+      |             ^~~~~~~~~~~
+door_control.c:25:41: error: ‘PI_GPIO_LOW’ undeclared (first use in this function); did you mean ‘PIGPIO_H’?
+   25 |         if (digitalRead(BUTTON_GPIO) == PI_GPIO_LOW) {
+      |                                         ^~~~~~~~~~~
+      |                                         PIGPIO_H
+door_control.c:25:41: note: each undeclared identifier is reported only once for each function it appears in
+door_control.c:35:13: warning: implicit declaration of function ‘digitalWrite’ [-Wimplicit-function-declaration]
+   35 |             digitalWrite(LOCK_1_GPIO, !state);
+      |             ^~~~~~~~~~~~
+door_control.c:40:13: error: too many arguments to function ‘logEvent’
+   40 |             logEvent("Lock toggled, Lock 1: %d, Lock 2: %d", !state, !state);
+      |             ^~~~~~~~
+door_control.c:14:6: note: declared here
+   14 | void logEvent(char* message);
+      |      ^~~~~~~~
+door_control.c: At top level:
+door_control.c:72:6: error: conflicting types for ‘logEvent’; have ‘void(const char *, ...)’
+   72 | void logEvent(const char* format, ...) {
+      |      ^~~~~~~~
+door_control.c:14:6: note: previous declaration of ‘logEvent’ with type ‘void(char *)’
+   14 | void logEvent(char* message);
+      |      ^~~~~~~~
+door_control.c: In function ‘logEvent’:
+door_control.c:83:5: warning: implicit declaration of function ‘va_start’ [-Wimplicit-function-declaration]
+   83 |     va_start(args, format);
+      |     ^~~~~~~~
+door_control.c:84:24: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   84 |     vsnprintf(buffer + strlen(buffer), sizeof(buffer) - strlen(buffer), format, args);
+      |                        ^~~~~~
+door_control.c:6:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    5 | #include <pigpio.h>
+  +++ |+#include <string.h>
+    6 | 
+door_control.c:84:24: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   84 |     vsnprintf(buffer + strlen(buffer), sizeof(buffer) - strlen(buffer), format, args);
+      |                        ^~~~~~
+door_control.c:84:24: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+door_control.c:85:5: warning: implicit declaration of function ‘va_end’ [-Wimplicit-function-declaration]
+   85 |     va_end(args);
+      |     ^~~~~~
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+  Base Syntax Error: Syntax errors detected:
+door_control.c: In function ‘main’:
+door_control.c:46:51: warning: implicit declaration of function ‘pigpio_error’ [-Wimplicit-function-declaration]
+   46 |         fprintf(stderr, "GPIO init failed: %s\n", pigpio_error(err));
+      |                                                   ^~~~~~~~~~~~
+door_control.c:46:45: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   46 |         fprintf(stderr, "GPIO init failed: %s\n", pigpio_error(err));
+      |                                            ~^     ~~~~~~~~~~~~~~~~~
+      |                                             |     |
+      |                                             |     int
+      |                                             char *
+      |                                            %d
+door_control.c:60:34: error: ‘button_pressed’ undeclared (first use in this function)
+   60 |     gpioSetAlertFunc(BUTTON_PIN, button_pressed);
+      |                                  ^~~~~~~~~~~~~~
+door_control.c:60:34: note: each undeclared identifier is reported only once for each function it appears in
+door_control.c:63:9: error: too few arguments to function ‘gpioSleep’
+   63 |         gpioSleep(0.1);
+      |         ^~~~~~~~~
+In file included from door_control.c:5:
+/usr/local/include/pigpio.h:4194:5: note: declared here
+ 4194 | int gpioSleep(unsigned timetype, int seconds, int micros);
+      |     ^~~~~~~~~
+door_control.c:42:40: warning: unused variable ‘button_state’ [-Wunused-variable]
+   42 |     int err, lock1_state, lock2_state, button_state;
+      |                                        ^~~~~~~~~~~~
+door_control.c:42:27: warning: unused variable ‘lock2_state’ [-Wunused-variable]
+   42 |     int err, lock1_state, lock2_state, button_state;
+      |                           ^~~~~~~~~~~
+door_control.c:42:14: warning: unused variable ‘lock1_state’ [-Wunused-variable]
+   42 |     int err, lock1_state, lock2_state, button_state;
+      |              ^~~~~~~~~~~
+  Base Build Error: Build errors detected:
+door_control.c: In function ‘main’:
+door_control.c:46:51: warning: implicit declaration of function ‘pigpio_error’ [-Wimplicit-function-declaration]
+   46 |         fprintf(stderr, "GPIO init failed: %s\n", pigpio_error(err));
+      |                                                   ^~~~~~~~~~~~
+door_control.c:60:34: error: ‘button_pressed’ undeclared (first use in this function)
+   60 |     gpioSetAlertFunc(BUTTON_PIN, button_pressed);
+      |                                  ^~~~~~~~~~~~~~
+door_control.c:60:34: note: each undeclared identifier is reported only once for each function it appears in
+door_control.c:63:9: error: too few arguments to function ‘gpioSleep’
+   63 |         gpioSleep(0.1);
+      |         ^~~~~~~~~
+In file included from door_control.c:5:
+/usr/local/include/pigpio.h:4194:5: note: declared here
+ 4194 | int gpioSleep(unsigned timetype, int seconds, int micros);
+      |     ^~~~~~~~~
+----------------------------------------
+ID: 0099
+  Base Syntax Error: Syntax errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:37:9: error: too many arguments to function ‘logDataToFile’
+   37 |         logDataToFile(filename, "Proximity: %d, ALS: %d, UV: %d, Timestamp: %s\n", proximity, alight, uv, timestamp);
+      |         ^~~~~~~~~~~~~
+motion_sensor_log.c:10:6: note: declared here
+   10 | void logDataToFile(char *filename, char *data);
+      |      ^~~~~~~~~~~~~
+motion_sensor_log.c: In function ‘readSi1153’:
+motion_sensor_log.c:50:5: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+   50 |     delay(10);
+      |     ^~~~~
+motion_sensor_log.c:74:5: error: too many arguments to function ‘wiringPiI2CReadReg16’
+   74 |     wiringPiI2CReadReg16(fd, 0x10, &buffer[0]);
+      |     ^~~~~~~~~~~~~~~~~~~~
+In file included from motion_sensor_log.c:4:
+/usr/local/include/wiringPiI2C.h:33:12: note: declared here
+   33 | extern int wiringPiI2CReadReg16      (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:75:5: error: ‘proximity’ undeclared (first use in this function)
+   75 |     proximity = (buffer[0] << 8) | buffer[1];
+      |     ^~~~~~~~~
+motion_sensor_log.c:75:5: note: each undeclared identifier is reported only once for each function it appears in
+motion_sensor_log.c:76:5: error: too many arguments to function ‘wiringPiI2CReadReg16’
+   76 |     wiringPiI2CReadReg16(fd, 0x12, &buffer[0]);
+      |     ^~~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:33:12: note: declared here
+   33 | extern int wiringPiI2CReadReg16      (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:77:5: error: ‘alight’ undeclared (first use in this function); did you mean ‘daylight’?
+   77 |     alight = (buffer[0] << 8) | buffer[1];
+      |     ^~~~~~
+      |     daylight
+motion_sensor_log.c:78:5: error: too many arguments to function ‘wiringPiI2CReadReg16’
+   78 |     wiringPiI2CReadReg16(fd, 0x14, &buffer[0]);
+      |     ^~~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:33:12: note: declared here
+   33 | extern int wiringPiI2CReadReg16      (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:79:5: error: ‘uv’ undeclared (first use in this function)
+   79 |     uv = (buffer[0] << 8) | buffer[1];
+      |     ^~
+motion_sensor_log.c: At top level:
+motion_sensor_log.c:84:6: error: conflicting types for ‘logDataToFile’; have ‘void(char *, char *, ...)’
+   84 | void logDataToFile(char *filename, char *format, ...) {
+      |      ^~~~~~~~~~~~~
+motion_sensor_log.c:10:6: note: previous declaration of ‘logDataToFile’ with type ‘void(char *, char *)’
+   10 | void logDataToFile(char *filename, char *data);
+      |      ^~~~~~~~~~~~~
+motion_sensor_log.c: In function ‘logDataToFile’:
+motion_sensor_log.c:94:5: warning: implicit declaration of function ‘va_start’ [-Wimplicit-function-declaration]
+   94 |     va_start(args, format);
+      |     ^~~~~~~~
+motion_sensor_log.c:96:5: warning: implicit declaration of function ‘va_end’ [-Wimplicit-function-declaration]
+   96 |     va_end(args);
+      |     ^~~~~~
+  Base Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:37:9: error: too many arguments to function ‘logDataToFile’
+   37 |         logDataToFile(filename, "Proximity: %d, ALS: %d, UV: %d, Timestamp: %s\n", proximity, alight, uv, timestamp);
+      |         ^~~~~~~~~~~~~
+motion_sensor_log.c:10:6: note: declared here
+   10 | void logDataToFile(char *filename, char *data);
+      |      ^~~~~~~~~~~~~
+motion_sensor_log.c: In function ‘readSi1153’:
+motion_sensor_log.c:50:5: warning: implicit declaration of function ‘delay’ [-Wimplicit-function-declaration]
+   50 |     delay(10);
+      |     ^~~~~
+motion_sensor_log.c:74:5: error: too many arguments to function ‘wiringPiI2CReadReg16’
+   74 |     wiringPiI2CReadReg16(fd, 0x10, &buffer[0]);
+      |     ^~~~~~~~~~~~~~~~~~~~
+In file included from motion_sensor_log.c:4:
+/usr/local/include/wiringPiI2C.h:33:12: note: declared here
+   33 | extern int wiringPiI2CReadReg16      (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:75:5: error: ‘proximity’ undeclared (first use in this function)
+   75 |     proximity = (buffer[0] << 8) | buffer[1];
+      |     ^~~~~~~~~
+motion_sensor_log.c:75:5: note: each undeclared identifier is reported only once for each function it appears in
+motion_sensor_log.c:76:5: error: too many arguments to function ‘wiringPiI2CReadReg16’
+   76 |     wiringPiI2CReadReg16(fd, 0x12, &buffer[0]);
+      |     ^~~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:33:12: note: declared here
+   33 | extern int wiringPiI2CReadReg16      (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:77:5: error: ‘alight’ undeclared (first use in this function); did you mean ‘daylight’?
+   77 |     alight = (buffer[0] << 8) | buffer[1];
+      |     ^~~~~~
+      |     daylight
+motion_sensor_log.c:78:5: error: too many arguments to function ‘wiringPiI2CReadReg16’
+   78 |     wiringPiI2CReadReg16(fd, 0x14, &buffer[0]);
+      |     ^~~~~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiI2C.h:33:12: note: declared here
+   33 | extern int wiringPiI2CReadReg16      (int fd, int reg) ;
+      |            ^~~~~~~~~~~~~~~~~~~~
+motion_sensor_log.c:79:5: error: ‘uv’ undeclared (first use in this function)
+   79 |     uv = (buffer[0] << 8) | buffer[1];
+      |     ^~
+motion_sensor_log.c: At top level:
+motion_sensor_log.c:84:6: error: conflicting types for ‘logDataToFile’; have ‘void(char *, char *, ...)’
+   84 | void logDataToFile(char *filename, char *format, ...) {
+      |      ^~~~~~~~~~~~~
+motion_sensor_log.c:10:6: note: previous declaration of ‘logDataToFile’ with type ‘void(char *, char *)’
+   10 | void logDataToFile(char *filename, char *data);
+      |      ^~~~~~~~~~~~~
+motion_sensor_log.c: In function ‘logDataToFile’:
+motion_sensor_log.c:94:5: warning: implicit declaration of function ‘va_start’ [-Wimplicit-function-declaration]
+   94 |     va_start(args, format);
+      |     ^~~~~~~~
+motion_sensor_log.c:96:5: warning: implicit declaration of function ‘va_end’ [-Wimplicit-function-declaration]
+   96 |     va_end(args);
+      |     ^~~~~~
+----------------------------------------
+ID: 0099
+  Base Syntax Error: Syntax errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:50:9: error: too many arguments to function ‘log_data’
+   50 |         log_data(asctime(timeinfo), "Proximity: %d, ALS: %d, UV: %d\n", proximity, als, uv);
+      |         ^~~~~~~~
+motion_sensor_log.c:14:6: note: declared here
+   14 | void log_data(const char *timestamp, const char *data);
+      |      ^~~~~~~~
+motion_sensor_log.c: In function ‘log_data’:
+motion_sensor_log.c:89:21: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   89 |     fwrite(data, 1, strlen(data), stdout);
+      |                     ^~~~~~
+motion_sensor_log.c:7:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    6 | #include <time.h>
+  +++ |+#include <string.h>
+    7 | 
+motion_sensor_log.c:89:21: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   89 |     fwrite(data, 1, strlen(data), stdout);
+      |                     ^~~~~~
+motion_sensor_log.c:89:21: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+  Base Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:50:9: error: too many arguments to function ‘log_data’
+   50 |         log_data(asctime(timeinfo), "Proximity: %d, ALS: %d, UV: %d\n", proximity, als, uv);
+      |         ^~~~~~~~
+motion_sensor_log.c:14:6: note: declared here
+   14 | void log_data(const char *timestamp, const char *data);
+      |      ^~~~~~~~
+motion_sensor_log.c: In function ‘log_data’:
+motion_sensor_log.c:89:21: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   89 |     fwrite(data, 1, strlen(data), stdout);
+      |                     ^~~~~~
+motion_sensor_log.c:7:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    6 | #include <time.h>
+  +++ |+#include <string.h>
+    7 | 
+motion_sensor_log.c:89:21: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   89 |     fwrite(data, 1, strlen(data), stdout);
+      |                     ^~~~~~
+motion_sensor_log.c:89:21: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+----------------------------------------
+ID: 0099
+  Base Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:57:33: warning: passing argument 2 of ‘logDataToFile’ makes pointer from integer without a cast [-Wint-conversion]
+   57 |         logDataToFile(filename, proximity);
+      |                                 ^~~~~~~~~
+      |                                 |
+      |                                 int
+motion_sensor_log.c:22:54: note: expected ‘const char *’ but argument is of type ‘int’
+   22 | void logDataToFile(const char *filename, const char *data);
+      |                                          ~~~~~~~~~~~~^~~~
+motion_sensor_log.c:61:33: warning: passing argument 2 of ‘logDataToFile’ makes pointer from integer without a cast [-Wint-conversion]
+   61 |         logDataToFile(filename, ambientLight);
+      |                                 ^~~~~~~~~~~~
+      |                                 |
+      |                                 int
+motion_sensor_log.c:22:54: note: expected ‘const char *’ but argument is of type ‘int’
+   22 | void logDataToFile(const char *filename, const char *data);
+      |                                          ~~~~~~~~~~~~^~~~
+motion_sensor_log.c:65:33: warning: passing argument 2 of ‘logDataToFile’ makes pointer from integer without a cast [-Wint-conversion]
+   65 |         logDataToFile(filename, uvIndex);
+      |                                 ^~~~~~~
+      |                                 |
+      |                                 int
+motion_sensor_log.c:22:54: note: expected ‘const char *’ but argument is of type ‘int’
+   22 | void logDataToFile(const char *filename, const char *data);
+      |                                          ~~~~~~~~~~~~^~~~
+motion_sensor_log.c:69:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   69 |         sleep(1);
+      |         ^~~~~
+/usr/bin/ld: /tmp/ccQRSHxV.o: in function `main':
+motion_sensor_log.c:(.text+0x28): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: /tmp/ccQRSHxV.o: in function `initSi1153':
+motion_sensor_log.c:(.text+0x200): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x21c): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x238): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: /tmp/ccQRSHxV.o: in function `readSensorData':
+motion_sensor_log.c:(.text+0x278): undefined reference to `wiringPiI2CReadReg16'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x2a8): undefined reference to `wiringPiI2CReadReg16'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x2d8): undefined reference to `wiringPiI2CReadReg16'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0099
+  Base Build Error: Build errors detected:
+motion_sensor_log.c: In function ‘main’:
+motion_sensor_log.c:91:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   91 |         sleep(1);
+      |         ^~~~~
+motion_sensor_log.c:95:5: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+   95 |     close(fd);
+      |     ^~~~~
+      |     pclose
+/usr/bin/ld: /tmp/ccPhu9lS.o: in function `si1153_read_byte':
+motion_sensor_log.c:(.text+0x1c): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x2c): undefined reference to `wiringPiI2CRead'
+/usr/bin/ld: /tmp/ccPhu9lS.o: in function `si1153_write_byte':
+motion_sensor_log.c:(.text+0x74): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: /tmp/ccPhu9lS.o: in function `main':
+motion_sensor_log.c:(.text+0xc4): undefined reference to `wiringPiSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x100): undefined reference to `wiringPiI2CSetup'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0099
+  Base Syntax Error: Syntax errors detected:
+motion_sensor_log.c:7:10: fatal error: si1153.h: No such file or directory
+    7 | #include "si1153.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+  Base Build Error: Build errors detected:
+motion_sensor_log.c:7:10: fatal error: si1153.h: No such file or directory
+    7 | #include "si1153.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 4801
+  Base Syntax Error: Syntax errors detected:
+interlock_monitor.c:11:10: fatal error: linux/jiffies.h: No such file or directory
+   11 | #include <linux/jiffies.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+  Base Build Error: Build errors detected:
+interlock_monitor.c:11:10: fatal error: linux/jiffies.h: No such file or directory
+   11 | #include <linux/jiffies.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 4801
+  Base Syntax Error: Syntax errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:54:17: error: ‘INPUT_PULLUP’ undeclared (first use in this function)
+   54 |     pinMode(17, INPUT_PULLUP);
+      |                 ^~~~~~~~~~~~
+interlock_monitor.c:54:17: note: each undeclared identifier is reported only once for each function it appears in
+interlock_monitor.c:57:40: warning: passing argument 3 of ‘wiringPiISR’ from incompatible pointer type [-Wincompatible-pointer-types]
+   57 |     if (wiringPiISR(17, INT_EDGE_BOTH, &gpio_interrupt_handler) == -1) {
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        void (*)(int)
+In file included from interlock_monitor.c:8:
+/usr/local/include/wiringPi.h:302:60: note: expected ‘void (*)(void)’ but argument is of type ‘void (*)(int)’
+  302 | extern int  wiringPiISR         (int pin, int mode, void (*function)(void)) ;
+      |                                                     ~~~~~~~^~~~~~~~~~~~~~~
+  Base Build Error: Build errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:54:17: error: ‘INPUT_PULLUP’ undeclared (first use in this function)
+   54 |     pinMode(17, INPUT_PULLUP);
+      |                 ^~~~~~~~~~~~
+interlock_monitor.c:54:17: note: each undeclared identifier is reported only once for each function it appears in
+interlock_monitor.c:57:40: warning: passing argument 3 of ‘wiringPiISR’ from incompatible pointer type [-Wincompatible-pointer-types]
+   57 |     if (wiringPiISR(17, INT_EDGE_BOTH, &gpio_interrupt_handler) == -1) {
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        void (*)(int)
+In file included from interlock_monitor.c:8:
+/usr/local/include/wiringPi.h:302:60: note: expected ‘void (*)(void)’ but argument is of type ‘void (*)(int)’
+  302 | extern int  wiringPiISR         (int pin, int mode, void (*function)(void)) ;
+      |                                                     ~~~~~~~^~~~~~~~~~~~~~~
+----------------------------------------
+ID: 4801
+  Base Syntax Error: Syntax errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:51:9: warning: implicit declaration of function ‘ioctl’ [-Wimplicit-function-declaration]
+   51 |     if (ioctl(fd, GPIO_GET_LINE_DIRECTION, GPIO_PIN) != 0) {
+      |         ^~~~~
+interlock_monitor.c:51:19: error: ‘GPIO_GET_LINE_DIRECTION’ undeclared (first use in this function)
+   51 |     if (ioctl(fd, GPIO_GET_LINE_DIRECTION, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+interlock_monitor.c:51:19: note: each undeclared identifier is reported only once for each function it appears in
+interlock_monitor.c:58:19: error: ‘GPIO_SET_LINE_DIRECTION’ undeclared (first use in this function)
+   58 |     if (ioctl(fd, GPIO_SET_LINE_DIRECTION, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+interlock_monitor.c:65:19: error: ‘GPIO_GET_LINE_EDGE’ undeclared (first use in this function)
+   65 |     if (ioctl(fd, GPIO_GET_LINE_EDGE, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~
+interlock_monitor.c:72:19: error: ‘GPIO_SET_LINE_EDGE’ undeclared (first use in this function)
+   72 |     if (ioctl(fd, GPIO_SET_LINE_EDGE, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~
+interlock_monitor.c:84:25: error: ‘GPIO_GET_LINE_VALUES’ undeclared (first use in this function)
+   84 |         ret = ioctl(fd, GPIO_GET_LINE_VALUES, GPIO_PIN);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+interlock_monitor.c:93:29: error: assignment to expression with array type
+   93 |         log[tail].timestamp = ctime(&ts.tv_sec);
+      |                             ^
+interlock_monitor.c:31:12: warning: unused variable ‘size’ [-Wunused-variable]
+   31 |     size_t size;
+      |            ^~~~
+  Base Build Error: Build errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:51:9: warning: implicit declaration of function ‘ioctl’ [-Wimplicit-function-declaration]
+   51 |     if (ioctl(fd, GPIO_GET_LINE_DIRECTION, GPIO_PIN) != 0) {
+      |         ^~~~~
+interlock_monitor.c:51:19: error: ‘GPIO_GET_LINE_DIRECTION’ undeclared (first use in this function)
+   51 |     if (ioctl(fd, GPIO_GET_LINE_DIRECTION, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+interlock_monitor.c:51:19: note: each undeclared identifier is reported only once for each function it appears in
+interlock_monitor.c:58:19: error: ‘GPIO_SET_LINE_DIRECTION’ undeclared (first use in this function)
+   58 |     if (ioctl(fd, GPIO_SET_LINE_DIRECTION, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+interlock_monitor.c:65:19: error: ‘GPIO_GET_LINE_EDGE’ undeclared (first use in this function)
+   65 |     if (ioctl(fd, GPIO_GET_LINE_EDGE, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~
+interlock_monitor.c:72:19: error: ‘GPIO_SET_LINE_EDGE’ undeclared (first use in this function)
+   72 |     if (ioctl(fd, GPIO_SET_LINE_EDGE, GPIO_PIN) != 0) {
+      |                   ^~~~~~~~~~~~~~~~~~
+interlock_monitor.c:84:25: error: ‘GPIO_GET_LINE_VALUES’ undeclared (first use in this function)
+   84 |         ret = ioctl(fd, GPIO_GET_LINE_VALUES, GPIO_PIN);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+interlock_monitor.c:93:29: error: assignment to expression with array type
+   93 |         log[tail].timestamp = ctime(&ts.tv_sec);
+      |                             ^
+interlock_monitor.c:31:12: warning: unused variable ‘size’ [-Wunused-variable]
+   31 |     size_t size;
+      |            ^~~~
+----------------------------------------
+ID: 4801
+  Base Build Error: Build errors detected:
+interlock_monitor.c: In function ‘printLastEvents’:
+interlock_monitor.c:59:46: warning: passing argument 1 of ‘localtime’ from incompatible pointer type [-Wincompatible-pointer-types]
+   59 |         printf("%s: %d\n", asctime(localtime(&logBuffer[index].timestamp)), logBuffer[index].event);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                              |
+      |                                              int *
+In file included from interlock_monitor.c:5:
+/usr/include/time.h:136:44: note: expected ‘const time_t *’ {aka ‘const long int *’} but argument is of type ‘int *’
+  136 | extern struct tm *localtime (const time_t *__timer) __THROW;
+      |                              ~~~~~~~~~~~~~~^~~~~~~
+interlock_monitor.c: In function ‘handleInterrupt’:
+interlock_monitor.c:65:14: warning: implicit declaration of function ‘GPIO_READ’ [-Wimplicit-function-declaration]
+   65 |     logEvent(GPIO_READ());
+      |              ^~~~~~~~~
+/usr/bin/ld: /tmp/cc2AVIQ9.o: in function `handleInterrupt':
+interlock_monitor.c:(.text+0x2c0): undefined reference to `GPIO_READ'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Base Syntax Error: Syntax errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:91:22: error: storage size of ‘sa’ isn’t known
+   91 |     struct sigaction sa;
+      |                      ^~
+interlock_monitor.c:92:21: error: ‘SIG_IGN’ undeclared (first use in this function)
+   92 |     sa.sa_handler = SIG_IGN;
+      |                     ^~~~~~~
+interlock_monitor.c:92:21: note: each undeclared identifier is reported only once for each function it appears in
+interlock_monitor.c:93:5: warning: implicit declaration of function ‘sigemptyset’ [-Wimplicit-function-declaration]
+   93 |     sigemptyset(&sa.sa_mask);
+      |     ^~~~~~~~~~~
+interlock_monitor.c:94:19: error: ‘SA_RESTART’ undeclared (first use in this function)
+   94 |     sa.sa_flags = SA_RESTART;
+      |                   ^~~~~~~~~~
+interlock_monitor.c:95:9: warning: implicit declaration of function ‘sigaction’ [-Wimplicit-function-declaration]
+   95 |     if (sigaction(SIGINT, &sa, NULL) == -1) {
+      |         ^~~~~~~~~
+interlock_monitor.c:95:19: error: ‘SIGINT’ undeclared (first use in this function)
+   95 |     if (sigaction(SIGINT, &sa, NULL) == -1) {
+      |                   ^~~~~~
+interlock_monitor.c:100:22: error: storage size of ‘sa_int’ isn’t known
+  100 |     struct sigaction sa_int;
+      |                      ^~~~~~
+interlock_monitor.c:102:19: error: ‘SIGIO’ undeclared (first use in this function); did you mean ‘S_ISGID’?
+  102 |     if (sigaction(SIGIO, &sa_int, NULL) == -1) {
+      |                   ^~~~~
+      |                   S_ISGID
+interlock_monitor.c:114:13: error: ‘buf’ undeclared (first use in this function)
+  114 |     sprintf(buf, "/sys/class/gpio/unexport");
+      |             ^~~
+interlock_monitor.c:100:22: warning: unused variable ‘sa_int’ [-Wunused-variable]
+  100 |     struct sigaction sa_int;
+      |                      ^~~~~~
+interlock_monitor.c:91:22: warning: unused variable ‘sa’ [-Wunused-variable]
+   91 |     struct sigaction sa;
+      |                      ^~
+  Base Build Error: Build errors detected:
+interlock_monitor.c: In function ‘main’:
+interlock_monitor.c:91:22: error: storage size of ‘sa’ isn’t known
+   91 |     struct sigaction sa;
+      |                      ^~
+interlock_monitor.c:92:21: error: ‘SIG_IGN’ undeclared (first use in this function)
+   92 |     sa.sa_handler = SIG_IGN;
+      |                     ^~~~~~~
+interlock_monitor.c:92:21: note: each undeclared identifier is reported only once for each function it appears in
+interlock_monitor.c:93:5: warning: implicit declaration of function ‘sigemptyset’ [-Wimplicit-function-declaration]
+   93 |     sigemptyset(&sa.sa_mask);
+      |     ^~~~~~~~~~~
+interlock_monitor.c:94:19: error: ‘SA_RESTART’ undeclared (first use in this function)
+   94 |     sa.sa_flags = SA_RESTART;
+      |                   ^~~~~~~~~~
+interlock_monitor.c:95:9: warning: implicit declaration of function ‘sigaction’ [-Wimplicit-function-declaration]
+   95 |     if (sigaction(SIGINT, &sa, NULL) == -1) {
+      |         ^~~~~~~~~
+interlock_monitor.c:95:19: error: ‘SIGINT’ undeclared (first use in this function)
+   95 |     if (sigaction(SIGINT, &sa, NULL) == -1) {
+      |                   ^~~~~~
+interlock_monitor.c:100:22: error: storage size of ‘sa_int’ isn’t known
+  100 |     struct sigaction sa_int;
+      |                      ^~~~~~
+interlock_monitor.c:102:19: error: ‘SIGIO’ undeclared (first use in this function); did you mean ‘S_ISGID’?
+  102 |     if (sigaction(SIGIO, &sa_int, NULL) == -1) {
+      |                   ^~~~~
+      |                   S_ISGID
+interlock_monitor.c:114:13: error: ‘buf’ undeclared (first use in this function)
+  114 |     sprintf(buf, "/sys/class/gpio/unexport");
+      |             ^~~
+interlock_monitor.c:100:22: warning: unused variable ‘sa_int’ [-Wunused-variable]
+  100 |     struct sigaction sa_int;
+      |                      ^~~~~~
+interlock_monitor.c:91:22: warning: unused variable ‘sa’ [-Wunused-variable]
+   91 |     struct sigaction sa;
+      |                      ^~
+----------------------------------------
+ID: 4244
+  Base Build Error: Build errors detected:
+light_control.c: In function ‘read_lux’:
+light_control.c:24:9: warning: implicit declaration of function ‘i2c_writeByteData’; did you mean ‘i2cWriteByteData’? [-Wimplicit-function-declaration]
+   24 |     if (i2c_writeByteData(BH1750_ADDR, BH1750_REG_CONTROL, BH1750_CMD_MEASUREMENT) != 0) {
+      |         ^~~~~~~~~~~~~~~~~
+      |         i2cWriteByteData
+light_control.c:32:16: warning: implicit declaration of function ‘i2c_readBlockData’; did you mean ‘i2cReadBlockData’? [-Wimplicit-function-declaration]
+   32 |     if ((ret = i2c_readBlockData(BH1750_ADDR, BH1750_REG_DATA_L, buf, 2)) != 2) {
+      |                ^~~~~~~~~~~~~~~~~
+      |                i2cReadBlockData
+light_control.c: In function ‘main’:
+light_control.c:72:63: warning: implicit declaration of function ‘pigpioGetError’ [-Wimplicit-function-declaration]
+   72 |         fprintf(stderr, "pigpio initialization failed: %s\n", pigpioGetError());
+      |                                                               ^~~~~~~~~~~~~~
+/usr/bin/ld: /tmp/cceorVVx.o: in function `read_lux':
+light_control.c:(.text+0x14): undefined reference to `i2c_writeByteData'
+/usr/bin/ld: light_control.c:(.text+0x44): undefined reference to `i2c_readBlockData'
+/usr/bin/ld: /tmp/cceorVVx.o: in function `main':
+light_control.c:(.text+0x188): undefined reference to `pigpioGetError'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4244
+  Base Build Error: Build errors detected:
+light_control.c: In function ‘main’:
+light_control.c:39:63: warning: implicit declaration of function ‘pigpioGetError’ [-Wimplicit-function-declaration]
+   39 |         fprintf(stderr, "pigpio initialization failed: %s\n", pigpioGetError(status));
+      |                                                               ^~~~~~~~~~~~~~
+light_control.c:57:9: warning: implicit declaration of function ‘i2cWriteReg’; did you mean ‘i2cWriteByte’? [-Wimplicit-function-declaration]
+   57 |         i2cWriteReg(i2c_id, BH1750_CMD_MEASUREMENT, 0);
+      |         ^~~~~~~~~~~
+      |         i2cWriteByte
+light_control.c:63:9: warning: implicit declaration of function ‘i2cReadReg’ [-Wimplicit-function-declaration]
+   63 |         i2cReadReg(i2c_id, 0x10, 2, buffer);
+      |         ^~~~~~~~~~
+/usr/bin/ld: /tmp/ccuTMjzD.o: in function `main':
+light_control.c:(.text+0x104): undefined reference to `pigpioGetError'
+/usr/bin/ld: light_control.c:(.text+0x174): undefined reference to `pigpioGetError'
+/usr/bin/ld: light_control.c:(.text+0x1a0): undefined reference to `i2cWriteReg'
+/usr/bin/ld: light_control.c:(.text+0x1c0): undefined reference to `i2cReadReg'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4244
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccdSAYg5.o: in function `main':
+light_control.c:(.text+0x58): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: light_control.c:(.text+0xf4): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: light_control.c:(.text+0x10c): undefined reference to `wiringPiI2CReadReg16'
+/usr/bin/ld: light_control.c:(.text+0x1a8): undefined reference to `analogWrite'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4244
+  Base Syntax Error: Syntax errors detected:
+light_control.c: In function ‘main’:
+light_control.c:46:47: error: lvalue required as unary ‘&’ operand
+   46 |             fprintf(logFile, "%s %d\n", ctime(&time(NULL)), lux);
+      |                                               ^
+light_control.c: In function ‘readBH1750’:
+light_control.c:67:9: warning: implicit declaration of function ‘i2cReadRegS’ [-Wimplicit-function-declaration]
+   67 |     if (i2cReadRegS(bus, addr, 0x10, &val) < 0) {
+      |         ^~~~~~~~~~~
+light_control.c:75:5: warning: implicit declaration of function ‘i2cWriteRegS’; did you mean ‘i2cWriteByte’? [-Wimplicit-function-declaration]
+   75 |     i2cWriteRegS(bus, addr, 0x08, buf, 1);
+      |     ^~~~~~~~~~~~
+      |     i2cWriteByte
+  Base Build Error: Build errors detected:
+light_control.c: In function ‘main’:
+light_control.c:46:47: error: lvalue required as unary ‘&’ operand
+   46 |             fprintf(logFile, "%s %d\n", ctime(&time(NULL)), lux);
+      |                                               ^
+light_control.c: In function ‘readBH1750’:
+light_control.c:67:9: warning: implicit declaration of function ‘i2cReadRegS’ [-Wimplicit-function-declaration]
+   67 |     if (i2cReadRegS(bus, addr, 0x10, &val) < 0) {
+      |         ^~~~~~~~~~~
+light_control.c:75:5: warning: implicit declaration of function ‘i2cWriteRegS’; did you mean ‘i2cWriteByte’? [-Wimplicit-function-declaration]
+   75 |     i2cWriteRegS(bus, addr, 0x08, buf, 1);
+      |     ^~~~~~~~~~~~
+      |     i2cWriteByte
+----------------------------------------
+ID: 4244
+  Base Build Error: Build errors detected:
+light_control.c: In function ‘main’:
+light_control.c:47:10: warning: implicit declaration of function ‘i2cWriteReg8’; did you mean ‘i2cWriteByte’? [-Wimplicit-function-declaration]
+   47 |     fd = i2cWriteReg8(BH1750_I2C_ADDR, BH1750_CMD_CONTINUOUS_HIGH_RES_MODE, 0x00);
+      |          ^~~~~~~~~~~~
+      |          i2cWriteByte
+light_control.c:50:22: warning: implicit declaration of function ‘i2cReadReg16’ [-Wimplicit-function-declaration]
+   50 |         int result = i2cReadReg16(BH1750_I2C_ADDR, 0x11);
+      |                      ^~~~~~~~~~~~
+/usr/bin/ld: /tmp/ccHXK96G.o: in function `main':
+light_control.c:(.text+0x150): undefined reference to `i2cWriteReg8'
+/usr/bin/ld: light_control.c:(.text+0x160): undefined reference to `i2cReadReg16'
+collect2: error: ld returned 1 exit status
+----------------------------------------

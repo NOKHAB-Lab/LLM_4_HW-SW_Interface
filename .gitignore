@@ -1,0 +1,18 @@
+# Large files — split versions are in dataset/training/synthetic/parts/
+dataset/training/synthetic/Validated_Synthetic_Dataset.json
+
+# Paper text
+¨paper.txt
+
+# Claude files
+.claude/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Environment
+.env
+*.egg-info/

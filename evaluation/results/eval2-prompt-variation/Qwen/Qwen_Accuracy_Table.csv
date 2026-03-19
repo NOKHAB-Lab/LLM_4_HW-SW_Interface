@@ -1,0 +1,11 @@
+task,accuracy_var_0,accuracy_var_1,accuracy_var_2,avg_accuracy,successful_builds
+Si1133 UV/ALS/IR sensor interface on Raspberry Pi,94.125,94.75,70.375,86.42,2
+Motion Detection with HC-SR501 and Buzzer,72.625,97.875,96.25,88.92,2
+Temperature-based fan control for Raspberry Pi 5,94.125,96.375,96.75,95.75,3
+Temperature-controlled fan with UDP communication,41.75,97.375,91.875,77,2
+Airflow Monitoring with Alarm,79.875,82.75,96.5,86.38,1
+Aircraft Proximity Alert System,92.5,93.5,94.375,93.46,3
+Door lock control system for Raspberry Pi using pigpio,93.375,96.625,95.625,95.21,3
+Motion-triggered sensor logging with Si1153 and PIR sensor on Raspberry Pi 5,95.75,67.375,78.625,80.58,1
+Safety Interlock System Monitor,79.625,74.375,82,78.67,0
+LED brightness control based on BH1750 light sensor readings on Raspberry Pi,93.875,91.625,95.875,93.79,3

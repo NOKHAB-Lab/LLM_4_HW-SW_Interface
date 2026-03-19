@@ -1,0 +1,7 @@
+Model,Fine-Tuning Status,pass@1,pass@3,pass@5
+Mistral-7B-Instructv0.3,Base,0.2,0.3,0.3
+Mistral-7B-Instructv0.3,Fine-tuned,0.6,0.8,0.9
+DeepSeek-Coder 6.7B-Instruct ,Base,0.4,0.7,0.8
+DeepSeek-Coder 6.7B-Instruct ,Fine-tuned,0.6,0.8,1
+Qwen2.5-7B-Instruct ,Base,0.2,0.4,0.5
+Qwen2.5-7B-Instruct ,Fine-tuned,0.6,0.8,0.9
