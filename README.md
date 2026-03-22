@@ -2,7 +2,6 @@
 
 > Replication package for the paper:
 > **"Domain-Specific Fine-Tuning of Large Language Models for HW/SW Interface Generation: An Empirical Study"**
-> *Accepted at CAiSE 2026 — Verona, Italy, June 8–12, 2026*
 
 > **To reproduce the paper results, see [REPLICATION.md](REPLICATION.md).**
 
