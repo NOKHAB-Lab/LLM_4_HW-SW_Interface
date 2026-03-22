@@ -1,0 +1,281 @@
+ID: 1599
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0647
+----------------------------------------
+ID: 2693
+----------------------------------------
+ID: 1507
+----------------------------------------
+ID: 1097
+----------------------------------------
+ID: 0912
+----------------------------------------
+ID: 441
+----------------------------------------
+ID: 4220
+  Inference Build Error: Build errors detected:
+pir_buzzer_interrupt.c:1:22: warning: extra tokens at end of #include directive
+    1 | #include <wiringPi.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n#define PIR_PIN 25
+      |                      ^
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 3109
+  Inference Build Error: Build errors detected:
+button_led_control.c:1:22: warning: extra tokens at end of #include directive
+    1 | #include <wiringPi.h>\n\n#define BUTTON_PIN 0
+      |                      ^
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0687
+----------------------------------------
+ID: 1483
+----------------------------------------
+ID: 0628
+----------------------------------------
+ID: 3073
+  Inference Syntax Error: Syntax errors detected:
+oled_clock.c:4:10: fatal error: ssd1306_i2c.h: No such file or directory
+    4 | #include "ssd1306_i2c.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+oled_clock.c:4:10: fatal error: ssd1306_i2c.h: No such file or directory
+    4 | #include "ssd1306_i2c.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 3339
+----------------------------------------
+ID: 1288
+----------------------------------------
+ID: 108
+----------------------------------------
+ID: 474
+----------------------------------------
+ID: 4398
+----------------------------------------
+ID: 431
+----------------------------------------
+ID: 4587
+  Inference Syntax Error: Syntax errors detected:
+gate_control.c:5:10: fatal error: vl53l1x_api.h: No such file or directory
+    5 | #include "vl53l1x_api.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+gate_control.c:5:10: fatal error: vl53l1x_api.h: No such file or directory
+    5 | #include "vl53l1x_api.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 224
+----------------------------------------
+ID: 414
+----------------------------------------
+ID: 3202
+  Inference Build Error: Build errors detected:
+ssd1306_test.c:1:22: warning: extra tokens at end of #include directive
+    1 | #include <wiringPi.h>\n#include <wiringPiI2C.h>\n\n#define SSD1306_I2C_ADDRESS 0x3C\n#define SSD1306_COMMAND 0x00\n#define SSD1306_DATA 0x40\n#define SSD1306_WIDTH 128\n#define SSD1306_HEIGHT 64\n\nvoid ssd1306_command(int fd, unsigned char cmd) {\n    wiringPiI2CWriteReg8(fd, SSD1306_COMMAND, cmd);\n}\n\nvoid ssd1306_init(int fd) {\n    ssd1306_command(fd, 0xAE);
+      |                      ^
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 2931
+----------------------------------------
+ID: 3275
+----------------------------------------
+ID: 3277
+  Inference Syntax Error: Syntax errors detected:
+dht22_monitor.c: In function ‘main’:
+dht22_monitor.c:57:11: error: conflicting types for ‘humidity_threshold’; have ‘float’
+   57 |     float humidity_threshold = json_object_get_double(humidity_threshold);
+      |           ^~~~~~~~~~~~~~~~~~
+dht22_monitor.c:39:25: note: previous declaration of ‘humidity_threshold’ with type ‘struct json_object *’
+   39 |     struct json_object *humidity_threshold;
+      |                         ^~~~~~~~~~~~~~~~~~
+dht22_monitor.c:57:11: warning: unused variable ‘humidity_threshold’ [-Wunused-variable]
+   57 |     float humidity_threshold = json_object_get_double(humidity_threshold);
+      |           ^~~~~~~~~~~~~~~~~~
+  Inference Build Error: Build errors detected:
+dht22_monitor.c: In function ‘main’:
+dht22_monitor.c:57:11: error: conflicting types for ‘humidity_threshold’; have ‘float’
+   57 |     float humidity_threshold = json_object_get_double(humidity_threshold);
+      |           ^~~~~~~~~~~~~~~~~~
+dht22_monitor.c:39:25: note: previous declaration of ‘humidity_threshold’ with type ‘struct json_object *’
+   39 |     struct json_object *humidity_threshold;
+      |                         ^~~~~~~~~~~~~~~~~~
+----------------------------------------
+ID: 0610
+  Inference Build Error: Build errors detected:
+hilbert_curve_plotter.c:1:22: warning: extra tokens at end of #include directive
+    1 | #include <wiringPi.h>\n#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\n\n#define STEPS_PER_REV 2048\n#define DELAY 2\n\n
+      |                      ^
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 1428
+----------------------------------------
+ID: 0421
+  Inference Build Error: Build errors detected:
+relay_control.c:1:22: warning: extra tokens at end of #include directive
+    1 | #include <wiringPi.h>\n#include <stdio.h>\n#include <stdlib.h>\n#include <syslog.h>\n#include <unistd.h>\n\n#define RELAY_PIN 0
+      |                      ^
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 1996
+----------------------------------------
+ID: 3115
+----------------------------------------
+ID: 2053
+----------------------------------------
+ID: 0223
+----------------------------------------
+ID: 4446
+----------------------------------------
+ID: 1913
+----------------------------------------
+ID: 0234
+----------------------------------------
+ID: 3816
+----------------------------------------
+ID: 1378
+----------------------------------------
+ID: 0374
+----------------------------------------
+ID: 1400
+----------------------------------------
+ID: 1519
+----------------------------------------
+ID: 0957
+----------------------------------------
+ID: 483
+  Inference Syntax Error: Syntax errors detected:
+ssd1306_oled_example.c:4:10: fatal error: ssd1306_i2c.h: No such file or directory
+    4 | #include "ssd1306_i2c.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+  Inference Build Error: Build errors detected:
+ssd1306_oled_example.c:4:10: fatal error: ssd1306_i2c.h: No such file or directory
+    4 | #include "ssd1306_i2c.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 4244
+----------------------------------------
+ID: 1374
+----------------------------------------
+ID: 4363
+----------------------------------------
+ID: 1373
+----------------------------------------
+ID: 1533
+  Inference Build Error: Build errors detected:
+stepper_motor_control.c:1:22: warning: extra tokens at end of #include directive
+    1 | #include <wiringPi.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n#define IN1 0
+      |                      ^
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 2144
+----------------------------------------
+ID: 4623
+  Inference Build Error: Build errors detected:
+magnetometer_led_control.c: In function ‘handle_error’:
+magnetometer_led_control.c:14:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   14 |         exit(1);
+      |         ^~~~
+magnetometer_led_control.c:4:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+    3 | #include <math.h>
+  +++ |+#include <stdlib.h>
+    4 | 
+magnetometer_led_control.c:14:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   14 |         exit(1);
+      |         ^~~~
+magnetometer_led_control.c:14:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+/usr/bin/ld: /tmp/ccJdSC7J.o: in function `main':
+magnetometer_led_control.c:(.text+0x1a0): undefined reference to `atan2'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+----------------------------------------
+ID: 0099
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 42
+----------------------------------------
+ID: 402
+  Inference Syntax Error: Syntax errors detected:
+seven_segment_display.c: In function ‘shiftOut’:
+seven_segment_display.c:26:25: error: ‘LSBFIRST’ undeclared (first use in this function)
+   26 |         if (bitOrder == LSBFIRST) {
+      |                         ^~~~~~~~
+seven_segment_display.c:26:25: note: each undeclared identifier is reported only once for each function it appears in
+seven_segment_display.c: In function ‘displayDigit’:
+seven_segment_display.c:40:35: error: ‘MSBFIRST’ undeclared (first use in this function)
+   40 |     shiftOut(DATA_PIN, CLOCK_PIN, MSBFIRST, digitCode[digit]);
+      |                                   ^~~~~~~~
+  Inference Build Error: Build errors detected:
+seven_segment_display.c: In function ‘shiftOut’:
+seven_segment_display.c:26:25: error: ‘LSBFIRST’ undeclared (first use in this function)
+   26 |         if (bitOrder == LSBFIRST) {
+      |                         ^~~~~~~~
+seven_segment_display.c:26:25: note: each undeclared identifier is reported only once for each function it appears in
+seven_segment_display.c: In function ‘displayDigit’:
+seven_segment_display.c:40:35: error: ‘MSBFIRST’ undeclared (first use in this function)
+   40 |     shiftOut(DATA_PIN, CLOCK_PIN, MSBFIRST, digitCode[digit]);
+      |                                   ^~~~~~~~
+----------------------------------------
+ID: 302
+----------------------------------------
+ID: 850
+----------------------------------------
+ID: 4856
+----------------------------------------
+ID: 1484
+----------------------------------------
+ID: 355
+----------------------------------------
+ID: 0446
+----------------------------------------
+ID: 664
+----------------------------------------
+ID: 1085
+----------------------------------------
+ID: 1178
+  Inference Build Error: Build errors detected:
+pir_buzzer.c:1:19: warning: extra tokens at end of #include directive
+    1 | #include <stdio.h>\n#include <stdlib.h>\n#include <wiringPi.h>\n\n#define PIR_PIN 0
+      |                   ^
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 415
+----------------------------------------

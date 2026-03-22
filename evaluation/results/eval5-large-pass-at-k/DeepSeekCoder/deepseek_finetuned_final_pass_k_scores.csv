@@ -1,0 +1,54 @@
+task,pass@1,pass@3,pass@5
+Si1133 UV/ALS/IR sensor interface on Raspberry Pi,1.0,1.0,1.0
+Motion Detection with HC-SR501 and Buzzer,1.0,1.0,1.0
+Temperature-based fan control for Raspberry Pi 5,1.0,1.0,1.0
+Temperature-controlled fan with UDP communication,0.0,1.0,1.0
+Airflow Monitoring with Alarm,1.0,1.0,1.0
+Aircraft Proximity Alert System,1.0,1.0,1.0
+Motion Detection System,1.0,1.0,1.0
+Motion detection and logging with multiple PIR sensors on Raspberry Pi,1.0,1.0,1.0
+Motion detection and buzzer activation with logging for Raspberry Pi,1.0,1.0,1.0
+Motion-activated buzzer and logging system for Raspberry Pi,1.0,1.0,1.0
+Threat detection node using PIR sensor and buzzer on Raspberry Pi Zero W,1.0,1.0,1.0
+Motion-activated buzzer for obstacle avoidance,0.0,1.0,1.0
+GPIO Control with Button and LED,1.0,1.0,1.0
+Drone Navigation System,1.0,1.0,1.0
+Environmental Monitoring,1.0,1.0,1.0
+Distance sensing application for assistive technology,1.0,1.0,1.0
+Accelerometer Monitoring and LED Control,1.0,1.0,1.0
+Interactive Art Installation with Tilt Switches and LEDs,1.0,1.0,1.0
+Smart Irrigation System,0.0,0.0,1.0
+Vibration Monitoring System,0.0,1.0,1.0
+Vibration-triggered shutdown mechanism for Raspberry Pi,1.0,1.0,1.0
+Assistive Technology Gate System,1.0,1.0,1.0
+Temperature and Humidity Monitoring System,1.0,1.0,1.0
+Smart Chicken Coop Door Controller,1.0,1.0,1.0
+"ADC/DAC (Raspberry Pi, C Language)SSD1306 OLED Display Initialization and Test",1.0,1.0,1.0
+Soil Moisture Monitoring and Relay Control,0.0,1.0,1.0
+Distributed temperature and humidity monitoring system for industrial automation on Raspberry Pi 4,0.0,1.0,1.0
+Relay control with touch sensors on Raspberry Pi Zero W,0.0,0.0,1.0
+Distributed Motion Detection System Node,1.0,1.0,1.0
+Home Security System,1.0,1.0,1.0
+Motion detection system for Raspberry Pi,1.0,1.0,1.0
+Distance monitoring with VL53L1X and PIR sensor on Raspberry Pi Zero W,1.0,1.0,1.0
+Motion detection and reporting to a central logging server using UDP.,1.0,1.0,1.0
+Automated Quality Control System using BMP180 sensors on Raspberry Pi,0.0,1.0,1.0
+Rain-activated window closer for Raspberry Pi,1.0,1.0,1.0
+Timed Access Control System for Raspberry Pi using pigpio,0.0,0.0,1.0
+Multi-sensor proximity-based musical alert system for industrial automation using Raspberry Pi Zero W and HC-SR04 sensors.,1.0,1.0,1.0
+LED brightness control based on BH1750 light sensor readings on Raspberry Pi,1.0,1.0,1.0
+MCP4725 DAC Voltage Setting,0.0,0.0,1.0
+Vibration-triggered Shutdown,1.0,1.0,1.0
+Home Automation Humidity Monitor,1.0,1.0,1.0
+Seven-Segment Display,0.0,1.0,1.0
+Magnetometer and LED control on Raspberry Pi,0.0,0.0,1.0
+Safety Interlock System Monitor,1.0,1.0,1.0
+Door lock control system for Raspberry Pi using pigpio,1.0,1.0,1.0
+Capacitive Touch Sensor with LED Fading on Raspberry Pi,1.0,1.0,1.0
+Air Quality Monitoring and Ventilation Control,1.0,1.0,1.0
+Motion-triggered buzzer with MQTT integration on Raspberry Pi Zero W,1.0,1.0,1.0
+Home Automation Motion Detection System,1.0,1.0,1.0
+Motion Detection and Logging,0.0,1.0,1.0
+Motion detection using multiple PIR sensors on Raspberry Pi,0.0,1.0,1.0
+Environmental Monitoring System,1.0,1.0,1.0
+Cumulative Average,0.73,0.9,1.0

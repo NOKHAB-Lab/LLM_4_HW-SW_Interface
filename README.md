@@ -1,4 +1,4 @@
-# HW/SW Interface LLM Dataset
+# HW/SW Interface LLM Dataset <a href="https://huggingface.co/datasets/NOKHAB-Lab/LLM_4_HW-SW_Interface"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="HuggingFace Dataset" align="right"/></a>
 
 > Replication package for the paper:
 > **"Domain-Specific Fine-Tuning of Large Language Models for HW/SW Interface Generation: An Empirical Study"**
@@ -54,7 +54,7 @@ The dataset covers **over 400 distinct sensor types** — pressure, temperature,
 ### Pre-trained vs. Fine-tuned Accuracy
 
 <p align="center">
-  <img src="figures/Fig4a.png" width="520" alt="Accuracy comparison: pre-trained (zero-shot) vs fine-tuned models"/>
+  <img src="figures/fig4a.png" width="520" alt="Accuracy comparison: pre-trained (zero-shot) vs fine-tuned models"/>
 </p>
 
 | Model | Pre-trained | Fine-tuned | Relative Gain |
@@ -68,7 +68,7 @@ The dataset covers **over 400 distinct sensor types** — pressure, temperature,
 ### Fine-tuned Models vs. Commercial SOTA
 
 <p align="center">
-  <img src="figures/Fig4b.png" width="520" alt="Accuracy comparison: fine-tuned models vs GPT-4o and Gemini Flash 2.0"/>
+  <img src="figures/fig4b.png" width="520" alt="Accuracy comparison: fine-tuned models vs GPT-4o and Gemini Flash 2.0"/>
 </p>
 
 Fine-tuned open-source models match and in some cases exceed commercial state-of-the-art systems (GPT-4o: 89.29%, Gemini Flash 2.0: 87.22%).
@@ -76,7 +76,7 @@ Fine-tuned open-source models match and in some cases exceed commercial state-of
 ### Pass@k Evaluation
 
 <p align="center">
-  <img src="figures/Fig5.png" width="520" alt="Pass@k metrics (k=1,3,5) for fine-tuned models and commercial systems"/>
+  <img src="figures/fig14.png" width="520" alt="Pass@k metrics (k=1,3,5) for fine-tuned models and commercial systems"/>
 </p>
 
 | Model | Pass@1 | Pass@3 | Pass@5 |
@@ -99,8 +99,8 @@ HW-SW-Interface-LLM-Dataset/
 │   ├── training/
 │   │   ├── synthetic/               # ~16K compiler-validated synthetic programs (15,886)
 │   │   ├── real-world/              # ~1K real-world programs (1,053)
-│   │   └── Training_Set_JSONL.jsonl  # Fine-tuning ready JSONL
-│   └── test/                        # 70-prompt test set + evaluation responses
+│   │   └── training_set.jsonl  # Fine-tuning ready JSONL
+│   └── test/                        # 70-prompt test set, template (prompts only), and statistics
 │
 ├── pipelines/                       # Data generation pipelines
 │   ├── 1-synthetic-data-pipeline/   # Automated synthetic data generation
@@ -126,8 +126,8 @@ HW-SW-Interface-LLM-Dataset/
 ├── analysis/                        # Dataset analysis and result visualization
 │   ├── training/                    # Training dataset analysis scripts
 │   ├── test/                        # Test set statistics
-│   ├── accuracyStats.py             # Accuracy summary from evaluation JSONs
-│   ├── timeStats.py                 # Execution time statistics
+│   ├── accuracy_stats.py             # Accuracy summary from evaluation JSONs
+│   ├── time_stats.py                 # Execution time statistics
 │   ├── extract_errors.py            # Build/syntax error extraction
 │   └── plot_generation.ipynb        # Generate all paper figures
 │
@@ -142,7 +142,7 @@ HW-SW-Interface-LLM-Dataset/
 1. dataset/                   Build training data using pipelines/
    └── pipelines/
 
-2. fine-tuning/               QLoRA fine-tune each model on Training_Set_JSONL.jsonl
+2. fine-tuning/               QLoRA fine-tune each model on training_set.jsonl
    └── <model>/training/
 
 3. evaluation/                Score model outputs → CSV + JSON results
@@ -216,9 +216,9 @@ Full evaluation pipeline with three protocols:
 
 | Script | Protocol |
 |---|---|
-| `execute_validation_Criteria1.py` | **Eval 1**: Base vs. fine-tuned — 70 prompts |
-| `execute_validation_Criteria2.py` | **Eval 2**: Prompt variation robustness |
-| `execute_validation_Criteria3.py` | **Eval 3**: Pass@k (k ∈ {1, 3, 5}, temperature=0.7) |
+| `execute_validation_criteria1.py` | **Eval 1**: Base vs. fine-tuned — 70 prompts |
+| `execute_validation_criteria2.py` | **Eval 2**: Prompt variation robustness |
+| `execute_validation_criteria3.py` | **Eval 3**: Pass@k (k ∈ {1, 3, 5}, temperature=0.7) |
 | `execute_validation_GPT_and_Gemini.py` | Functional relevance scoring via GPT-4o + Gemini |
 
 ---
@@ -262,31 +262,49 @@ Each entry in the training dataset (JSON/JSONL) follows this structure:
 }
 ```
 
----
 
-## Citation
+## Token Length Distribution
 
-If you use this dataset or pipelines in your work, please cite:
+<p align="center">
+  <img src="figures/fig5.png" width="600" alt="Estimated token count distribution of training examples"/>
+</p>
 
-```bibtex
-@inproceedings{hassan2026hwsw,
-  title     = {Domain-Specific Fine-Tuning of Large Language Models for HW/SW Interface Generation: An Empirical Study},
-  author    = {Hassan, Ali and Saeed, Muhammad Saqib and Senouci, Benaoumeur and Benatallah, Boualem},
-  booktitle = {Proceedings of the 38th International Conference on Advanced Information Systems Engineering (CAiSE 2026)},
-  year      = {2026},
-  address   = {Verona, Italy},
-  publisher = {Springer}
-}
-```
+Mean sequence length ~1,357 tokens; max ~5,341 — all well within the 8,192-token context window of the evaluated models.
 
 ---
 
-## Authors
+## Methodology Figures
 
-- **Ali Hassan** — University of Southern Denmark (SDU), Sønderborg, Denmark
-- **Muhammad Saqib Saeed** — University of Southern Denmark (SDU) · musae@sdu.dk
-- **Benaoumeur Senouci** — University of Southern Denmark (SDU) · senouci@sdu.dk
-- **Boualem Benatallah** — Insight SFI Centre on Data Analytics, Dublin City University, Ireland
+### Dataset Sources
+
+The training dataset combines two complementary sources — real-world C programs collected from GitHub and educational resources, and synthetic programs generated via Gemini Flash 2.0 with compiler-in-the-loop validation.
+
+<p align="center">
+  <img src="figures/fig_dataset_sources.png" width="650" alt="Overview of fine-tuning dataset sources"/>
+</p>
+<p align="center"><em>Overview of fine-tuning dataset sources (real-world + synthetic)</em></p>
+
+---
+
+### Real-World Data Collection & Processing Pipeline
+
+The real-world pipeline collects `.c` source files from GitHub repositories and educational materials, then processes them through a multi-stage validation stack before augmenting with LLM-generated task descriptions and prompt variations.
+
+<p align="center">
+  <img src="figures/fig_realworld_collection_processing.png" width="650" alt="Real-world data collection and processing pipeline"/>
+</p>
+<p align="center"><em>Real-world data collection & processing pipeline</em></p>
+
+---
+
+### Synthetic Data Collection & Processing Pipeline
+
+The synthetic pipeline uses structured prompting (zero-shot and chain-of-thought) to generate C programs via Gemini Flash 2.0, then validates each program through four sequential stages — C++ detection, structural check, header inspection, and GCC compilation — before formatting into the training dataset.
+
+<p align="center">
+  <img src="figures/fig_synthetic_collection_processing.png" width="650" alt="Synthetic data collection and processing pipeline"/>
+</p>
+<p align="center"><em>Synthetic data collection & processing pipeline</em></p>
 
 ---
 
@@ -295,3 +313,4 @@ If you use this dataset or pipelines in your work, please cite:
 This dataset and associated code are released under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE) license. You are free to share and adapt the material for any purpose, provided appropriate credit is given.
 
 Please cite the paper if you use any part of this replication package (see [Citation](#citation) above).
+

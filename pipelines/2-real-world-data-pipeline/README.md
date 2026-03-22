@@ -10,7 +10,7 @@ Collects, validates, and tags real-world embedded C programs from GitHub reposit
 Raw `.c` source files are placed in `raw-files/`. These are collected manually or via the GitHub REST API from public embedded systems repositories.
 
 **Step 2 — Raspberry Pi Relevance Check**
-`Prompting_code.py` reads each file and uses Gemini to determine whether the code is specifically designed for Raspberry Pi. Files that fail this check are saved to `raspberry_pi_invalid_data.json` for reference.
+`prompting_code.py` reads each file and uses Gemini to determine whether the code is specifically designed for Raspberry Pi. Files that fail this check are saved to `raspberry_pi_invalid_data.json` for reference.
 
 **Step 3 — Task Description Generation**
 For each validated file, Gemini generates a detailed natural language prompt describing the program — including hardware requirements, software dependencies, and expected behavior.
@@ -37,7 +37,7 @@ Validated examples are saved to `raspberry_pi_validated_data.json`.
 ```
 2-real-world-data-pipeline/
 ├── raw-files/              # Raw .c source files collected from GitHub
-├── Prompting_code.py              # Main processing script
+├── prompting_code.py              # Main processing script
 ├── Prompt_Fetch.ipynb             # Jupyter notebook version
 ├── prompts/
 │   └── prompt_generator.py        # Generates task descriptions via Gemini
@@ -82,7 +82,7 @@ API_KEYS = [
 
 ```bash
 cd pipelines/2-real-world-data-pipeline
-python Prompting_code.py --input-dir "raw-files/"
+python prompting_code.py --input-dir "raw-files/"
 ```
 
 Or use the notebook:

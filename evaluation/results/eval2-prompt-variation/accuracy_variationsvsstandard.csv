@@ -1,7 +1,0 @@
-Model,Evaluation Type,Accuracy
-Mistral-7B-Instructv0.3,Prompt-set driven evaluation accuracy,89.3
-Mistral-7B-Instructv0.3,Prompt-variation driven evaluation accuracy,91.65
-DeepSeek-Coder 6.7B-Instruct,Prompt-set driven evaluation accuracy,90.05
-DeepSeek-Coder 6.7B-Instruct,Prompt-variation driven evaluation accuracy,87.5
-Qwen2.5-7B-Instruct,Prompt-set driven evaluation accuracy,87.72
-Qwen2.5-7B-Instruct,Prompt-variation driven evaluation accuracy,87.62

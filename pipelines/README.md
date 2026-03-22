@@ -51,7 +51,7 @@ python task_generator/task_manager.py
 Applies the same four-stage validation stack as the synthetic pipeline. Task descriptions generated via Gemini Flash 2.0 with paraphrasing augmentation.
 
 **Key files:**
-- `Prompting_code.py` / `Prompt_Fetch.ipynb` — fetch and process collected files
+- `prompting_code.py` / `Prompt_Fetch.ipynb` — fetch and process collected files
 - `prompts/prompt_generator.py` — generates task descriptions for collected programs
 - `validation/` — validation stack
 - `raw-files/` — raw `.c` source files from public repositories
@@ -59,7 +59,7 @@ Applies the same four-stage validation stack as the synthetic pipeline. Task des
 **Run:**
 ```bash
 cd 2-real-world-data-pipeline
-python Prompting_code.py
+python prompting_code.py
 ```
 
 ---

@@ -1,0 +1,71 @@
+task,avg_accuracy,successful_test_cases,accuracy_var_0,accuracy_var_1,accuracy_var_2,accuracy_var_3,accuracy_var_4
+Si1133 UV/ALS/IR sensor interface on Raspberry Pi,68.4,3,59.0,58.0,75.0,75.0,75.0
+Motion Detection with HC-SR501 and Buzzer,74.0,5,74.0,74.0,74.0,74.0,74.0
+Temperature-based fan control for Raspberry Pi 5,65.2,1,72.0,46.0,60.0,73.0,75.0
+Temperature-controlled fan with UDP communication,57.4,1,48.0,60.0,59.0,70.0,50.0
+Airflow Monitoring with Alarm,72.0,4,75.0,75.0,75.0,60.0,75.0
+Aircraft Proximity Alert System,68.4,3,73.0,73.0,75.0,75.0,46.0
+Motion Detection System,63.0,1,60.0,60.0,60.0,60.0,75.0
+Motion detection and logging with multiple PIR sensors on Raspberry Pi,71.8,4,75.0,60.0,75.0,75.0,74.0
+Motion detection and buzzer activation with logging for Raspberry Pi,66.4,3,74.0,73.0,75.0,60.0,50.0
+Motion-activated buzzer and logging system for Raspberry Pi,75.0,5,75.0,75.0,75.0,75.0,75.0
+Threat detection node using PIR sensor and buzzer on Raspberry Pi Zero W,67.8,3,60.0,72.0,74.0,75.0,58.0
+"Proximity-triggered, servo-controlled bird feeder for Raspberry Pi 5",60.6,1,59.0,60.0,50.0,60.0,74.0
+Motion-activated buzzer for obstacle avoidance,74.2,5,74.0,73.0,74.0,75.0,75.0
+GPIO Control with Button and LED,75.0,5,75.0,75.0,75.0,75.0,75.0
+Drone Navigation System,56.0,1,47.0,49.0,75.0,50.0,59.0
+Environmental Monitoring,51.2,0,60.0,49.0,49.0,48.0,50.0
+Temperature monitoring and fan control for Raspberry Pi using LM75 sensors and PWM fan.,56.2,0,46.0,60.0,60.0,55.0,60.0
+"OLED Application - Digital Clock Display (Pigpio I2C Mode, Raspberry Pi, SSD1306)",52.2,1,75.0,48.0,48.0,50.0,40.0
+Distance sensing application for assistive technology,70.8,4,75.0,72.0,72.0,60.0,75.0
+Accelerometer Monitoring and LED Control,53.0,0,50.0,55.0,60.0,50.0,50.0
+Interactive Art Installation with Tilt Switches and LEDs,64.4,2,60.0,55.0,58.0,75.0,74.0
+Smart Irrigation System,53.6,0,46.0,60.0,49.0,40.0,73.0
+Vibration Monitoring System,48.6,1,45.0,35.0,47.0,46.0,70.0
+Vibration-triggered shutdown mechanism for Raspberry Pi,59.6,1,74.0,57.0,55.0,56.0,56.0
+Assistive Technology Gate System,49.0,1,40.0,50.0,75.0,40.0,40.0
+Temperature and Humidity Monitoring System,54.2,1,46.0,56.0,70.0,49.0,50.0
+Smart Chicken Coop Door Controller,69.0,4,75.0,75.0,46.0,75.0,74.0
+"ADC/DAC (Raspberry Pi, C Language)SSD1306 OLED Display Initialization and Test",52.0,0,50.0,50.0,50.0,60.0,50.0
+Periodic Actuation with Manual Interrupt - LED Blink Skipped During Button Press,47.4,0,48.0,48.0,47.0,46.0,48.0
+Soil Moisture Monitoring and Relay Control,74.8,5,75.0,75.0,74.0,75.0,75.0
+Distributed temperature and humidity monitoring system for industrial automation on Raspberry Pi 4,48.2,1,46.0,40.0,40.0,75.0,40.0
+Miniature CNC plotter for textiles using Raspberry Pi Zero W,63.6,2,60.0,75.0,50.0,75.0,58.0
+Environmental data logger for Raspberry Pi Zero W using SHT31-DIS sensor,65.0,3,57.0,75.0,73.0,70.0,50.0
+Relay control with touch sensors on Raspberry Pi Zero W,64.0,3,75.0,75.0,49.0,75.0,46.0
+Seismic event logger using Omron D7S sensor on Raspberry Pi Zero W,69.8,4,75.0,74.0,50.0,75.0,75.0
+Distributed Motion Detection System Node,63.2,3,74.0,35.0,75.0,75.0,57.0
+Home Security System,75.0,5,75.0,75.0,75.0,75.0,75.0
+Motion detection system for Raspberry Pi,65.8,2,75.0,60.0,60.0,60.0,74.0
+Distance monitoring with VL53L1X and PIR sensor on Raspberry Pi Zero W,60.2,0,71.0,72.0,45.0,73.0,40.0
+Motion detection and reporting to a central logging server using UDP.,74.6,5,73.0,75.0,75.0,75.0,75.0
+Automated Quality Control System using BMP180 sensors on Raspberry Pi,52.4,0,49.0,48.0,59.0,58.0,48.0
+Rain-activated window closer for Raspberry Pi,68.8,3,75.0,60.0,59.0,75.0,75.0
+Timed Access Control System for Raspberry Pi using pigpio,68.4,3,75.0,60.0,75.0,59.0,73.0
+Smart Lighting System,66.0,2,60.0,60.0,75.0,60.0,75.0
+Multi-sensor proximity-based musical alert system for industrial automation using Raspberry Pi Zero W and HC-SR04 sensors.,58.4,2,50.0,48.0,75.0,50.0,69.0
+LED Blinking with pigpio,47.4,0,48.0,48.0,47.0,48.0,46.0
+BME280 Sensor Logger,51.6,0,50.0,50.0,48.0,60.0,50.0
+"OLED Display Example - Static Text (Pigpio I2C Mode, Raspberry Pi, SSD1306)",50.0,0,50.0,50.0,50.0,50.0,50.0
+LED brightness control based on BH1750 light sensor readings on Raspberry Pi,48.6,0,49.0,49.0,50.0,60.0,35.0
+MCP4725 DAC Voltage Setting,68.0,4,71.0,71.0,72.0,56.0,70.0
+Vibration-triggered Shutdown,64.2,3,75.0,74.0,49.0,75.0,48.0
+Home Automation Humidity Monitor,55.4,1,55.0,48.0,50.0,74.0,50.0
+"Stepper Motor Control Example - Direction Toggle with Button (WiringPi Mode, Raspberry Pi, 28BYJ-48 with L293D Motor Driver)",39.8,0,50.0,38.0,38.0,35.0,38.0
+Seven-Segment Display,41.0,0,48.0,47.0,38.0,35.0,37.0
+Magnetometer and LED control on Raspberry Pi,56.0,1,58.0,47.0,75.0,55.0,45.0
+Safety Interlock System Monitor,72.0,4,60.0,75.0,75.0,75.0,75.0
+Motion-triggered sensor logging with Si1153 and PIR sensor on Raspberry Pi 5,63.2,2,47.0,75.0,60.0,59.0,75.0
+Door lock control system for Raspberry Pi using pigpio,74.6,5,74.0,75.0,75.0,75.0,74.0
+Capacitive Touch Sensor with LED Fading on Raspberry Pi,62.4,2,74.0,47.0,59.0,57.0,75.0
+Seven Segment Display with 74HC595,58.4,2,50.0,48.0,47.0,73.0,74.0
+"MCP3008 SPI - Log AIN0 to CSV (Raspberry Pi, C Language, spidev)",44.8,0,44.0,43.0,47.0,43.0,47.0
+Air Quality Monitoring and Ventilation Control,74.4,5,74.0,75.0,74.0,75.0,74.0
+Motion-triggered buzzer with MQTT integration on Raspberry Pi Zero W,67.6,3,57.0,74.0,74.0,59.0,74.0
+Home Automation Motion Detection System,66.2,3,74.0,60.0,75.0,73.0,49.0
+Motion Detection and Logging,75.0,5,75.0,75.0,75.0,75.0,75.0
+Motion detection using multiple PIR sensors on Raspberry Pi,75.0,5,75.0,75.0,75.0,75.0,75.0
+Environmental Monitoring System,74.0,5,74.0,75.0,73.0,74.0,74.0
+Motion detection and relay activation with logging,69.0,3,60.0,60.0,75.0,75.0,75.0
+Entry access logging system with PIR sensors and buzzer,61.0,2,60.0,35.0,75.0,75.0,60.0
+Motion Detection and Logging with Piezo Buzzer,71.0,4,75.0,74.0,75.0,57.0,74.0

@@ -55,9 +55,9 @@ All datasets and evaluation results are already provided. You can skip straight 
 The training and test data is in `dataset/`:
 
 ```
-dataset/training/synthetic/Validated_Synthetic_Dataset.json   # 15,886 synthetic programs
-dataset/training/real-world/Real_World_Dataset.json            # 1,053 real-world programs
-dataset/training/Training_Set_JSONL.jsonl                      # Fine-tuning ready JSONL
+dataset/training/synthetic/validated_synthetic_dataset.json   # 15,886 synthetic programs
+dataset/training/real-world/real_world_dataset.json            # 1,053 real-world programs
+dataset/training/training_set.jsonl                      # Fine-tuning ready JSONL
 dataset/test/test_set_70.json                                  # 70-prompt test set
 ```
 
@@ -79,8 +79,8 @@ Each model subfolder contains `*_VALIDATED.json` files with per-example scores.
 
 ```bash
 cd analysis
-python accuracyStats.py     # prompts for a *_VALIDATED.json file
-python timeStats.py         # prompts for a *_VALIDATED.json file
+python accuracy_stats.py     # prompts for a *_VALIDATED.json file
+python time_stats.py         # prompts for a *_VALIDATED.json file
 python extract_errors.py    # prompts for a *_VALIDATED.json file
 ```
 
@@ -120,7 +120,7 @@ Failed examples are automatically sent to the repair pipeline (Step 3).
 cd pipelines/2-real-world-data-pipeline
 # Set your Gemini API key in config/model.py
 # Place .c source files in raw-files/
-python Prompting_code.py --input-dir "raw-files/"
+python prompting_code.py --input-dir "raw-files/"
 ```
 
 Output: `raspberry_pi_validated_data.json` — programs that passed all four validation stages.
@@ -148,7 +148,7 @@ fine-tuning/qwen2.5-7b/training/Fine_Tuning_Script_Qwen2.5_7B_v1.ipynb
 ```
 
 All notebooks use:
-- Input: `dataset/training/Training_Set_JSONL.jsonl`
+- Input: `dataset/training/training_set.jsonl`
 - Method: QLoRA (4-bit NF4 + BF16, LoRA r=16 α=32)
 - Framework: HuggingFace SFTTrainer (TRL) + PEFT
 - Hardware: dual NVIDIA H100 80GB
@@ -163,11 +163,11 @@ The evaluation is a **two-step process**. Run step 5a first, then 5b.
 
 ```bash
 cd evaluation/validation-pipeline
-# Edit execute_validation_Criteria1.py:
+# Edit execute_validation_criteria1.py:
 #   INPUT_JSON  = 'YourModel_Responses.json'
 #   OUTPUT_JSON = 'YourModel_Responses_VALIDATED.json'
 #   Model_Name  = 'YourModelName'
-python execute_validation_Criteria1.py
+python execute_validation_criteria1.py
 ```
 
 This scores each example on:
@@ -195,25 +195,25 @@ This adds functional relevance scores (Gemini Flash 2.0 + GPT-4o) to the validat
 
 ```bash
 cd evaluation/validation-pipeline
-# Edit execute_validation_Criteria2.py with your input/output filenames
-python execute_validation_Criteria2.py
+# Edit execute_validation_criteria2.py with your input/output filenames
+python execute_validation_criteria2.py
 ```
 
 #### Step 5d — Pass@k evaluation (Eval 3)
 
 ```bash
 cd evaluation/validation-pipeline
-# Edit execute_validation_Criteria3.py with your input/output filenames
+# Edit execute_validation_criteria3.py with your input/output filenames
 # Input must contain 5 responses per prompt (subid 0–4)
-python execute_validation_Criteria3.py
+python execute_validation_criteria3.py
 ```
 
 ### Step 6 — Compute statistics and generate figures
 
 ```bash
 cd analysis
-python accuracyStats.py
-python timeStats.py
+python accuracy_stats.py
+python time_stats.py
 python extract_errors.py
 jupyter notebook plot_generation.ipynb
 ```

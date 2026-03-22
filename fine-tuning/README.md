@@ -32,7 +32,7 @@ All models were fine-tuned using **QLoRA** (4-bit NF4 quantization + BF16 comput
 - Sequence length: 6,000 tokens
 - Batch size: 2 per device, gradient accumulation: 4 steps
 - Validation split: 10% held out; early stopping on validation loss
-- Training dataset: `dataset/training/Training_Set_JSONL.jsonl`
+- Training dataset: `dataset/training/training_set.jsonl`
 
 ---
 

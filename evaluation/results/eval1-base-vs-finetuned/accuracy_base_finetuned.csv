@@ -1,0 +1,13 @@
+Model,Fine-tuning Status,Accuracy
+CodeLLaMA-7B-HF,Base,48.5
+CodeLLaMA-7B-HF,Fine-tuned,80.9
+Mistral-7B-Instructv0.3,Base,65.99
+Mistral-7B-Instructv0.3,Fine-tuned,89.3
+StarCoder2-7B,Base,54.38
+StarCoder2-7B,Fine-tuned,86.64
+DeepSeek-Coder 6.7B-Instruct,Base,78.97
+DeepSeek-Coder 6.7B-Instruct,Fine-tuned,90.05
+Qwen2.5-7B-Instruct,Base,74.27
+Qwen2.5-7B-Instruct,Fine-tuned,87.72
+Falcon3-7B-Instruct,Base,73.84
+Falcon3-7B-Instruct,Fine-tuned,85.6

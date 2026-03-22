@@ -1,0 +1,482 @@
+ID: 1599
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 1599
+----------------------------------------
+ID: 26
+  Base Build Error: Build errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:21:56: warning: implicit declaration of function ‘gpioErrorText’ [-Wimplicit-function-declaration]
+   21 |         fprintf(stderr, "gpioInitialise failed: %s\n", gpioErrorText(result));
+      |                                                        ^~~~~~~~~~~~~
+motion_sensor.c:35:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   35 |         sleep(1);
+      |         ^~~~~
+/usr/bin/ld: /tmp/ccGEHL4a.o: in function `main':
+motion_sensor.c:(.text+0x80): undefined reference to `gpioErrorText'
+/usr/bin/ld: motion_sensor.c:(.text+0xc4): undefined reference to `gpioErrorText'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 26
+  Base Build Error: Build errors detected:
+motion_sensor.c: In function ‘main’:
+motion_sensor.c:27:45: warning: implicit declaration of function ‘gpioErrorText’ [-Wimplicit-function-declaration]
+   27 |       printf("gpioInitialise failed: %s\n", gpioErrorText(result));
+      |                                             ^~~~~~~~~~~~~
+/usr/bin/ld: /tmp/cc3tiq2H.o: in function `main':
+motion_sensor.c:(.text+0x94): undefined reference to `gpioErrorText'
+/usr/bin/ld: motion_sensor.c:(.text+0xd0): undefined reference to `gpioErrorText'
+/usr/bin/ld: motion_sensor.c:(.text+0x110): undefined reference to `gpioErrorText'
+/usr/bin/ld: motion_sensor.c:(.text+0x15c): undefined reference to `gpioErrorText'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 26
+----------------------------------------
+ID: 2841
+  Base Syntax Error: Syntax errors detected:
+thermal_control.c: In function ‘main’:
+thermal_control.c:52:63: error: expected expression before ‘)’ token
+   52 |         printf("Temperature: %.2fC, Fan speed: %d\n", temp_c, );
+      |                                                               ^
+  Base Build Error: Build errors detected:
+thermal_control.c: In function ‘main’:
+thermal_control.c:52:63: error: expected expression before ‘)’ token
+   52 |         printf("Temperature: %.2fC, Fan speed: %d\n", temp_c, );
+      |                                                               ^
+----------------------------------------
+ID: 2841
+  Base Syntax Error: Syntax errors detected:
+thermal_control.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+thermal_control.c: In function ‘init_pwm’:
+thermal_control.c:61:26: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   61 |     write(file_pwm, buf, strlen(buf));
+      |                          ^~~~~~
+thermal_control.c:10:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    9 | #include <time.h>
+  +++ |+#include <string.h>
+   10 | 
+thermal_control.c:61:26: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   61 |     write(file_pwm, buf, strlen(buf));
+      |                          ^~~~~~
+thermal_control.c:61:26: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+thermal_control.c: In function ‘adjust_fan’:
+thermal_control.c:77:26: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   77 |     write(file_pwm, buf, strlen(buf));
+      |                          ^~~~~~
+thermal_control.c:77:26: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+  Base Build Error: Build errors detected:
+thermal_control.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+thermal_control.c: In function ‘init_pwm’:
+thermal_control.c:61:26: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   61 |     write(file_pwm, buf, strlen(buf));
+      |                          ^~~~~~
+thermal_control.c:10:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    9 | #include <time.h>
+  +++ |+#include <string.h>
+   10 | 
+thermal_control.c:61:26: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   61 |     write(file_pwm, buf, strlen(buf));
+      |                          ^~~~~~
+thermal_control.c:61:26: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+thermal_control.c: In function ‘adjust_fan’:
+thermal_control.c:77:26: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   77 |     write(file_pwm, buf, strlen(buf));
+      |                          ^~~~~~
+thermal_control.c:77:26: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 2841
+----------------------------------------
+ID: 2841
+  Base Syntax Error: Syntax errors detected:
+thermal_control.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+thermal_control.c: In function ‘main’:
+thermal_control.c:61:30: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   61 |     write(file_pwm, pwm_buf, strlen(pwm_buf));
+      |                              ^~~~~~
+thermal_control.c:8:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    7 | #include <unistd.h>
+  +++ |+#include <string.h>
+    8 | 
+thermal_control.c:61:30: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   61 |     write(file_pwm, pwm_buf, strlen(pwm_buf));
+      |                              ^~~~~~
+thermal_control.c:61:30: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+  Base Build Error: Build errors detected:
+thermal_control.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+thermal_control.c: In function ‘main’:
+thermal_control.c:61:30: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   61 |     write(file_pwm, pwm_buf, strlen(pwm_buf));
+      |                              ^~~~~~
+thermal_control.c:8:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    7 | #include <unistd.h>
+  +++ |+#include <string.h>
+    8 | 
+thermal_control.c:61:30: warning: incompatible implicit declaration of built-in function ‘strlen’ [-Wbuiltin-declaration-mismatch]
+   61 |     write(file_pwm, pwm_buf, strlen(pwm_buf));
+      |                              ^~~~~~
+thermal_control.c:61:30: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+----------------------------------------
+ID: 862
+  Base Syntax Error: Syntax errors detected:
+fan_controller.c: In function ‘readTemp’:
+fan_controller.c:13:55: error: lvalue required as unary ‘&’ operand
+   13 |     data = wiringPiSPIDataRW(channel, (unsigned char*)&MAX31855_READ, 2);
+      |                                                       ^
+  Base Build Error: Build errors detected:
+fan_controller.c: In function ‘readTemp’:
+fan_controller.c:13:55: error: lvalue required as unary ‘&’ operand
+   13 |     data = wiringPiSPIDataRW(channel, (unsigned char*)&MAX31855_READ, 2);
+      |                                                       ^
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 862
+  Base Syntax Error: Syntax errors detected:
+fan_controller.c: In function ‘main’:
+fan_controller.c:7:23: warning: passing argument 2 of ‘wiringPiSPIDataRW’ makes pointer from integer without a cast [-Wint-conversion]
+    7 | #define MAX31855_READ 0xffff
+      |                       ^~~~~~
+      |                       |
+      |                       int
+fan_controller.c:46:60: note: in expansion of macro ‘MAX31855_READ’
+   46 |         temp_raw = wiringPiSPIDataRW(MAX31855_SPI_CHANNEL, MAX31855_READ);
+      |                                                            ^~~~~~~~~~~~~
+In file included from fan_controller.c:2:
+/usr/local/include/wiringPiSPI.h:32:55: note: expected ‘unsigned char *’ but argument is of type ‘int’
+   32 | int wiringPiSPIDataRW    (int channel, unsigned char *data, int len) ;
+      |                                        ~~~~~~~~~~~~~~~^~~~
+fan_controller.c:46:20: error: too few arguments to function ‘wiringPiSPIDataRW’
+   46 |         temp_raw = wiringPiSPIDataRW(MAX31855_SPI_CHANNEL, MAX31855_READ);
+      |                    ^~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiSPI.h:32:5: note: declared here
+   32 | int wiringPiSPIDataRW    (int channel, unsigned char *data, int len) ;
+      |     ^~~~~~~~~~~~~~~~~
+fan_controller.c:56:21: warning: implicit declaration of function ‘map’ [-Wimplicit-function-declaration]
+   56 |         fan_speed = map(temp_celsius, TEMP_MIN, TEMP_MAX, FAN_MIN, FAN_MAX);
+      |                     ^~~
+fan_controller.c: At top level:
+fan_controller.c:69:5: error: conflicting types for ‘map’; have ‘int(float,  float,  float,  int,  int)’
+   69 | int map(float x, float in_min, float in_max, int out_min, int out_max)
+      |     ^~~
+fan_controller.c:70:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+   70 | {
+      | ^
+fan_controller.c:56:21: note: previous implicit declaration of ‘map’ with type ‘int()’
+   56 |         fan_speed = map(temp_celsius, TEMP_MIN, TEMP_MAX, FAN_MIN, FAN_MAX);
+      |                     ^~~
+  Base Build Error: Build errors detected:
+fan_controller.c: In function ‘main’:
+fan_controller.c:7:23: warning: passing argument 2 of ‘wiringPiSPIDataRW’ makes pointer from integer without a cast [-Wint-conversion]
+    7 | #define MAX31855_READ 0xffff
+      |                       ^~~~~~
+      |                       |
+      |                       int
+fan_controller.c:46:60: note: in expansion of macro ‘MAX31855_READ’
+   46 |         temp_raw = wiringPiSPIDataRW(MAX31855_SPI_CHANNEL, MAX31855_READ);
+      |                                                            ^~~~~~~~~~~~~
+In file included from fan_controller.c:2:
+/usr/local/include/wiringPiSPI.h:32:55: note: expected ‘unsigned char *’ but argument is of type ‘int’
+   32 | int wiringPiSPIDataRW    (int channel, unsigned char *data, int len) ;
+      |                                        ~~~~~~~~~~~~~~~^~~~
+fan_controller.c:46:20: error: too few arguments to function ‘wiringPiSPIDataRW’
+   46 |         temp_raw = wiringPiSPIDataRW(MAX31855_SPI_CHANNEL, MAX31855_READ);
+      |                    ^~~~~~~~~~~~~~~~~
+/usr/local/include/wiringPiSPI.h:32:5: note: declared here
+   32 | int wiringPiSPIDataRW    (int channel, unsigned char *data, int len) ;
+      |     ^~~~~~~~~~~~~~~~~
+fan_controller.c:56:21: warning: implicit declaration of function ‘map’ [-Wimplicit-function-declaration]
+   56 |         fan_speed = map(temp_celsius, TEMP_MIN, TEMP_MAX, FAN_MIN, FAN_MAX);
+      |                     ^~~
+fan_controller.c: At top level:
+fan_controller.c:69:5: error: conflicting types for ‘map’; have ‘int(float,  float,  float,  int,  int)’
+   69 | int map(float x, float in_min, float in_max, int out_min, int out_max)
+      |     ^~~
+fan_controller.c:70:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+   70 | {
+      | ^
+fan_controller.c:56:21: note: previous implicit declaration of ‘map’ with type ‘int()’
+   56 |         fan_speed = map(temp_celsius, TEMP_MIN, TEMP_MAX, FAN_MIN, FAN_MAX);
+      |                     ^~~
+----------------------------------------
+ID: 862
+  Base Build Error: Build errors detected:
+fan_controller.c: In function ‘readTemp’:
+fan_controller.c:12:5: warning: implicit declaration of function ‘wiringPiSPITransfer’; did you mean ‘wiringPiSPIxClose’? [-Wimplicit-function-declaration]
+   12 |     wiringPiSPITransfer(spi_fd, data, data, 2);
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     wiringPiSPIxClose
+/usr/bin/ld: /tmp/ccnlCkx0.o: in function `readTemp':
+fan_controller.c:(.text+0x28): undefined reference to `wiringPiSPITransfer'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 862
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+  Base Syntax Error: Syntax errors detected:
+airflow_monitor.c: In function ‘main’:
+airflow_monitor.c:33:15: error: ‘rawtime’ undeclared (first use in this function); did you mean ‘ctime’?
+   33 |         time(&rawtime);
+      |               ^~~~~~~
+      |               ctime
+airflow_monitor.c:33:15: note: each undeclared identifier is reported only once for each function it appears in
+  Base Build Error: Build errors detected:
+airflow_monitor.c: In function ‘main’:
+airflow_monitor.c:33:15: error: ‘rawtime’ undeclared (first use in this function); did you mean ‘ctime’?
+   33 |         time(&rawtime);
+      |               ^~~~~~~
+      |               ctime
+airflow_monitor.c:33:15: note: each undeclared identifier is reported only once for each function it appears in
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0210
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+----------------------------------------
+ID: 0777
+  Base Build Error: Build errors detected:
+proximity_alert.c: In function ‘main’:
+proximity_alert.c:26:56: warning: implicit declaration of function ‘gpioErrorText’ [-Wimplicit-function-declaration]
+   26 |         fprintf(stderr, "gpioInitialise failed: %s\n", gpioErrorText(ret));
+      |                                                        ^~~~~~~~~~~~~
+/usr/bin/ld: /tmp/ccewZIQI.o: in function `main':
+proximity_alert.c:(.text+0xcc): undefined reference to `gpioErrorText'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+  Base Syntax Error: Syntax errors detected:
+door_control.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+door_control.c: In function ‘main’:
+door_control.c:40:5: warning: implicit declaration of function ‘gpioSetDebounce’; did you mean ‘gpioSetISRFunc’? [-Wimplicit-function-declaration]
+   40 |     gpioSetDebounce(BUTTON_PIN, 500);
+      |     ^~~~~~~~~~~~~~~
+      |     gpioSetISRFunc
+door_control.c:45:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   45 |         sleep(1);
+      |         ^~~~~
+  Base Build Error: Build errors detected:
+door_control.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+door_control.c: In function ‘main’:
+door_control.c:40:5: warning: implicit declaration of function ‘gpioSetDebounce’; did you mean ‘gpioSetISRFunc’? [-Wimplicit-function-declaration]
+   40 |     gpioSetDebounce(BUTTON_PIN, 500);
+      |     ^~~~~~~~~~~~~~~
+      |     gpioSetISRFunc
+door_control.c:45:9: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   45 |         sleep(1);
+      |         ^~~~~
+----------------------------------------
+ID: 0850
+----------------------------------------
+ID: 0850
+  Base Syntax Error: Syntax errors detected:
+door_control.c: In function ‘writeToLog’:
+door_control.c:19:87: error: ‘struct tm’ has no member named ‘tm_mda’; did you mean ‘tm_mday’?
+   19 |     fprintf(f, "%d-%02d-%02d %02d:%02d:%02d - ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mda + 1, tm.tm_hour, tm.tm_min, tm.tm_sec);
+      |                                                                                       ^~~~~~
+      |                                                                                       tm_mday
+door_control.c: In function ‘buttonPressed’:
+door_control.c:27:47: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘uint32_t’ {aka ‘unsigned int’} [-Wformat=]
+   27 |         sprintf(message, "Button pressed at %lu\n", tick);
+      |                                             ~~^     ~~~~
+      |                                               |     |
+      |                                               |     uint32_t {aka unsigned int}
+      |                                               long unsigned int
+      |                                             %u
+  Base Build Error: Build errors detected:
+door_control.c: In function ‘writeToLog’:
+door_control.c:19:87: error: ‘struct tm’ has no member named ‘tm_mda’; did you mean ‘tm_mday’?
+   19 |     fprintf(f, "%d-%02d-%02d %02d:%02d:%02d - ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mda + 1, tm.tm_hour, tm.tm_min, tm.tm_sec);
+      |                                                                                       ^~~~~~
+      |                                                                                       tm_mday
+----------------------------------------
+ID: 0099
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccVeYpnq.o: in function `main':
+motion_sensor_log.c:(.text+0xc): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x90): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x1b8): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0099
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccRBHDh1.o: in function `main':
+motion_sensor_log.c:(.text+0x8): undefined reference to `wiringPiSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x2c): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x114): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x124): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x134): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x1a4): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0099
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccAgEwrE.o: in function `setup':
+motion_sensor_log.c:(.text+0xc): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: /tmp/ccAgEwrE.o: in function `main':
+motion_sensor_log.c:(.text+0x150): undefined reference to `wiringPiSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x184): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x1a0): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x1bc): undefined reference to `wiringPiI2CReadReg8'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0099
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /tmp/ccUwYBGC.o: in function `main':
+motion_sensor_log.c:(.text+0x8): undefined reference to `wiringPiSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x2c): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x94): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0xa4): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0xb4): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x11c): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 0099
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /tmp/cc1r1EYC.o: in function `write_data':
+motion_sensor_log.c:(.text+0x28): undefined reference to `wiringPiI2CWriteReg8'
+/usr/bin/ld: /tmp/cc1r1EYC.o: in function `read_data':
+motion_sensor_log.c:(.text+0x88): undefined reference to `wiringPiI2CReadReg8'
+/usr/bin/ld: /tmp/cc1r1EYC.o: in function `main':
+motion_sensor_log.c:(.text+0xdc): undefined reference to `wiringPiSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x118): undefined reference to `wiringPiI2CSetup'
+/usr/bin/ld: motion_sensor_log.c:(.text+0x280): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4801
+  Base Syntax Error: Syntax errors detected:
+interlock_monitor.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+  Base Build Error: Build errors detected:
+interlock_monitor.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+----------------------------------------
+ID: 4801
+----------------------------------------
+ID: 4801
+  Base Syntax Error: Syntax errors detected:
+interlock_monitor.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+  Base Build Error: Build errors detected:
+interlock_monitor.c:1:2: error: expected ‘;’ before ‘typedef’
+    1 | C
+      |  ^
+      |  ;
+----------------------------------------
+ID: 4801
+----------------------------------------
+ID: 4801
+  Base Syntax Error: Syntax errors detected:
+interlock_monitor.c: In function ‘callback’:
+interlock_monitor.c:40:42: error: incompatible types when assigning to type ‘char’ from type ‘Event’
+   40 |     buffer[buffer_index % BUFFER_SIZE] = event;
+      |                                          ^~~~~
+  Base Build Error: Build errors detected:
+interlock_monitor.c: In function ‘callback’:
+interlock_monitor.c:40:42: error: incompatible types when assigning to type ‘char’ from type ‘Event’
+   40 |     buffer[buffer_index % BUFFER_SIZE] = event;
+      |                                          ^~~~~
+----------------------------------------
+ID: 4244
+  Base Syntax Error: Syntax errors detected:
+light_control.c:4:10: fatal error: bh1750.h: No such file or directory
+    4 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+  Base Build Error: Build errors detected:
+light_control.c:4:10: fatal error: bh1750.h: No such file or directory
+    4 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 4244
+  Base Syntax Error: Syntax errors detected:
+light_control.c:4:10: fatal error: bh1750.h: No such file or directory
+    4 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+  Base Build Error: Build errors detected:
+light_control.c:4:10: fatal error: bh1750.h: No such file or directory
+    4 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 4244
+  Base Build Error: Build errors detected:
+/usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/12/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/ld: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+----------------------------------------
+ID: 4244
+  Base Syntax Error: Syntax errors detected:
+light_control.c:4:10: fatal error: bh1750.h: No such file or directory
+    4 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+  Base Build Error: Build errors detected:
+light_control.c:4:10: fatal error: bh1750.h: No such file or directory
+    4 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+----------------------------------------
+ID: 4244
+  Base Syntax Error: Syntax errors detected:
+light_control.c:2:10: fatal error: bh1750.h: No such file or directory
+    2 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+  Base Build Error: Build errors detected:
+light_control.c:2:10: fatal error: bh1750.h: No such file or directory
+    2 | #include <bh1750.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+----------------------------------------

@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 # List of input JSON files
-input_files = ["GPT_Missing_Output_Responses.json", "GPT_Test_Train_Samples_Count_70by5_LargeSet_Responses.json", "missing_entries1.json"]
+input_files = ["GPT_Missing_Output_Responses.json", "gpt_responses_70by5_large.json", "missing_entries1.json"]
 
 # Load and combine all data
 combined_data = []

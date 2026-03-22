@@ -36,9 +36,9 @@ Scores each model-generated C program across four dimensions:
 
 | Script | What it runs |
 |--------|-------------|
-| `execute_validation_Criteria1.py` | Eval 1 — base vs fine-tuned, 70 prompts |
-| `execute_validation_Criteria2.py` | Eval 2 — prompt variation robustness |
-| `execute_validation_Criteria3.py` | Eval 3 — Pass@k (temperature=0.7, k ∈ {1,3,5}) |
+| `execute_validation_criteria1.py` | Eval 1 — base vs fine-tuned, 70 prompts |
+| `execute_validation_criteria2.py` | Eval 2 — prompt variation robustness |
+| `execute_validation_criteria3.py` | Eval 3 — Pass@k (temperature=0.7, k ∈ {1,3,5}) |
 | `execute_validation_GPT_and_Gemini.py` | Functional relevance scoring via GPT-4o + Gemini |
 
 ### Setup
@@ -48,7 +48,7 @@ cd evaluation/validation-pipeline
 # Set API keys in config/model.py:
 #   API_KEY = "YOUR_GEMINI_API_KEY"
 #   OPENAI_API_KEY = "YOUR_OPENAI_API_KEY"
-python execute_validation_Criteria1.py
+python execute_validation_criteria1.py
 ```
 
 Outputs per run: `*_VALIDATED.json`, accuracy CSV, build/syntax error report.

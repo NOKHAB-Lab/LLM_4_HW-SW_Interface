@@ -1,0 +1,11 @@
+category,base_pass@1,finetuned_pass@1,base_pass@3,finetuned_pass@3,base_pass@5,finetuned_pass@5
+Si1133 UV/ALS/IR sensor interface on Raspberry Pi,1,0,1,2,2,3
+Motion Detection with HC-SR501 and Buzzer,0,1,0,3,0,5
+Temperature-based fan control for Raspberry Pi 5,0,1,0,3,0,4
+Temperature-controlled fan with UDP communication,0,1,0,3,0,5
+Airflow Monitoring with Alarm,1,1,2,2,4,3
+Aircraft Proximity Alert System,0,1,1,3,2,5
+Door lock control system for Raspberry Pi using pigpio,0,1,0,3,0,5
+Motion-triggered sensor logging with Si1153 and PIR sensor on Raspberry Pi 5,0,1,0,2,0,2
+Safety Interlock System Monitor,0,0,0,0,0,0
+LED brightness control based on BH1750 light sensor readings on Raspberry Pi,0,1,0,3,0,5
