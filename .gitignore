@@ -4,9 +4,6 @@ dataset/training/synthetic/Validated_Synthetic_Dataset.json
 # Paper text
 ¨paper.txt
 
-# Claude files
-.claude/
-
 # Python cache
 __pycache__/
 *.pyc
