@@ -307,6 +307,9 @@ The synthetic pipeline uses structured prompting (zero-shot and chain-of-thought
 
 ---
 
+### Disclaimer
+
+Claude AI was used to assist with git workflow management.
 ## License
 
 This dataset and associated code are released under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE) license. You are free to share and adapt the material for any purpose, provided appropriate credit is given.
